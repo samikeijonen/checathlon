@@ -1,0 +1,2 @@
+Checathlon WordPress theme
+===
