@@ -21,13 +21,19 @@
 		
 			<?php checathlon_post_thumbnail( $post_thumbnail = 'checathlon-singular' ) ?>
 			
-			<div class="entry-inner-content">
-				<div class="entry-content">
-					<?php
-						the_content();
-					?>
-				</div><!-- .entry-content -->
-			</div><!-- .entry-inner-content -->
+			<div class="entry-inner-singular-wrapper">
+			
+				<?php get_sidebar( 'downloads' ); ?>
+			
+				<div class="entry-inner-content">
+					<div class="entry-content">
+						<?php
+							the_content();
+						?>
+					</div><!-- .entry-content -->
+				</div><!-- .entry-inner-content -->
+				
+			</div><!-- .entry-inner-singular-wrapper -->
 			
 		</div><!-- .entry-inner-singular -->
 	
