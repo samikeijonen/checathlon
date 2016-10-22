@@ -23,7 +23,7 @@
 		<div class="site-info main-width">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'checathlon' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'checathlon' ), 'WordPress' ); ?></a>
 			<span class="sep"> &middot; </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s', 'checathlon' ), 'checathlon', '<a href="https://foxland.fi/" rel="designer">Sami Keijonen</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s', 'checathlon' ), 'Checathlon', '<a href="https://foxland.fi/">Sami Keijonen</a>' ); ?>
 		</div><!-- .site-info -->
 		
 	</footer><!-- #colophon -->
