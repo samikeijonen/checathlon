@@ -419,12 +419,30 @@ function checathlon_has_service_pricing_widgets() {
 }
 
 /**
+ * Check if download sidebar have any widgets.
+ *
+ * @return bool
+ */
+function checathlon_has_download_sidebar_widgets() {
+	return ( is_active_sidebar( 'sidebar-10' ) ) ? true : false;
+}
+
+/**
  * Check when to show main sidebar.
  *
  * @return bool
  */
 function checathlon_show_main_sidebar() {
 	return apply_filters( 'checathlon_show_main_sidebar', is_singular( array( 'post', 'page' ) ) );
+}
+
+/**
+ * Check when to show main sidebar.
+ *
+ * @return bool
+ */
+function checathlon_show_download_sidebar() {
+	return apply_filters( 'checathlon_show_download_sidebar', is_singular( array( 'download' ) ) );
 }
 
 /**
