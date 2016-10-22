@@ -46,7 +46,7 @@ function checathlon_setup() {
 	set_post_thumbnail_size( 680, 680, true );
 	
 	// Add custom image sizes.
-	add_image_size( 'checathlon-singular', 1240, 9999, false );
+	add_image_size( 'checathlon-singular', 1240, 620, true );
 	add_image_size( 'checathlon-product', 1080, 540, true );
 	add_image_size( 'checathlon-team', 1020, 720, true );
 	add_image_size( 'checathlon-small', 100, 100, true );
@@ -118,9 +118,9 @@ add_action( 'after_setup_theme', 'checathlon_content_width', 0 );
 function checathlon_widgets_init() {
 	
 	register_sidebar( array(
-		'name'          => esc_html__( 'Main sidebar. Add widgets here for posts or pages.', 'checathlon' ),
+		'name'          => esc_html__( 'Main sidebar', 'checathlon' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here for after posts or pages.', 'checathlon' ),
+		'description'   => esc_html__( 'Add widgets here for posts or pages.', 'checathlon' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner-wrappper">',
 		'after_widget'  => '</div></section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -204,6 +204,16 @@ function checathlon_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="hentry %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="entry-title">',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar for downloads', 'checathlon' ),
+		'id'            => 'sidebar-10',
+		'description'   => esc_html__( 'Add widgets here for downloads.', 'checathlon' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner-wrappper">',
+		'after_widget'  => '</div></section>',
+		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	
