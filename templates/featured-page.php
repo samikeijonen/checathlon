@@ -46,7 +46,7 @@ get_header(); ?>
 			// Load Front Page Widget area.
 			get_template_part( 'sidebar-front-page' );
 			
-			// Load blog area
+			// Load blog area.
 			get_template_part( 'components/content', 'blog-area' );
 			
 			?>
