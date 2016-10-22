@@ -96,6 +96,11 @@ function checathlon_body_classes( $classes ) {
 		$classes[] = 'has-main-sidebar';
 	}
 	
+	// Check download sidebar.
+	if( checathlon_has_download_sidebar_widgets() && checathlon_show_download_sidebar() ) {
+		$classes[] = 'has-download-sidebar';
+	}
+	
 	// Check after content widget area.
 	if( checathlon_has_after_content_widgets() ) {
 		$classes[] = 'has-after-content-widget-area';
@@ -214,8 +219,6 @@ add_filter( 'get_the_archive_description', 'checathlon_archive_description_filte
 
 /**
  * Modifies tag cloud widget arguments to have all tags in the widget same font size.
- *
- * @since Twenty Sixteen 1.1
  *
  * @param  array $args Arguments for tag cloud widget.
  * @return array A new modified arguments.
