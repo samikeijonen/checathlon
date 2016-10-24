@@ -13,18 +13,18 @@ $posts = new WP_Query( apply_filters( 'checathlon_front_page_posts', array(
 ) ) );
 
 if ( $posts->have_posts() && ! checathlon_get_fp_hide_blog_posts() ) : ?>
-				
+
 	<div id="front-page-blog-area" class="front-page-blog-area front-page-area">
-					
+
 	<?php echo checathlon_get_blog_area_title_html() ; ?>
-					
-		<div class="blog-wrapper">			
+
+		<div class="blog-wrapper">
 
 			<?php
 				while ( $posts->have_posts() ) : $posts->the_post();
-			
+
 					get_template_part( 'template-parts/content', '' );
-				
+
 				endwhile;
 			?>
 
