@@ -1,10 +1,10 @@
-<?php 
+<?php
 /**
  * Content for displaying read more link and comment link.
  *
  * @package Checathlon
  */
-?> 
+?>
 
 <div class="entry-comment grid-same-line">
 	<?php

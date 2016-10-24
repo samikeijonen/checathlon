@@ -1,11 +1,11 @@
-<?php 
+<?php
 /**
  * Entry for displaying product info like price.
  *
  * @package Checathlon
  */
- 
-if ( ! function_exists( 'edd_price' ) ) :
+
+if ( ! function_exists( 'edd_get_purchase_link' ) ) :
 	return;
 endif;
 ?>
@@ -17,12 +17,11 @@ endif;
 					echo '<a class="button" href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . esc_html__( 'Details', 'checathlon' ) . '</a>';
 				else :
 					echo edd_get_purchase_link( apply_filters( 'checathlon_purchace_link',
-						array(  
+						array(
 							'price' => 0 // turn the price off
 						)
 					) );
 				endif;
-				// echo '<a class="demo-link button button-secondary" href="#">Demo</a>';
 			?>
 		</span>
 		<span class="product-price soft-color medium-font-weight">
