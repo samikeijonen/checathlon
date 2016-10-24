@@ -9,17 +9,19 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area main-width">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area main-padding">
+		<main id="main" class="site-main main-width" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title title-font no-margin-bottom text-center text-italic"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'checathlon' ); ?></h1>
+					<div class="archive-description text-center soft-color">
+						<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'checathlon' ); ?></p>
+						<p><?php echo checathlon_get_svg( array( 'icon' => '404', 'title' => esc_html__( '404', 'checathlon' ), 'desc' => esc_html__( 'Page not found icon', 'checathlon' ) ) ); ?></p>
+					</div>
 				</header><!-- .page-header -->
 
 				<div class="page-content entry-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'checathlon' ); ?></p>
-
 					<?php
 						get_search_form();
 
