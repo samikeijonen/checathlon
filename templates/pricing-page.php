@@ -17,9 +17,9 @@ get_header(); ?>
 			?>
 
 				<header class="page-header">
-				
+
 					<?php the_title( '<h1 class="page-title title-font no-margin-bottom text-center text-italic">', '</h1>' ); ?>
-					
+
 					<?php
 					$content = trim( get_the_content() ); // Get page content.
 					if( '' !== $content ) : ?>
@@ -29,8 +29,8 @@ get_header(); ?>
 					<?php endif; ?>
 
 				</header><!-- .page-header -->
-				
-				<?php get_template_part( 'sidebar-pricing-page' ); // Load pricing table widgets.
+
+				<?php get_template_part( 'widget-areas/sidebar', 'pricing-page' ); // Load pricing table widgets.
 
 			endwhile; // End of the loop.
 			?>
