@@ -4,7 +4,7 @@
  *
  * @package Checathlon
  */
- 
+
 /**
  * This handles Front Page logic.
  *
@@ -16,12 +16,12 @@
  * @return $template
  */
 function checathlon_front_page_template( $template ) {
-	
+
 	return ( is_home() || locate_template( get_page_template_slug() ) ) ? '' : $template;
-	
+
 }
 add_filter( 'frontpage_template', 'checathlon_front_page_template' );
- 
+
 /**
  * Change [...] to just "...".
  *
@@ -49,10 +49,10 @@ add_filter( 'excerpt_more', 'checathlon_excerpt_more' );
 function checathlon_excerpt_length( $length ) {
 
 	// Change excerpt length on pages.
-	if( is_page_template( 'templates/team-page.php' ) ) {
+	if ( is_page_template( 'templates/team-page.php' ) ) {
 		$length = absint( apply_filters( 'checathlon_team_excerpt_length', 15 ) );
 	}
-	
+
 	return $length;
 
 }
@@ -65,7 +65,7 @@ add_filter( 'excerpt_length', 'checathlon_excerpt_length' );
  * @return array
  */
 function checathlon_body_classes( $classes ) {
-	
+
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -75,63 +75,63 @@ function checathlon_body_classes( $classes ) {
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
 	}
-	
+
 	// Add the '.custom-header-image' class if the user is using a custom header image.
 	if ( get_header_image() && ! checathlon_hide_header_image() ) {
 		$classes[] = 'custom-header-image';
 	}
-	
+
 	// Add the '.no-header-text' class if there is no Site Title and Tagline.
 	if ( ! display_header_text() ) {
 		$classes[] = 'no-header-text';
 	}
-	
+
 	// Add the '.no-social-menu' class if there is no Social menu.
 	if ( ! has_nav_menu( 'social' ) ) {
 		$classes[] = 'no-social-menu';
 	}
-	
+
 	// Check main sidebar.
-	if( checathlon_has_main_sidebar_widgets() && checathlon_show_main_sidebar() && ! checathlon_edd_is_checkout() ) {
+	if ( checathlon_has_main_sidebar_widgets() && checathlon_show_main_sidebar() && ! checathlon_edd_is_checkout() ) {
 		$classes[] = 'has-main-sidebar';
 	}
-	
+
 	// Check download sidebar.
-	if( checathlon_has_download_sidebar_widgets() && checathlon_show_download_sidebar() ) {
+	if ( checathlon_has_download_sidebar_widgets() && checathlon_show_download_sidebar() ) {
 		$classes[] = 'has-download-sidebar';
 	}
-	
+
 	// Check after content widget area.
-	if( checathlon_has_after_content_widgets() ) {
+	if ( checathlon_has_after_content_widgets() ) {
 		$classes[] = 'has-after-content-widget-area';
 	}
-	
+
 	// Before footer widget area count.
 	$before_footer_widget_count = 0;
-	if( is_active_sidebar( 'sidebar-3' ) ) {
+	if ( is_active_sidebar( 'sidebar-3' ) ) {
 		$before_footer_widget_count++;
 	}
-	if( is_active_sidebar( 'sidebar-4' ) ) {
+	if ( is_active_sidebar( 'sidebar-4' ) ) {
 		$before_footer_widget_count++;
 	}
-	if( is_active_sidebar( 'sidebar-5' ) ) {
+	if ( is_active_sidebar( 'sidebar-5' ) ) {
 		$before_footer_widget_count++;
 	}
-	
+
 	if (  1 < $before_footer_widget_count ) {
 		$classes[] = 'before-footer-widgets-many';
 	}
 	$classes[] = 'before-footer-widgets-' . $before_footer_widget_count;
-	
+
 	// Footer widget area count.
 	$footer_widget_count = 0;
-	if( is_active_sidebar( 'sidebar-6' ) ) {
+	if ( is_active_sidebar( 'sidebar-6' ) ) {
 		$footer_widget_count++;
 	}
-	if( is_active_sidebar( 'sidebar-7' ) ) {
+	if ( is_active_sidebar( 'sidebar-7' ) ) {
 		$footer_widget_count++;
 	}
-	
+
 	if (  0 < $footer_widget_count ) {
 		$classes[] = 'footer-widgets-many';
 	}
@@ -166,7 +166,7 @@ function checathlon_archive_title_filter( $title ) {
 	elseif ( is_author() ) {
 		$title = get_the_author_meta( 'display_name', absint( get_query_var( 'author' ) ) );
 	}
-	
+
 	elseif ( is_search() ) {
 		$title = sprintf( esc_html__( 'Search results for &#8220;%s&#8221;', 'checathlon' ), get_search_query() );
 	}
@@ -204,7 +204,7 @@ function checathlon_archive_description_filter( $desc ) {
 	elseif ( is_tax() ) {
 		$desc = get_term_field( 'description', get_queried_object_id(), get_query_var( 'taxonomy' ), 'raw' );
 	}
-	
+
 	elseif ( is_author() ) {
 		$desc = get_the_author_meta( 'description', get_query_var( 'author' ) );
 	}
@@ -216,6 +216,38 @@ function checathlon_archive_description_filter( $desc ) {
 	return apply_filters( 'checathlon_archive_description', $desc );
 }
 add_filter( 'get_the_archive_description', 'checathlon_archive_description_filter', 5 );
+
+/**
+ * Set same template for Jetpack and Custom Content Portfolio categories and tags.
+ *
+ * @since  1.0.0
+ * @param  string $template Template for displaying archive page.
+ * @return string $template
+ */
+function chucathlon_jetpack_portfolio_taxonomy_template( $template ) {
+	// Jetpack portfolio template.
+	if ( is_tax( 'jetpack-portfolio-type' ) || is_tax( 'jetpack-portfolio-tag' ) ) {
+
+		$new_template = locate_template( array( 'archive-jetpack-portfolio.php' ) );
+		if ( '' != $new_template ) {
+			return $new_template ;
+		}
+
+	}
+
+	// Custom content portfolio template.
+	if ( is_tax( 'portfolio_category' ) || is_tax( 'portfolio_tag' ) ) {
+
+		$new_template = locate_template( array( 'archive-portfolio_project.php' ) );
+		if ( '' != $new_template ) {
+			return $new_template ;
+		}
+
+	}
+
+	return $template;
+}
+add_filter( 'taxonomy_template', 'chucathlon_jetpack_portfolio_taxonomy_template', 99 );
 
 /**
  * Modifies tag cloud widget arguments to have all tags in the widget same font size.
