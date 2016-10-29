@@ -16,8 +16,8 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
-			
-			get_sidebar( 'after-content' );
+
+			get_template_part( 'widget-areas/sidebar', 'after-content' );
 
 		endwhile; // End of the loop.
 		?>
