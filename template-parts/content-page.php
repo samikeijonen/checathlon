@@ -52,11 +52,8 @@
 
 			<?php
 				// Get featured image as post background image.
-				$checathlon_bg = checathlon_post_background( 'medium_large' );
+				echo checathlon_get_bg_header( array( 'icon' => 'info' ) );
 			?>
-			<div class="entry-header-bg"<?php if ( has_post_thumbnail() ) echo ' style="background-image:url(' . esc_url( $checathlon_bg ) . ');"' ?>>
-				<?php the_title( '<a class="entry-header-bg-link" href="' . esc_url( get_permalink() ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading', 'checathlon' ) . ' ', '</span></a>' ); ?>
-			</div>
 
 		<div class="entry-inner">
 

@@ -1736,6 +1736,13 @@ a > img.alignnone {
 	position: relative;
 }
 
+.blog-wrapper .entry-header-bg {
+	display: none;
+}
+.blog-wrapper .has-post-thumbnail .entry-header-bg {
+	display: block;
+}
+
 a.entry-header-bg-link {
 	position: absolute;
 	width: 100%;
@@ -1749,6 +1756,20 @@ a.entry-header-bg-link:hover,
 a.entry-header-bg-link:focus,
 a.entry-header-bg-link:active {
 	background-color: rgba(59, 59, 59, 0.33);
+}
+
+.entry-header-bg-link > .icon {
+	display: block;
+	color: #6c6c6c;
+	position: absolute;
+	left: calc(50% - 3em);
+	top: calc(50% - 3em);
+	width: 6em;
+	height: 6em;
+}
+
+.blog-wrapper .entry-header-bg-link > .icon {
+	left: calc(170px - 3em);
 }
 
 @media screen and (min-width: 38.875em) {
@@ -1877,18 +1898,15 @@ a.entry-header-bg-link:active {
 		background-size: contain;
 	}
 
-	.entry-inner-bg > .icon {
+	.blog-wrapper .entry-header-bg {
 		display: block;
-		color: #6c6c6c;
-		position: absolute;
-		left: calc(170px - 3em);
-		top: calc(50% - 3em);
-		width: 6em;
-		height: 6em;
+		padding-top: 0;
+		width: 340px;
+		height: auto;
 	}
 
 	.blog-wrapper .entry-inner {
-		margin-left: 340px;
+		width: calc(100% - 340px);
 		min-height: 340px;
 	}
 

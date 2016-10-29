@@ -302,6 +302,35 @@ function checathlon_post_thumbnail( $post_thumbnail = null ) {
 	<?php endif; // End is_singular()
 }
 
+function checathlon_get_bg_header( $args = array() ) {
+
+	$defaults = array(
+		'post_id' => get_the_ID(),
+		'size'    => 'medium_large',
+		'icon'    => 'pencil',
+	);
+
+	$args = wp_parse_args( $args, $defaults );
+
+	// Get featured image as post background image.
+	$checathlon_bg = checathlon_post_background( $args['size'] );
+
+	// Start markup.
+	$markup = '';
+
+	if ( has_post_thumbnail( $args['post_id'] ) ) :
+		$markup .= '<div class="entry-header-bg" style="background-image:url(' . esc_url( $checathlon_bg ) . ');">';
+			$markup .= '<a class="entry-header-bg-link" href="' . esc_url( get_permalink() ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading', 'checathlon' ) . ' ' . get_the_title() . '</span></a>';
+	else :
+		$markup .= '<div class="entry-header-bg">';
+		$markup .= '<a class="entry-header-bg-link" href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . checathlon_get_svg( array( 'icon' => $args['icon'] ) ) . '<span class="screen-reader-text">' . esc_html__( 'Continue reading', 'checathlon' ) . ' ' . get_the_title() . '</span></a>';
+	endif;
+
+	$markup .= '</div>';
+
+	return $markup;
+}
+
 /**
  * Display post pagination.
  *

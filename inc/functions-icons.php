@@ -215,6 +215,7 @@ function checathlon_get_svg_icons() {
 		'pencil'         => 'pencil',
 		'angle-down'     => 'angle-down',
 		'clock-o'        => 'clock-o',
+		'download'       => 'download',
 		'phone'          => 'phone',
 		'search'         => 'search',
 		'info'           => 'info',
