@@ -15,7 +15,7 @@
  * as indicating support for post thumbnails.
  */
 function checathlon_setup() {
-	
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -41,10 +41,10 @@ function checathlon_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	
+
 	// Default image size.
 	set_post_thumbnail_size( 680, 680, true );
-	
+
 	// Add custom image sizes.
 	add_image_size( 'checathlon-singular', 1240, 620, true );
 	add_image_size( 'checathlon-product', 1080, 540, true );
@@ -56,14 +56,14 @@ function checathlon_setup() {
 		'primary' => esc_html__( 'Primary', 'checathlon' ),
 		'social'  => esc_html__( 'Social Links', 'checathlon' ),
 	) );
-	
+
 	// Add support for logo.
 	add_theme_support( 'custom-logo', apply_filters( 'checathlon_custom_logo_arguments', array(
 		'height'     => 60,
 		'width'      => 60,
 		'flex-width' => true,
 	) ) );
-	
+
 	/*
 	 * Add support for selective refresh.
 	 *
@@ -82,19 +82,19 @@ function checathlon_setup() {
 		'gallery',
 		'caption',
 	) );
-	
+
 	// Add excerpt to pages.
 	add_post_type_support( 'page', 'excerpt' );
-	
+
 	// Add support for Custom Content Portfolio Plugin
 	add_theme_support( 'custom-content-portfolio' );
-	
+
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
 	add_editor_style( array( 'assets/css/editor-style.css' ) );
-	
+
 }
 add_action( 'after_setup_theme', 'checathlon_setup' );
 
@@ -116,7 +116,7 @@ add_action( 'after_setup_theme', 'checathlon_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function checathlon_widgets_init() {
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Main sidebar', 'checathlon' ),
 		'id'            => 'sidebar-1',
@@ -126,7 +126,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Widget area after content', 'checathlon' ),
 		'id'            => 'sidebar-2',
@@ -136,7 +136,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Before footer widget area 1', 'checathlon' ),
 		'id'            => 'sidebar-3',
@@ -146,7 +146,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Before footer widget area 2', 'checathlon' ),
 		'id'            => 'sidebar-4',
@@ -156,7 +156,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Before footer widget area 3', 'checathlon' ),
 		'id'            => 'sidebar-5',
@@ -166,7 +166,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer widget area 1', 'checathlon' ),
 		'id'            => 'sidebar-6',
@@ -176,7 +176,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer widget area 2', 'checathlon' ),
 		'id'            => 'sidebar-7',
@@ -186,7 +186,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Front Page widget area', 'checathlon' ),
 		'id'            => 'sidebar-8',
@@ -196,7 +196,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Service and Pricing widget area', 'checathlon' ),
 		'id'            => 'sidebar-9',
@@ -206,7 +206,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="entry-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar for downloads', 'checathlon' ),
 		'id'            => 'sidebar-10',
@@ -216,7 +216,7 @@ function checathlon_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 }
 add_action( 'widgets_init', 'checathlon_widgets_init' );
 
@@ -248,7 +248,7 @@ function checathlon_fonts_url() {
 	if ( 'off' !== esc_attr_x( 'on', 'Source Sans Pro font: on or off', 'checathlon' ) ) {
 		$fonts[] = 'Source Sans Pro:400,600,700,400italic,600italic,700italic';
 	}
-	
+
 	/* translators: If there are characters in your language that are not supported by Lora, translate this to 'off'. Do not translate into your own language. */
 	if ( 'off' !== esc_attr_x( 'on', 'Lora font: on or off', 'checathlon' ) ) {
 		$fonts[] = 'Lora:400,700,400italic,700italic';
@@ -265,32 +265,55 @@ function checathlon_fonts_url() {
 }
 
 /**
+ * Add preconnect for Google Fonts.
+ *
+ * @param  array  $urls          URLs to print for resource hints.
+ * @param  string $relation_type The relation type the URLs are printed.
+ * @return array  URLs to print for resource hints.
+ */
+function checathlon_resource_hints( $urls, $relation_type ) {
+	if ( wp_style_is( 'checathlon-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '>=' ) ) {
+			$urls[] = array(
+				'href' => 'https://fonts.gstatic.com',
+				'crossorigin',
+			);
+		} else {
+			$urls[] = 'https://fonts.gstatic.com';
+		}
+	}
+
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'checathlon_resource_hints', 10, 2 );
+
+/**
  * Enqueue scripts and styles.
  */
 function checathlon_scripts() {
-	
+
 	// Get '.min' suffix.
 	$suffix = checathlon_get_min_suffix();
-	
+
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'checathlon-fonts', checathlon_fonts_url(), array(), null );
-	
+
 	// Add parent theme styles if using child theme.
 	if ( is_child_theme() ) {
 		wp_enqueue_style( 'checathlon-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . $suffix . '.css', array(), null );
 	}
-	
+
 	// Add theme styles.
 	wp_enqueue_style( 'checathlon-style', get_stylesheet_uri() );
-	
+
 	// Add theme scripts.
 	wp_enqueue_script( 'checathlon-navigation', get_template_directory_uri() . '/assets/js/navigation' . $suffix . '.js', array(), '20160912', true );
-	
+
 	// Add comment scripts.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'checathlon_scripts' );
 
@@ -338,16 +361,6 @@ require get_template_directory() . '/inc/functions-filters.php';
  * Load theme scripts related file.
  */
 require get_template_directory() . '/inc/functions-scripts.php';
-
-/**
- * Load Custom Content Portfolio Plugin functions file.
- */
-require get_template_directory() . '/inc/functions-portfolio.php';
-
-/**
- * Load Jetpack Portfolio functions file.
- */
-require get_template_directory() . '/inc/functions-jetpack-portfolio.php';
 
 /**
  * Load pricing widget file.
