@@ -11,7 +11,7 @@
  * Prints HTML with meta information for the current post-date/time.
  */
 function checathlon_posted_on() {
-	
+
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -39,7 +39,7 @@ function checathlon_posted_on() {
  * Prints HTML with meta information for the current author.
  */
 function checathlon_author() {
-	
+
 	$byline = sprintf(
 		esc_html_x( 'by %s', 'post author', 'checathlon' ),
 		'<span class="author vcard"><a class="url fn n soft-color" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
@@ -47,16 +47,16 @@ function checathlon_author() {
 
 	echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
-	
+
 }
 
 /**
- * This template tag is meant to replace template tags like `the_category()`, `the_terms()`, etc.  These core 
- * WordPress template tags don't offer proper translation and RTL support without having to write a lot of 
- * messy code within the theme's templates.  This is why theme developers often have to resort to custom 
- * functions to handle this (even the default WordPress themes do this). Particularly, the core functions 
- * don't allow for theme developers to add the terms as placeholders in the accompanying text (ex: "Posted in %s"). 
- * This funcion is a wrapper for the WordPress `get_the_terms_list()` function.  It uses that to build a 
+ * This template tag is meant to replace template tags like `the_category()`, `the_terms()`, etc.  These core
+ * WordPress template tags don't offer proper translation and RTL support without having to write a lot of
+ * messy code within the theme's templates.  This is why theme developers often have to resort to custom
+ * functions to handle this (even the default WordPress themes do this). Particularly, the core functions
+ * don't allow for theme developers to add the terms as placeholders in the accompanying text (ex: "Posted in %s").
+ * This funcion is a wrapper for the WordPress `get_the_terms_list()` function.  It uses that to build a
  * better post terms list.
  *
  * @author  Justin Tadlock
@@ -111,7 +111,7 @@ function checathlon_post_terms( $args = array() ) {
  * Prints HTML with meta information for the categories, tags and comments.
  */
 function checathlon_entry_footer() {
-	
+
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
@@ -155,9 +155,9 @@ function checathlon_get_read_more_link() {
 	/* Translators: The %s is the post title shown to screen readers. */
 	$text = sprintf( esc_attr__( 'Read more %s', 'checathlon' ), '<span class="screen-reader-text">' . get_the_title() ) .  '</span>';
 	$more = sprintf( '<a href="%s" class="more-link underline-link medium-font-weight">%s %s</a>', esc_url( get_permalink() ), $text, checathlon_get_svg( array( 'icon' => 'next' ) ) );
-		
+
 	return $more;
-	
+
 }
 
 /**
@@ -168,7 +168,7 @@ function checathlon_get_read_more_link() {
 function checathlon_read_more_link() {
 
 	echo checathlon_get_read_more_link();
-	
+
 }
 
 /**
@@ -177,34 +177,34 @@ function checathlon_read_more_link() {
  * @since 1.0.0
  */
 function checathlon_comments_popup_link( $zero = false, $one = false, $more = false, $css_class = '', $none = false ) {
-	
+
 	$id     = get_the_ID();
 	$title  = get_the_title();
 	$number = get_comments_number( $id );
 	$icon   = checathlon_get_svg( array( 'icon' => 'comment' ) );
-	
+
 	$css_class = 'comment-link soft-color medium-font-weight smaller-font-size';
-	
+
 	if ( false === $zero ) {
 		/* translators: 1: Number of comments 2: post title */
 		$zero = $icon . sprintf( wp_kses( __( '%1$s<span class="screen-reader-text"> Comment on %2$s</span>', 'checathlon' ), array( 'span' => array( 'class' => array() ) ) ), number_format_i18n( 0 ), $title );
 	}
- 
+
 	if ( false === $one ) {
 	/* translators: %s: post title */
 		$one = $icon . sprintf( wp_kses( __( '1<span class="screen-reader-text">Comment on %s</span>', 'checathlon' ), array( 'span' => array( 'class' => array() ) ) ), $title );
 	}
- 
+
 	if ( false === $more ) {
 		/* translators: 1: Number of comments 2: post title */
 		$more = wp_kses( _n( '%1$s<span class="screen-reader-text"> Comment on %2$s</span>', '%1$s<span class="screen-reader-text">Comments on %2$s</span>', $number, 'checathlon' ), array( 'span' => array( 'class' => array() ) ) );
 		$more = $icon . sprintf( $more, number_format_i18n( $number ), $title );
 	}
- 
+
 	if ( false === $none ) {
 		$none = '';
 	}
-	
+
 	if ( 0 == $number && !comments_open() && !pings_open() ) :
 		return;
 	else :
@@ -219,23 +219,23 @@ function checathlon_comments_popup_link( $zero = false, $one = false, $more = fa
  * @since 1.0.0
  */
 function checathlon_attachment_url( $size = null, $id = null ) {
-	
+
 	// Set default size.
 	if ( null === $size ) {
 		$size = 'full';
 	}
-	
+
 	// Set default ID.
 	if ( null === $id ) {
 		$id = get_the_ID();
 	}
-	
+
 	// Get attachment image.
 	$attachment_image = wp_get_attachment_image_src( absint( $id ), esc_attr( $size ), true );
-	
+
 	// Return attachment image url.
 	return $attachment_image_url = $attachment_image[0];
-	
+
 }
 
 /**
@@ -249,28 +249,20 @@ function checathlon_post_background( $post_thumbnail = null, $id = null ) {
 	if ( null === $post_thumbnail ) {
 		$post_thumbnail = 'post-thumbnail';
 	}
-	
+
 	// Set default ID.
 	if ( null === $id ) {
 		$id = get_the_ID();
 	}
-	
-	// Get default post image from the Customizer.
-	if( get_theme_mod( 'default_post_image' ) ) :
-		$checathlon_default_image = wp_get_attachment_image_src( absint( get_theme_mod( 'default_post_image' ) ), 'full' );
-		$checathlon_default_image = $checathlon_default_image[0];
-	endif;
-	
+
 	// Return post thumbnail url if it's set, else return false.
 	if ( has_post_thumbnail( $id ) ) {
 		$thumb_url_array = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), esc_attr( $post_thumbnail ), true );
 		$bg              = $thumb_url_array[0];
-	} elseif( get_theme_mod( 'default_post_image' ) ) {
-		$bg = $checathlon_default_image;
 	} else {
 		$bg = false;
 	}
-	
+
 	return $bg;
 
 }
@@ -284,11 +276,11 @@ function checathlon_post_background( $post_thumbnail = null, $id = null ) {
  * @since 1.0.0
  */
 function checathlon_post_thumbnail( $post_thumbnail = null ) {
-	
+
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
 	}
-	
+
 	// Set default size.
 	if ( null === $post_thumbnail ) {
 		$post_thumbnail = 'post-thumbnail';
@@ -316,11 +308,11 @@ function checathlon_post_thumbnail( $post_thumbnail = null ) {
  * Use WordPress native the_posts_pagination function.
  */
 function checathlon_posts_pagination() {
-	
+
 	the_posts_pagination( array(
 		'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'checathlon' ) . ' </span>',
 	) );
-	
+
 }
 
 /**
@@ -330,11 +322,11 @@ function checathlon_posts_pagination() {
  *
  */
 function checathlon_the_custom_logo() {
-	
+
 	if ( function_exists( 'the_custom_logo' ) ) {
 		the_custom_logo();
 	}
-	
+
 }
 
 /**

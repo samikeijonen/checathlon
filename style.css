@@ -1726,6 +1726,42 @@ a > img.alignnone {
 .entry-inner-bg > .icon {
 	display: none;
 }
+
+.entry-header-bg {
+	background-color: #d4d4d4;
+	background-size: cover;
+	background-position: center;
+	height: 0;
+	padding-top: 75%;
+	position: relative;
+}
+
+a.entry-header-bg-link {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 0.5s;
+}
+
+a.entry-header-bg-link:hover,
+a.entry-header-bg-link:focus,
+a.entry-header-bg-link:active {
+	background-color: rgba(59, 59, 59, 0.33);
+}
+
+@media screen and (min-width: 38.875em) {
+
+	.entry-header-bg {
+		padding-top: 56.25%;
+	}
+	.page-template-team-page .entry-header-bg {
+			padding-top: 70.588%;
+		}
+
+}
+
 .blog-wrapper .entry-inner,
 .search-results .entry-inner,
 .grid-wrapper .entry-inner-wrapper,
