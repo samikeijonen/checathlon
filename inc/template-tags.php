@@ -25,9 +25,9 @@ function checathlon_posted_on() {
 	);
 
 	$posted_on = sprintf(
-	/* translators: 1: Posted on string 2: post author */
+		/* translators: 1: Posted on string 2: post author */
 		esc_html_x( '%1$s %2$s', 'post date', 'checathlon' ),
-		'<span class="screen-reader-text">' .esc_html__( 'Posted on', 'checathlon' ) . '</span>',
+		'<span class="screen-reader-text">' . esc_html__( 'Posted on', 'checathlon' ) . '</span>',
 		'<a class="soft-color" href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -460,7 +460,7 @@ function checathlon_edd_is_checkout() {
  * @return bool
  */
 function checathlon_hide_header_image() {
-	return apply_filters( 'checathlon_hide_header_image', is_singular() );
+	return apply_filters( 'checathlon_hide_header_image', is_singular( 'post' ) );
 }
 
 /**
