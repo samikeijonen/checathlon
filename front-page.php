@@ -17,9 +17,9 @@ get_header(); ?>
 			?>
 
 				<header class="page-header">
-				
+
 					<?php the_title( '<h1 class="page-title title-font no-margin-bottom text-center text-italic">', '</h1>' ); ?>
-					
+
 					<?php
 					$content = trim( get_the_content() ); // Get page content.
 					if( '' !== $content ) : ?>
@@ -29,25 +29,25 @@ get_header(); ?>
 					<?php endif; ?>
 
 				</header><!-- .page-header -->
-				
+
 			<?php
 			endwhile; // End of the loop.
-			
+
 			// Load service and pricing table widgets.
 			get_template_part( 'components/content', 'service-pricing' );
-			
+
 			// Load featured area.
 			get_template_part( 'components/content', 'featured-area' );
-			
+
 			// Load featured area.
 			get_template_part( 'components/content', 'testimonials-area' );
-			
+
 			// Load Front Page Widget area.
-			get_template_part( 'sidebar-front-page' );
-			
+			get_template_part( 'widget-areas/sidebar', 'front-page' );
+
 			// Load blog area
 			get_template_part( 'components/content', 'blog-area' );
-			
+
 			?>
 
 		</main><!-- #main -->
