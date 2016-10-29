@@ -4,7 +4,7 @@
  *
  * @package Checathlon
  */
- 
+
 /**
  * This is a wrapper function for core WP's `get_theme_mod()` function. Core doesn't
  * provide a filter hook for the default value (useful for child themes). The purpose
@@ -275,32 +275,31 @@ function checathlon_how_many_selected_pages() {
  * @return array
  */
 function checathlon_featured_pages() {
-	
+
 	$k = 1;
-	
+
 	// Set empty array of featured pages.
 	$checathlon_featured_pages = array();
-	
+
 	// How many pages to show.
 	$how_many_pages = checathlon_how_many_selected_pages();
-	
+
 	// Loop all the featured pages.
-	while ( $k <= absint ( $how_many_pages ) ) { // Begins the loop through found pages from customize settings. 
-	
+	while ( $k <= absint ( $how_many_pages ) ) { // Begins the loop through found pages from customize settings.
+
 		$checathlon_page_id = absint( get_theme_mod( 'featured_page_' . $k ) );
-			
+
 			// Add selected featured pages in array.
 			if ( 0 != $checathlon_page_id || ! empty( $checathlon_page_id ) ) { // Check if page is selected.
 				$checathlon_featured_pages[] = $checathlon_page_id;
 			}
-	
+
 		$k++;
-	
+
 	}
-	
+
 	// Return featured pages.
 	return $checathlon_featured_pages;
-	
 }
 
 /**
@@ -345,11 +344,10 @@ function checathlon_hex2rgb( $color ) {
  * @return string|void
  */
 function checathlon_sanitize_hex_color( $color ) {
-	       
 	if ( '' === $color ) {
 		return '';
 	}
-	
+
 	// 3 or 6 hex digits, or the empty string.
 	if ( preg_match('|^#([A-Fa-f0-9]{3}){1,2}$|', $color ) ) {
 		return $color;
