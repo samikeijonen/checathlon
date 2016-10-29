@@ -22,12 +22,12 @@
  */
 function checathlon_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'checathlon_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '1f1f1f',
-		'width'                  => 1920,
-		'height'                 => 500,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'checathlon_header_style',
+		'default-image'      => '',
+		'default-text-color' => '1f1f1f',
+		'width'              => 1920,
+		'height'             => 500,
+		'flex-height'        => true,
+		'wp-head-callback'   => 'checathlon_header_style',
 	) ) );
 }
 add_action( 'after_setup_theme', 'checathlon_custom_header_setup', 15 );
@@ -78,14 +78,14 @@ function checathlon_header_style() {
 	
 	// Site title styles.
 	if ( display_header_text() ) {
-		$style .= ".site-title a,.site-title a:visited { color: #{$header_color} }";
+		$style .= ".site-title a, .site-title a:visited { color: #{$header_color} }";
 	}
 	
 	if ( ! display_header_text() ) {
 		$style .= ".site-title { clip: rect(1px, 1px, 1px, 1px); position: absolute; }";	
 	}
 	
-	/* Echo styles if it's not empty. */
+	// Echo styles if it's not empty.
 	if ( ! empty( $style ) ) {
 		echo "\n" . '<style type="text/css" id="custom-header-css">' . trim( $style ) . '</style>' . "\n";
 	}
