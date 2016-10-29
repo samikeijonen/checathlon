@@ -14,15 +14,15 @@
 	<?php if ( is_singular() && ! checathlon_is_featured_page() && ! checathlon_is_front_page() ) : // If single. ?>
 
 		<div class="entry-inner-singular">
-	
+
 			<header class="entry-header page-header text-center">
 				<?php the_title( '<h1 class="entry-title title-font no-margin-bottom text-italic">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
-	
+
 			<?php checathlon_post_thumbnail( $post_thumbnail = 'checathlon-singular' ) ?>
-		
+
 			<div class="entry-inner-singular-wrapper">
-			
+
 				<div class="entry-inner-content">
 					<div class="entry-content">
 					<?php
@@ -39,35 +39,41 @@
 					?>
 					</div><!-- .entry-content -->
 				</div><!-- .entry-inner-content -->
-			
+
 				<?php get_sidebar(); ?>
-				
+
 			</div><!-- .entry-inner-singular-wrapper -->
-	
+
 	</div><!-- .entry-inner-singular -->
-	
+
 <?php else : ?>
-	
+
 		<div class="entry-inner-wrapper">
-	
-		<?php checathlon_post_thumbnail( $post_thumbnail = 'checathlon-product' ); ?>
-	
+
+			<?php
+				// Get featured image as post background image.
+				$checathlon_bg = checathlon_post_background( 'medium_large' );
+			?>
+			<div class="entry-header-bg"<?php if ( has_post_thumbnail() ) echo ' style="background-image:url(' . esc_url( $checathlon_bg ) . ');"' ?>>
+				<?php the_title( '<a class="entry-header-bg-link" href="' . esc_url( get_permalink() ) . '" rel="bookmark"><span class="screen-reader-text">' . esc_html__( 'Continue reading', 'checathlon' ) . ' ', '</span></a>' ); ?>
+			</div>
+
 		<div class="entry-inner">
-			
+
 			<header class="entry-header">
 				<?php
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				?>
 			</header><!-- .entry-header -->
-		
+
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
-			
+
 		</div><!-- .entry-inner -->
-		
+
 	</div><!-- .entry-inner-wrapper -->
 
 	<?php endif; // End check single. ?>
-		
+
 </article><!-- #post-## -->
