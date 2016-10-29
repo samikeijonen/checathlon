@@ -31,8 +31,8 @@ get_header(); ?>
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
-			
-			get_sidebar( 'after-content' );
+
+			get_template_part( 'widget-areas/sidebar', 'after-content' );
 
 		endwhile; // End of the loop.
 		?>
