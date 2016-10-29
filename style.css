@@ -47,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Jetpack
 	## Custom Content Portfolio
 	## EDD
-	
+
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -340,7 +340,7 @@ h1,
 	font-size: 1.625rem;
 }
 .before-footer-widgets-title {
-	color: #474747;	
+	color: #474747;
 }
 h2,
 .site-title {
@@ -384,7 +384,7 @@ h6 {
 }
 
 @media screen and (min-width: 58.875em) {
-	
+
 	body,
 	button,
 	input,
@@ -393,12 +393,12 @@ h6 {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
-	
+
 	body:not(.edd-checkout) .entry-content {
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
-	
+
 	h1,
 	.page-title,
 	.checathlon-widget-pricing-price {
@@ -438,7 +438,7 @@ h6 {
 		font-size: 17px;
 		font-size: 1.0625rem;
 	}
-	
+
 }
 
 p,
@@ -575,7 +575,7 @@ body {
 .page-template-default.edd-checkout .site-content,
 .page-template-default.edd-success .site-content {
 	background-color: inherit;
-	background-image: none;	
+	background-image: none;
 }
 
 blockquote:before,
@@ -700,8 +700,8 @@ tr > :last-child {
 
 	.custom-header-image .site-header-wrap {
 		min-height: 500px;
-	}	
-	
+	}
+
 }
 
 .site-header {
@@ -1049,12 +1049,12 @@ a:active {
 }
 
 @media screen and (max-width: 62.874em) {
-	
+
 	/* Disable scroll on html body when menu is opened. */
 	.disable-scroll {
 		overflow: hidden;
 	}
-	
+
 	.main-navigation-wrapper {
 		transition: all 0.5s ease-in-out;
 	}
@@ -1103,23 +1103,23 @@ a:active {
 	.main-navigation .current-menu-ancestor > a {
 		color: #fff;
 	}
-	
+
 	.main-navigation .menu-item-has-children .icon {
 		display: none;
 	}
-	
+
 	.menu-toggle {
 		z-index: 1010;
 	}
-	
+
 }
 
 @media screen and (max-width: 32.875em) {
-	
+
 	.main-navigation {
 		width: 90%;
 	}
-	
+
 }
 
 .site-header > .wrapper {
@@ -1140,7 +1140,7 @@ a:active {
 }
 
 @media screen and (min-width: 62.875em) {
-	
+
 	.menu-toggle {
 		display: none;
 	}
@@ -1152,7 +1152,7 @@ a:active {
 	.main-navigation .primary-menu > li {
 		border: 0;
 	}
-	
+
 	.main-navigation a,
 	.main-navigation .primary-menu > li {
 		display: inline-block;
@@ -1223,7 +1223,7 @@ a:active {
 		left: 100%;
 		top: -1px;
 	}
-	
+
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current-menu-ancestor > a {
 		color: #ff1654;
@@ -1232,12 +1232,12 @@ a:active {
 	.main-navigation .menu-item-has-children > a {
 		margin: 0;
 	}
-	
+
 	.main-navigation .menu-item-has-children .icon {
 		margin-left: 0.25em;
 		top: -0.1em;
 	}
-	
+
 	.main-navigation ul ul .menu-item-has-children .icon {
 		position: absolute;
 		top: calc(50% - 0.5em);
@@ -1245,7 +1245,7 @@ a:active {
 		-ms-transform: rotate(-90deg);
 		    transform: rotate(-90deg);
 	}
-	
+
 }
 
 /* Social Links. */
@@ -1352,11 +1352,11 @@ a:active {
 }
 
 @media screen and (min-width: 62.875em) {
-	
+
 	.post-navigation {
 		text-align: left;
 	}
-	
+
 	.comment-navigation .nav-previous,
 	.post-navigation .nav-previous {
 		float: left;
@@ -1369,7 +1369,7 @@ a:active {
 		text-align: right;
 		width: 50%;
 	}
-	
+
 	.post-navigation .nav-previous ~ .nav-next,
 	.comment-navigation .nav-previous ~ .nav-next {
 		border-top: none;
@@ -1459,7 +1459,7 @@ a > img.alignnone {
 }
 
 @media screen and (min-width: 30em) {
-	
+
 	img.alignleft,
 	img.alignright {
 		display: inline;
@@ -1473,7 +1473,7 @@ a > img.alignnone {
 		float: right;
 		margin-left: 1.66666666667em;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
@@ -1587,12 +1587,12 @@ a > img.alignnone {
 }
 
 @media screen and (min-width: 62.875em) {
-	
+
 	.grid-wrapper > .hentry .entry-inner-wrapper .highlight-title {
 		position: absolute;
 		bottom: 100%;
 	}
-	
+
 }
 
 /* Make sure select elements fit in widgets. */
@@ -1610,8 +1610,7 @@ a > img.alignnone {
 .page-template-default:not(.home) .hentry,
 .post-navigation,
 .comments-area,
-.after-content-widget-area,
-.error-404 {
+.after-content-widget-area {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
@@ -1801,18 +1800,17 @@ a > img.alignnone {
 }
 
 @media screen and (min-width: 48.875em) {
-	
+
 	.main-padding,
 	.single .hentry,
 	.page-template-default:not(.home) .hentry,
 	.post-navigation,
 	.comments-area,
-	.after-content-widget-area,
-	.error-404 {
+	.after-content-widget-area {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
 	}
-	
+
 	.grid-wrapper-3,
 	.before-footer-widgets-2 .before-footer-widgets-wrapper .grid-wrapper,
 	.footer-widgets-2 .footer-widgets-wrapper .grid-wrapper {
@@ -1828,21 +1826,21 @@ a > img.alignnone {
 	.before-footer-widgets-1 .before-footer-widgets-wrapper .grid-wrapper > .widget-area {
 		margin-bottom: 2.5rem;
 	}
-	
+
 	.jetpack-testimonial > .entry-inner-wrapper:after {
 		left: 5rem;
 	}
-	
+
 }
 
 @media screen and (min-width: 62.875em) {
-	
+
 	.entry-inner-bg {
 		background-color: #d4d4d4;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-	
+
 	.entry-inner-bg > .icon {
 		display: block;
 		color: #6c6c6c;
@@ -1852,12 +1850,12 @@ a > img.alignnone {
 		width: 6em;
 		height: 6em;
 	}
-	
+
 	.blog-wrapper .entry-inner {
 		margin-left: 340px;
 		min-height: 340px;
 	}
-	
+
 	.grid-wrapper,
 	.before-footer-widgets-many .before-footer-widgets-wrapper .grid-wrapper,
 	.footer-widgets-many .footer-widgets-wrapper .grid-wrapper,
@@ -1875,7 +1873,7 @@ a > img.alignnone {
 		margin-bottom: 3.75rem;
 		width: 50%;
 	}
-	
+
 	.has-main-sidebar .entry-inner-singular-wrapper > .entry-inner-content,
 	.has-main-sidebar .entry-inner-singular-wrapper > .main-sidebar,
 	.has-download-sidebar .entry-inner-singular-wrapper > .entry-inner-content,
@@ -1891,7 +1889,7 @@ a > img.alignnone {
 		-ms-flex-order: 2;
 		    order: 2;
 	}
-	
+
 	.grid-wrapper.grid-wrapper-testimonial > .hentry {
 		margin-bottom: calc(3.75rem + 5rem); /* Space for testimonial image. */
 	}
@@ -1901,7 +1899,7 @@ a > img.alignnone {
 	.jetpack-testimonial .entry-inner .icon {
 		right: 2.5rem;
 	}
-	
+
 	.before-footer-widgets-many .before-footer-widgets-wrapper .grid-wrapper > .widget-area,
 	.footer-widgets-many .footer-widgets-wrapper .grid-wrapper > * {
 		margin-bottom: 2.5rem;
@@ -2016,7 +2014,7 @@ fieldset > fieldset {
 }
 
 @media screen and (min-width: 62.875em) {
-	
+
 	.site-content,
 	.comments-area,
 	.after-content-widget-area {
@@ -2034,7 +2032,7 @@ fieldset > fieldset {
 	.post-navigation > .nav-links {
 		padding-top: 3.125rem;
 	}
-	
+
 	.site-content {
 		padding-bottom: 4.375rem;
 	}
@@ -2091,7 +2089,7 @@ fieldset > fieldset {
 	.before-footer-widgets-title {
 		margin-bottom: 3.75rem;
 	}
-	
+
 	.after-content-widget-area .widget:first-of-type,
 	.front-page-widget-area .widget:first-of-type {
 		padding-top: 3.75rem;
@@ -2100,11 +2098,11 @@ fieldset > fieldset {
 	.front-page-widget-area {
 		padding-bottom: 1.25rem;
 	}
-	
+
 	.entry-content .edd_download_purchase_form {
 		margin-bottom: 3.125rem;
 	}
-	
+
 	.home.page .site-content,
 	.page-template-featured-page .site-content,
 	.page-template-account-page .site-content {
@@ -2188,7 +2186,8 @@ fieldset > fieldset {
 
 .page-content,
 .entry-content,
-.entry-summary {
+.entry-summary,
+.single-attachment .entry-media {
 	margin-bottom: 1.66666666667em;
 }
 
@@ -2404,6 +2403,11 @@ object {
 	height: 1em;
 }
 
+.error-404 .icon {
+	width: 10em;
+	height: 10em;
+}
+
 .before-footer-widgets-wrapper .icon,
 .checathlon_widget_pricing .icon {
 	color: #ff1654;
@@ -2416,7 +2420,7 @@ object {
 	margin-right: 0.375em;
 	opacity: 0.5555555;
 	width: 0.875em;
-	height: 0.875em;	
+	height: 0.875em;
 }
 
 /*--------------------------------------------------------------
@@ -2605,11 +2609,11 @@ object {
 }
 
 @media screen and (min-width: 62.875em) {
-	
+
 	#edd_purchase_form fieldset > legend {
 		top: 1em;
 	}
-	
+
 }
 
 #edd_purchase_form fieldset legend ~ :first-of-type {
