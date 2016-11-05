@@ -4,7 +4,7 @@
  *
  * @package Checathlon
  */
-	
+
 	// Add the front-page section.
 	$wp_customize->add_section(
 		'front-page',
@@ -16,16 +16,16 @@
 			'active_callback' => 'checathlon_is_front_page_template',
 		)
 	);
-	
+
 	// Hide service and pricing section setting.
 	$wp_customize->add_setting(
 		'hide_service_pricing',
 		array(
 			'default'           => checathlon_get_fp_hide_service_pricing(),
-			'sanitize_callback' => 'checathlon_sanitize_checkbox'
+			'sanitize_callback' => 'checathlon_sanitize_checkbox',
 		)
 	);
-	
+
 	// Hide service and pricing section control.
 	$wp_customize->add_control(
 		'hide_service_pricing',
@@ -33,19 +33,19 @@
 			'label'       => esc_html__( 'Hide Service and Pricing Section', 'checathlon' ),
 			'section'     => 'front-page',
 			'priority'    => 5,
-			'type'        => 'checkbox'
+			'type'        => 'checkbox',
 		)
 	);
-	
+
 	// Hide testimonials setting.
 	$wp_customize->add_setting(
 		'hide_testimonials',
 		array(
 			'default'           => checathlon_get_fp_hide_testimonials(),
-			'sanitize_callback' => 'checathlon_sanitize_checkbox'
+			'sanitize_callback' => 'checathlon_sanitize_checkbox',
 		)
 	);
-	
+
 	// Hide testimonials control.
 	$wp_customize->add_control(
 		'hide_testimonials',
@@ -53,19 +53,19 @@
 			'label'       => esc_html__( 'Hide Testimonials', 'checathlon' ),
 			'section'     => 'front-page',
 			'priority'    => 6,
-			'type'        => 'checkbox'
+			'type'        => 'checkbox',
 		)
 	);
-	
+
 	// Hide blog posts setting.
 	$wp_customize->add_setting(
 		'hide_blog_posts',
 		array(
 			'default'           => checathlon_get_fp_hide_blog_posts(),
-			'sanitize_callback' => 'checathlon_sanitize_checkbox'
+			'sanitize_callback' => 'checathlon_sanitize_checkbox',
 		)
 	);
-	
+
 	// Hide blog posts control.
 	$wp_customize->add_control(
 		'hide_blog_posts',
@@ -73,24 +73,24 @@
 			'label'       => esc_html__( 'Hide Blog Posts', 'checathlon' ),
 			'section'     => 'front-page',
 			'priority'    => 7,
-			'type'        => 'checkbox'
+			'type'        => 'checkbox',
 		)
 	);
-	
+
 	/**
 	 * Titles for Front Page sections.
 	 *
 	 */
-	 
+
 	// Pricing area title setting.
 	$wp_customize->add_setting(
 		'pricing_area_title',
 		array(
 			'default'           => checathlon_get_pricing_area_title(),
-			'sanitize_callback' => 'sanitize_text_field'
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
- 	
+
 	// Featured area title control.
 	$wp_customize->add_control(
 		'pricing_area_title',
@@ -102,16 +102,16 @@
 			'active_callback' => 'checathlon_show_pricing_title',
 		)
 	);
-	
+
 	// Testimonial area title setting.
 	$wp_customize->add_setting(
 		'testimonial_area_title',
 		array(
 			'default'           => checathlon_get_testimonial_area_title(),
-			'sanitize_callback' => 'sanitize_text_field'
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
- 	
+
 	// Testimonial area title control.
 	$wp_customize->add_control(
 		'testimonial_area_title',
@@ -123,16 +123,16 @@
 			'active_callback' => 'checathlon_show_testimonial_title',
 		)
 	);
-	
+
 	// Blog area title setting.
 	$wp_customize->add_setting(
 		'blog_area_title',
 		array(
 			'default'           => checathlon_get_blog_area_title(),
-			'sanitize_callback' => 'sanitize_text_field'
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
- 	
+
 	// Blog area title control.
 	$wp_customize->add_control(
 		'blog_area_title',
@@ -144,7 +144,7 @@
 			'active_callback' => 'checathlon_show_blog_title',
 		)
 	);
-	
+
 /**
  * Checks when to show pricing area title.
  *
@@ -154,7 +154,7 @@
  * @return boolean
  */
 function checathlon_show_pricing_title( $control ) {
-	
+
 	if (  1 != $control->manager->get_setting( 'hide_service_pricing' )->value() ) {
 		return true;
 	} else {
@@ -172,7 +172,7 @@ function checathlon_show_pricing_title( $control ) {
  * @return boolean
  */
 function checathlon_show_testimonial_title( $control ) {
-	
+
 	if (  1 != $control->manager->get_setting( 'hide_testimonials' )->value() ) {
 		return true;
 	} else {
@@ -190,7 +190,7 @@ function checathlon_show_testimonial_title( $control ) {
  * @return boolean
  */
 function checathlon_show_blog_title( $control ) {
-	
+
 	if (  1 != $control->manager->get_setting( 'hide_blog_posts' )->value() ) {
 		return true;
 	} else {
