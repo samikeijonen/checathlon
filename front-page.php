@@ -34,19 +34,19 @@ get_header(); ?>
 			endwhile; // End of the loop.
 
 			// Load service and pricing table widgets.
-			get_template_part( 'components/content', 'service-pricing' );
+			get_template_part( 'template-parts/content', 'service-pricing-area' );
 
 			// Load featured area.
-			get_template_part( 'components/content', 'featured-area' );
+			get_template_part( 'template-parts/content', 'featured-area' );
 
 			// Load featured area.
-			get_template_part( 'components/content', 'testimonials-area' );
+			get_template_part( 'template-parts/content', 'testimonials-area' );
 
 			// Load Front Page Widget area.
 			get_template_part( 'widget-areas/sidebar', 'front-page' );
 
 			// Load blog area
-			get_template_part( 'components/content', 'blog-area' );
+			get_template_part( 'template-parts/content', 'blog-area' );
 
 			?>
 
