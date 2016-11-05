@@ -63,7 +63,7 @@ function checathlon_get_svg( $args = array() ) {
 	// Set ARIA for title and desc with unique ID.
 	$aria_labelledby = '';
 
-	if ( $args['title'] || $args['desc'] ) {
+	if ( $args['title'] && $args['desc'] ) {
 		$unique_id       = uniqid();
 		$aria_labelledby = ' aria-labelledby="title-' . $unique_id . ' desc-' . $unique_id . '"';
 		$aria_hidden     = '';
@@ -83,15 +83,11 @@ function checathlon_get_svg( $args = array() ) {
 	}
 
 	/*
-	 * Use absolute path in the Customizer so that icons show up in there.
+	 * Display the icon.
 	 *
 	 * The whitespace around `<use>` is intentional. See https://core.trac.wordpress.org/ticket/38387.
 	 */
-	if ( is_customize_preview() ) {
-		$svg .= ' <use xlink:href="' . get_template_directory_uri() . '/assets/images/svg-icons.svg' . '#icon-' . esc_html( $args['icon'] ) . '" /> ';
-	} else {
-		$svg .= ' <use xlink:href="#icon-' . esc_html( $args['icon'] ) . '" /> ';
-	}
+	$svg .= ' <use xlink:href="#icon-' . esc_html( $args['icon'] ) . '" /> ';
 
 	// Add some markup to use as a fallback for browsers that do not support SVGs.
 	if ( $args['fallback'] ) {
