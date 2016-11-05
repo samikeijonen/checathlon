@@ -6,13 +6,13 @@
  */
 
 // Blog Query.
-$posts = new WP_Query( apply_filters( 'checathlon_front_page_posts', array(
+$blog_posts = new WP_Query( apply_filters( 'checathlon_front_page_posts', array(
 	'post_type'      => 'post',
 	'posts_per_page' => 2,
 	'no_found_rows'  => true,
 ) ) );
 
-if ( $posts->have_posts() && ! checathlon_get_fp_hide_blog_posts() ) : ?>
+if ( $blog_posts->have_posts() && ! checathlon_get_fp_hide_blog_posts() ) : ?>
 
 	<div id="front-page-blog-area" class="front-page-blog-area front-page-area">
 
@@ -21,7 +21,7 @@ if ( $posts->have_posts() && ! checathlon_get_fp_hide_blog_posts() ) : ?>
 		<div class="blog-wrapper">
 
 			<?php
-				while ( $posts->have_posts() ) : $posts->the_post();
+				while ( $blog_posts->have_posts() ) : $blog_posts->the_post();
 
 					get_template_part( 'template-parts/content', '' );
 
