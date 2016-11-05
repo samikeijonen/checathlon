@@ -8,7 +8,7 @@
 // Get featured area content.
 $featured_area = esc_attr( checathlon_get_fp_featured_content() );
 
-if( 'jetpack-portfolio' === $featured_area ) :
+if ( 'jetpack-portfolio' === $featured_area ) :
 
 	// Jetpack portfolio query.
 	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_jetpack_portfolios', array(
@@ -59,13 +59,13 @@ if ( 'nothing' !== $featured_area && $featured_content->have_posts() ) : ?>
 			<?php
 				while ( $featured_content->have_posts() ) : $featured_content->the_post();
 
-					if( 'jetpack-portfolio' == $featured_area ) :
+					if ( 'jetpack-portfolio' === $featured_area ) :
 						get_template_part( 'template-parts/content', 'jetpack-portfolio' );
-					elseif( 'portfolio-project' == $featured_area ) :
+					elseif ( 'portfolio-project' === $featured_area ) :
 						get_template_part( 'template-parts/content', 'portfolio_project' );
-					elseif( 'download' == $featured_area ) :
+					elseif ( 'download' === $featured_area ) :
 						get_template_part( 'template-parts/content', 'download' );
-					elseif( 'select-pages' == $featured_area ) :
+					elseif ( 'select-pages' === $featured_area ) :
 						get_template_part( 'template-parts/content', 'page' );
 					endif;
 
