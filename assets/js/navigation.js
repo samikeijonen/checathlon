@@ -16,13 +16,13 @@
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
-	
+
 	// Set vars.
 	html        = document.getElementsByTagName( 'html' )[0];
 	body        = document.getElementsByTagName( 'body' )[0];
 	menu        = container.getElementsByTagName( 'ul' )[0];
 	menuWrapper = document.getElementById( 'main-navigation-wrapper' );
-	
+
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
 		button.style.display = 'none';
@@ -46,7 +46,7 @@
 			menu.setAttribute( 'aria-expanded', 'true' );
 		}
 	};
-	
+
 	// Close menu using Esc key.
 	document.addEventListener( 'keyup', function( event ) {
 
@@ -57,14 +57,14 @@
 		}
 
 	});
-	
+
 	// Close menu clicking menu wrapper area.
 	menuWrapper.onclick = function( e ) {
 		if ( e.target == menuWrapper && -1 !== container.className.indexOf( 'toggled' ) ) {
 			closeMenu(); // Close menu.
 		}
 	};
-	
+
 	// Close menu function.
 	function closeMenu() {
 		html.className      = html.className.replace( ' disable-scroll', '' );
@@ -143,7 +143,7 @@
 			}
 		}
 	}( container ) );
-	
+
 } )();
 
 /**
@@ -154,11 +154,9 @@
  * Learn more: https://git.io/vWdr2
  */
 ( function() {
-	var isWebkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
-	    isOpera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
-	    isIe     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
+	var isIe = /(trident|msie)/i.test( navigator.userAgent );
 
-	if ( ( isWebkit || isOpera || isIe ) && document.getElementById && window.addEventListener ) {
+	if ( isIe && document.getElementById && window.addEventListener ) {
 		window.addEventListener( 'hashchange', function() {
 			var id = location.hash.substring( 1 ),
 				element;
