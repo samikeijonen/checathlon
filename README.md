@@ -26,6 +26,6 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
-### Version 1.0.0 - Octobe 10, 2016
+### Version 1.0.0 - September 10, 2016
 
 * Everything's new!
