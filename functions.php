@@ -46,8 +46,8 @@ function checathlon_setup() {
 	set_post_thumbnail_size( 680, 680, true );
 
 	// Add custom image sizes.
-	add_image_size( 'checathlon-singular', 1240, 620, true );
-	add_image_size( 'checathlon-product', 1080, 540, true );
+	add_image_size( 'checathlon-singular', 1240, 3000, false );
+	add_image_size( 'checathlon-product', 1080, 3000, false );
 	add_image_size( 'checathlon-team', 1020, 720, true );
 	add_image_size( 'checathlon-small', 100, 100, true );
 
@@ -361,11 +361,6 @@ require get_template_directory() . '/inc/functions-filters.php';
  * Load theme scripts related file.
  */
 require get_template_directory() . '/inc/functions-scripts.php';
-
-/**
- * Load pricing widget file.
- */
-require get_template_directory() . '/inc/class-widget-pricing.php';
 
 /**
  * Load Easy Digital Downloads functions file.
