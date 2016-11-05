@@ -302,6 +302,11 @@ function checathlon_post_thumbnail( $post_thumbnail = null ) {
 	<?php endif; // End is_singular()
 }
 
+/**
+ * Get post thubmnail as background image.
+ *
+ * Uses checathlon_post_background function.
+ */
 function checathlon_get_bg_header( $args = array() ) {
 
 	$defaults = array(
@@ -332,6 +337,17 @@ function checathlon_get_bg_header( $args = array() ) {
 }
 
 /**
+ * Display default footer text.
+ *
+ */
+function checathlon_default_footer_text() { ?>
+
+	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'checathlon' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'checathlon' ), 'WordPress' ); ?></a>
+	<span class="sep"> &middot; </span>
+	<?php printf( esc_html__( 'Theme: %1$s by %2$s', 'checathlon' ), 'Checathlon', '<a href="https://foxland.fi/">Sami Keijonen</a>' );
+}
+
+/**
  * Display post pagination.
  *
  * Use WordPress native the_posts_pagination function.
@@ -356,6 +372,17 @@ function checathlon_the_custom_logo() {
 		the_custom_logo();
 	}
 
+}
+
+/**
+ * Check if we're on Front Page template.
+ *
+ * @since  1.0.0
+ *
+ * @return boolean.
+ */
+function checathlon_is_front_page_template() {
+	return is_page_template( 'templates/featured-page.php' ) || checathlon_is_front_page();
 }
 
 /**
@@ -473,6 +500,17 @@ function checathlon_show_download_sidebar() {
  */
 function checathlon_edd_is_checkout() {
 	return ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() ) ? true : false;
+}
+
+/**
+ * Check if hide purchace link ic checked.
+ *
+ * @return bool
+ */
+function checathlon_edd_is_purchace_link_hidden() {
+	$edd_hide_purchace_link = get_post_meta( get_the_ID(), '_edd_hide_purchase_link', true );
+
+	return ( isset( $edd_hide_purchace_link ) && $edd_hide_purchace_link ) ? true : false;
 }
 
 /**
