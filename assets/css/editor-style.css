@@ -11,3 +11,7 @@ body#tinymce {
 	padding-right: 3%;
 	max-width: 740px;
 }
+
+body#tinymce a {
+	text-decoration: underline;
+}
