@@ -18,15 +18,20 @@
 		get_template_part( 'widget-areas/sidebar', 'footer' );        // Loads the sidebar-footer.php template.
 	?>
 
-	<footer id="colophon" class="site-footer main-padding text-center smaller-font-size" role="contentinfo">
+	<?php if ( ! get_theme_mod( 'hide_footer_text' ) ) : ?>
+		<footer id="colophon" class="site-footer main-padding text-center smaller-font-size" role="contentinfo">
 
-		<div class="site-info main-width">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'checathlon' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'checathlon' ), 'WordPress' ); ?></a>
-			<span class="sep"> &middot; </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s', 'checathlon' ), 'Checathlon', '<a href="https://foxland.fi/">Sami Keijonen</a>' ); ?>
-		</div><!-- .site-info -->
+			<div class="site-info main-width">
+			<?php
+				if ( get_theme_mod( 'footer_text' ) ) :
+					echo checathlon_get_footer_text_html(); // Echo custom footer text.
+				else :
+					checathlon_default_footer_text();
+				endif; ?>
+			</div><!-- .site-info -->
 
-	</footer><!-- #colophon -->
+		</footer><!-- #colophon -->
+	<?php endif; ?>
 
 </div><!-- #page -->
 
