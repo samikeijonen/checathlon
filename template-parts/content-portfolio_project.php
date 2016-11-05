@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying Jetpack portfolios.
+ * Template part for displaying Custom Content Portfolios.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -36,7 +36,7 @@
 						'separator'   => '<span class="screen-reader-text">,</span> ',
 					) );
 
-					get_template_part( 'entry-portfolio-info' );
+					get_template_part( 'misc/entry', 'portfolio-info' );
 				?>
 
 				<?php
@@ -76,7 +76,6 @@
 
 			<header class="entry-header">
 				<?php
-					get_template_part( 'entry-meta' );
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				?>
 			</header><!-- .entry-header -->
@@ -88,7 +87,7 @@
 		</div><!-- .entry-inner -->
 
 		<?php
-			get_template_part( 'entry-portfolio-info' );
+			get_template_part( 'misc/entry', 'portfolio-info' );
 		?>
 
 	</div><!-- .entry-inner-wrapper -->

@@ -49,7 +49,7 @@ function checathlon_setup() {
 	add_image_size( 'checathlon-singular', 1240, 3000, false );
 	add_image_size( 'checathlon-product', 1080, 3000, false );
 	add_image_size( 'checathlon-team', 1020, 720, true );
-	add_image_size( 'checathlon-small', 100, 100, true );
+	add_image_size( 'checathlon-small', 200, 200, true );
 
 	// This theme uses wp_nav_menu() in two location.
 	register_nav_menus( array(

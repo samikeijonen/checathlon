@@ -47,7 +47,7 @@
 					?>
 					</div><!-- .entry-content -->
 
-					<?php get_template_part( 'entry', 'footer' ); // Loads the entry-footer.php file. ?>
+					<?php get_template_part( 'misc/entry', 'footer' ); // Loads the misc/entry-footer.php file. ?>
 
 				</div><!-- .entry-inner-content -->
 
@@ -66,7 +66,7 @@
 
 			<header class="entry-header">
 				<?php
-					get_template_part( 'entry-meta' );
+					get_template_part( 'misc/entry', 'meta' );
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				?>
 			</header><!-- .entry-header -->
@@ -76,7 +76,7 @@
 			</div><!-- .entry-summary -->
 
 			<?php
-				get_template_part( 'entry-comment' );
+				get_template_part( 'misc/entry', 'comment' );
 			?>
 
 		</div><!-- .entry-inner -->

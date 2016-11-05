@@ -1839,8 +1839,14 @@ a.entry-header-bg-link:active {
 .testimonial-icon-wrapper {
 	margin-right: 0.9375rem;
 }
-.entry-thumbnail img {
+.entry-thumbnail img,
+.size-checathlon-small {
 	border-radius: 50%;
+}
+.size-checathlon-small {
+	max-width: 100px;
+}
+.entry-thumbnail img {
 	max-width: 50px;
 }
 

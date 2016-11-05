@@ -50,7 +50,6 @@
 
 			<header class="entry-header">
 				<?php
-					get_template_part( 'entry-meta' );
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				?>
 			</header><!-- .entry-header -->
@@ -66,7 +65,7 @@
 		</div><!-- .entry-inner -->
 
 		<?php
-			get_template_part( 'entry-product-info' );
+			get_template_part( 'misc/entry', 'product-info' );
 		?>
 
 	</div><!-- .entry-inner-wrapper -->

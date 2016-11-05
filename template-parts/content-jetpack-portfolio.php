@@ -38,8 +38,6 @@
 				</div><!-- .entry-content -->
 			</div><!-- .entry-inner-content -->
 
-			<?php get_template_part( 'entry', 'footer' ); // Loads the entry-footer.php file. ?>
-
 		</div><!-- .entry-inner-singular -->
 
 	<?php else : ?>
