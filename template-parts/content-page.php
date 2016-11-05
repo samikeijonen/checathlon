@@ -52,7 +52,7 @@
 
 			<?php
 				// Get featured image as post background image.
-				echo checathlon_get_bg_header( array( 'icon' => 'info' ) );
+				echo checathlon_get_bg_header( array( 'size' => 'checathlon-product', 'icon' => 'info' ) );
 			?>
 
 		<div class="entry-inner">
