@@ -17,9 +17,9 @@ get_header(); ?>
 			?>
 
 				<header class="page-header">
-				
+
 					<?php the_title( '<h1 class="page-title title-font no-margin-bottom text-center text-italic">', '</h1>' ); ?>
-					
+
 					<?php
 					$content = trim( get_the_content() ); // Get page content.
 					if( '' !== $content ) : ?>
@@ -29,8 +29,8 @@ get_header(); ?>
 					<?php endif; ?>
 
 				</header><!-- .page-header -->
-				
-				<?php get_template_part( 'misc/content', 'team-page' ); // Load misc/content-team-page.php template.
+
+				<?php get_template_part( 'template-parts/content', 'team-page' ); // Load template-parts/content-team-page.php template.
 
 			endwhile; // End of the loop.
 			?>
