@@ -57,6 +57,11 @@ function checathlon_setup() {
 		'social'  => esc_html__( 'Social Links', 'checathlon' ),
 	) );
 
+	// Register nav menu for EDD checkout page.
+	if ( function_exists( 'EDD' ) ) {
+		register_nav_menu( 'checkout', esc_html__( 'Checkout Page', 'checathlon' ) );
+	}
+
 	// Add support for logo.
 	add_theme_support( 'custom-logo', apply_filters( 'checathlon_custom_logo_arguments', array(
 		'height'     => 60,
@@ -88,6 +93,9 @@ function checathlon_setup() {
 
 	// Add support for Custom Content Portfolio Plugin
 	add_theme_support( 'custom-content-portfolio' );
+
+	// Add support for Message Board Plugin.
+	add_theme_support( 'message-board' );
 
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
@@ -307,7 +315,11 @@ function checathlon_scripts() {
 	wp_enqueue_style( 'checathlon-style', get_stylesheet_uri() );
 
 	// Add theme scripts.
-	wp_enqueue_script( 'checathlon-navigation', get_template_directory_uri() . '/assets/js/navigation' . $suffix . '.js', array(), '20160912', true );
+	wp_enqueue_script( 'checathlon-scripts', get_template_directory_uri() . '/assets/js/scripts' . $suffix . '.js', array(), '20160912', true );
+
+	wp_localize_script( 'checathlon-scripts', 'checathlonText', array(
+		'lock' => checathlon_get_svg( array( 'icon' => 'lock' ) ),
+	) );
 
 	// Add comment scripts.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
