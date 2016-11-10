@@ -147,7 +147,7 @@
 } )();
 
 /**
- * File skip-link-focus-fix.js.
+ * Skip link focus fix.
  *
  * Helps with accessibility for keyboard only users.
  *
