@@ -29,7 +29,6 @@ function checathlon_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport                 = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport          = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'before_footer_area_title' )->transport = 'postMessage';
 	$wp_customize->get_setting( 'featured_area_title' )->transport      = 'postMessage';
 	$wp_customize->get_setting( 'pricing_area_title' )->transport       = 'postMessage';
 	$wp_customize->get_setting( 'testimonial_area_title' )->transport   = 'postMessage';
@@ -51,14 +50,6 @@ function checathlon_customize_register( $wp_customize ) {
 			'selector'        => '.site-description',
 			'render_callback' => function() {
 				return bloginfo( 'description' );
-			},
-		) );
-
-		// Partial refresh for before footer area title.
-		$wp_customize->selective_refresh->add_partial( 'before_footer_area_title', array(
-			'selector'            => '.before-footer-widgets-title',
-			'render_callback'     => function() {
-				return checathlon_get_before_footer_area_title_html();
 			},
 		) );
 
