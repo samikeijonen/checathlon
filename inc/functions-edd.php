@@ -9,6 +9,19 @@
 add_filter( 'edd_get_option_disable_styles', '__return_true' );
 
 /**
+ * Dequeue scripts and styles.
+ */
+function checathlon_edd_scripts() {
+
+	// Remove dashicons from the checkout page. Padlock is added as a SVG icon.
+	if ( checathlon_edd_is_checkout() && is_ssl() ) {
+		wp_dequeue_style( 'dashicons' );
+	}
+
+}
+add_action( 'wp_enqueue_scripts', 'checathlon_edd_scripts' );
+
+/**
  * Output download price.
  *
  * Works with variable prices and free products.
