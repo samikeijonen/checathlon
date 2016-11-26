@@ -97,11 +97,71 @@ function checathlon_setup() {
 	// Add support for Message Board Plugin.
 	add_theme_support( 'message-board' );
 
+	// Starter content.
+	add_theme_support( 'starter-content', array(
+		'widgets' => array(
+			'sidebar-1' => array(
+				'text_about',
+				'text_business_info',
+			),
+
+			'sidebar-2' => array(
+				'text_business_info',
+			),
+
+			'sidebar-3' => array(
+				'text_business_info',
+			),
+
+			'sidebar-4' => array(
+				'text_about',
+			),
+
+			'sidebar-5' => array(
+				'text_business_info',
+			),
+		),
+
+		'posts' => array(
+			'home',
+			'about',
+			'contact',
+			'blog',
+		),
+
+		'options' => array(
+			'show_on_front' => 'page',
+			'page_on_front' => '{{home}}',
+			'page_for_posts' => '{{blog}}',
+		),
+
+		'nav_menus' => array(
+			'primary' => array(
+				'name'  => esc_html__( 'Primary', 'checathlon' ),
+				'items' => array(
+					'page_home',
+					'page_about',
+					'page_blog',
+					'page_contact',
+				),
+			),
+			'social'  => array(
+				'name'  => esc_html__( 'Social Links', 'checathlon' ),
+				'items' => array(
+					'link_twitter',
+					'link_instagram',
+					'link_email',
+					'link_facebook',
+				),
+			),
+		),
+	) );
+
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
-	add_editor_style( array( 'assets/css/editor-style.css' ) );
+	add_editor_style( array( 'assets/css/editor-style.css', checathlon_fonts_url() ) );
 
 }
 add_action( 'after_setup_theme', 'checathlon_setup' );
