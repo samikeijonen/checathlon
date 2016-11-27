@@ -503,6 +503,15 @@ function checathlon_edd_is_checkout() {
 }
 
 /**
+ * Check if we are on EDD checkout page and cart is empty.
+ *
+ * @return bool
+ */
+function checathlon_edd_is_checkout_cart_empty() {
+	return ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! edd_get_cart_contents() && ! edd_cart_has_fees() ) ? true : false;
+}
+
+/**
  * Check if hide purchace link ic checked.
  *
  * @return bool

@@ -80,11 +80,11 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: build/checathlon/functions.php:56, functions.php:56
+#: build/checathlon/functions.php:56, build/checathlon/functions.php:140, functions.php:56, functions.php:140
 msgid "Primary"
 msgstr ""
 
-#: build/checathlon/functions.php:57, functions.php:57
+#: build/checathlon/functions.php:57, build/checathlon/functions.php:149, functions.php:57, functions.php:149
 msgid "Social Links"
 msgstr ""
 
@@ -92,92 +92,92 @@ msgstr ""
 msgid "Checkout Page"
 msgstr ""
 
-#: build/checathlon/functions.php:129, functions.php:129
+#: build/checathlon/functions.php:189, functions.php:189
 msgid "Main sidebar"
 msgstr ""
 
-#: build/checathlon/functions.php:131, functions.php:131
+#: build/checathlon/functions.php:191, functions.php:191
 msgid "Add widgets here for posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:139, functions.php:139
+#: build/checathlon/functions.php:199, functions.php:199
 msgid "Widget area after content"
 msgstr ""
 
-#: build/checathlon/functions.php:141, functions.php:141
+#: build/checathlon/functions.php:201, functions.php:201
 msgid "Add widgets here for after posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:149, functions.php:149
+#: build/checathlon/functions.php:209, functions.php:209
 msgid "Before footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:151, functions.php:151
+#: build/checathlon/functions.php:211, functions.php:211
 msgid "Add widgets here for before footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:159, functions.php:159
+#: build/checathlon/functions.php:219, functions.php:219
 msgid "Before footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:161, functions.php:161
+#: build/checathlon/functions.php:221, functions.php:221
 msgid "Add widgets here for before footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:169, functions.php:169
+#: build/checathlon/functions.php:229, functions.php:229
 msgid "Before footer widget area 3"
 msgstr ""
 
-#: build/checathlon/functions.php:171, functions.php:171
+#: build/checathlon/functions.php:231, functions.php:231
 msgid "Add widgets here for before footer widget area 3."
 msgstr ""
 
-#: build/checathlon/functions.php:179, functions.php:179
+#: build/checathlon/functions.php:239, functions.php:239
 msgid "Footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:181, functions.php:181
+#: build/checathlon/functions.php:241, functions.php:241
 msgid "Add widgets here for footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:189, functions.php:189
+#: build/checathlon/functions.php:249, functions.php:249
 msgid "Footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:191, functions.php:191
+#: build/checathlon/functions.php:251, functions.php:251
 msgid "Add widgets here for footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:199, functions.php:199
+#: build/checathlon/functions.php:259, functions.php:259
 msgid "Front Page widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:201, functions.php:201
+#: build/checathlon/functions.php:261, functions.php:261
 msgid "Add widgets here for Front Page widget area."
 msgstr ""
 
-#: build/checathlon/functions.php:209, functions.php:209
+#: build/checathlon/functions.php:269, functions.php:269
 msgid "Service and Pricing widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:211, functions.php:211
+#: build/checathlon/functions.php:271, functions.php:271
 msgid "Add Service and Pricing Widgets here, they appear in Front Page or Pricing Page Template."
 msgstr ""
 
-#: build/checathlon/functions.php:219, functions.php:219
+#: build/checathlon/functions.php:279, functions.php:279
 msgid "Sidebar for downloads"
 msgstr ""
 
-#: build/checathlon/functions.php:221, functions.php:221
+#: build/checathlon/functions.php:281, functions.php:281
 msgid "Add widgets here for downloads."
 msgstr ""
 
-#: build/checathlon/functions.php:256, functions.php:256
+#: build/checathlon/functions.php:316, functions.php:316
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
 
-#: build/checathlon/functions.php:261, functions.php:261
+#: build/checathlon/functions.php:321, functions.php:321
 msgctxt "Lora font: on or off"
 msgid "on"
 msgstr ""

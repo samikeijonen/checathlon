@@ -17,7 +17,7 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
-			get_template_part( 'widget-areas/sidebar', 'after-content' );
+			get_template_part( 'template-parts/content', 'downloads-area' );
 
 		endwhile; // End of the loop.
 		?>

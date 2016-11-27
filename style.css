@@ -712,7 +712,8 @@ tr > :last-child {
 }
 
 .comments-area,
-.after-content-widget-area {
+.after-content-widget-area,
+.downloads-area {
 	background-color: #f2f2f2;
 }
 
@@ -1618,10 +1619,21 @@ a > img.alignnone {
 .page-template-default:not(.home) .hentry,
 .post-navigation,
 .comments-area,
-.after-content-widget-area {
+.after-content-widget-area,
+.downloads-area {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
+
+.single .downloads-area .hentry,
+.page-template-default .downloads-area .hentry {
+	padding-left: 0;
+	padding-right: 0;
+}
+.page-template-default:not(.home) .downloads-area .hentry {
+	padding-right: 0;
+}
+
 .main-width,
 .page-content,
 .page-header,
@@ -1639,6 +1651,7 @@ a > img.alignnone {
 .widget,
 .after-content-widget-area .widget,
 .front-page-widget-area .widget,
+.downloads-area .wrapper,
 .widget-inner-wrappper,
 .search-results .hentry,
 .mb-wrapper,
@@ -1861,7 +1874,8 @@ a.entry-header-bg-link:active {
 	.page-template-default:not(.home) .hentry,
 	.post-navigation,
 	.comments-area,
-	.after-content-widget-area {
+	.after-content-widget-area,
+	.downloads-area {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
 	}
@@ -1913,6 +1927,7 @@ a.entry-header-bg-link:active {
 		margin-left: 0;
 	}
 	.grid-wrapper > .hentry,
+	.downloads-area .grid-wrapper > .hentry,
 	.before-footer-widgets-many .before-footer-widgets-wrapper .grid-wrapper > .widget-area,
 	.footer-widgets-many .footer-widgets-wrapper .grid-wrapper > * {
 		padding-left: 3.75rem;
@@ -1973,7 +1988,8 @@ a.entry-header-bg-link:active {
 /* Paddings and margins. */
 .site-content,
 .comments-area,
-.after-content-widget-area {
+.after-content-widget-area,
+.downloads-area {
 	padding-top: 3.75rem;
 }
 .comments-area ~ .after-content-widget-area {
@@ -2046,7 +2062,8 @@ fieldset > fieldset {
 	margin-bottom: 2.5rem;
 }
 
-.after-content-widget-area {
+.after-content-widget-area,
+.downloads-area {
 	padding-bottom: 1.25rem;
 }
 .after-content-widget-area .widget:first-of-type .widget-title,
@@ -2065,7 +2082,8 @@ fieldset > fieldset {
 
 	.site-content,
 	.comments-area,
-	.after-content-widget-area {
+	.after-content-widget-area,
+	.downloads-area {
 		padding-top: 5rem;
 	}
 	.page-header,
@@ -2133,7 +2151,8 @@ fieldset > fieldset {
 		padding: 0 2.5rem 2.5rem 2.5rem;
 	}
 	.page-template-team-page .site-content,
-	.page-template-pricing-page .site-content {
+	.page-template-pricing-page .site-content,
+	.downloads-area {
 		padding-bottom: 1.25rem;
 	}
 	.before-footer-widgets-title {
@@ -2791,6 +2810,11 @@ td.edd_cart_item_price,
 .widget_edd_product_details .edd-add-to-cart.button,
 .widget_edd_product_details .edd_go_to_checkout.button {
 	margin-top: 0.9375rem;
+}
+
+.edd_empty_cart {
+	display: block;
+	text-align: center;
 }
 
 #edd_secure_site_wrapper,

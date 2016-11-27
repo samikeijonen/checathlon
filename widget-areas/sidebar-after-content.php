@@ -7,6 +7,12 @@
  * @package Checathlon
  */
 
+// Show downloads area if we are on checkout page and cart is empty.
+if ( checathlon_edd_is_checkout_cart_empty() ) :
+	get_template_part( 'template-parts/content', 'downloads-area' );
+endif;
+
+// Bail if there are no widget or we are on checkout page.
 if ( ! checathlon_has_after_content_widgets() || checathlon_edd_is_checkout() ) :
 	return;
 endif;
