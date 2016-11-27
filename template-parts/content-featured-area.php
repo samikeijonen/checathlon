@@ -17,7 +17,7 @@ if ( 'jetpack-portfolio' === $featured_area ) :
 		'no_found_rows'  => true,
 	) ) );
 
-elseif( 'portfolio-project' === $featured_area ) :
+elseif ( 'portfolio-project' === $featured_area ) :
 
 	// Portfolio project query.
 	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_portfolio_projects', array(
@@ -26,7 +26,7 @@ elseif( 'portfolio-project' === $featured_area ) :
 		'no_found_rows'  => true,
 	) ) );
 
-elseif( 'download' === $featured_area ) :
+elseif ( 'download' === $featured_area ) :
 
 	// Downloads query.
 	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_downloads', array(
@@ -35,7 +35,7 @@ elseif( 'download' === $featured_area ) :
 		'no_found_rows'  => true,
 	) ) );
 
-elseif( 'select-pages' === $featured_area ) :
+elseif ( 'select-pages' === $featured_area ) :
 
 	// Selected pages query.
 	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_selected_pages', array(
