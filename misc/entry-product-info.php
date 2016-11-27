@@ -26,7 +26,7 @@ endif;
 		</span>
 		<span class="product-price soft-color medium-font-weight">
 		<?php
-			echo chucathlon_download_get_demo_link();
+			echo checathlon_download_get_demo_link();
 		?>
 		</span>
 	</div><!-- .entry-product-info-wrapper -->

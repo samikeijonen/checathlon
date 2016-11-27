@@ -56,7 +56,7 @@
 
 			<div class="entry-summary">
 				<?php
-					echo '<p class="product-price-p product-price soft-color medium-font-weight">' . chucathlon_get_download_price() . '</p>';
+					echo '<p class="product-price-p product-price soft-color medium-font-weight">' . checathlon_get_download_price() . '</p>';
 
 					the_excerpt();
 				?>

@@ -29,7 +29,7 @@ add_action( 'wp_enqueue_scripts', 'checathlon_edd_scripts' );
  * @since  1.0.0
  * @return string
  */
-function chucathlon_get_download_price() {
+function checathlon_get_download_price() {
 	// Set price.
 	$price = '';
 
@@ -51,7 +51,7 @@ function chucathlon_get_download_price() {
  * @since  1.0.0
  * @return string $template
  */
-function chucathlon_download_category_template( $template ) {
+function checathlon_download_category_template( $template ) {
 
 	if ( is_tax( 'download_category' ) || is_tax( 'download_tag' ) || is_tax( 'edd_download_info_feature' ) ) {
 
@@ -64,7 +64,7 @@ function chucathlon_download_category_template( $template ) {
 
 	return $template;
 }
-add_filter( 'taxonomy_template', 'chucathlon_download_category_template', 99 );
+add_filter( 'taxonomy_template', 'checathlon_download_category_template', 99 );
 
 /**
  * Get download demo link url.
@@ -72,7 +72,7 @@ add_filter( 'taxonomy_template', 'chucathlon_download_category_template', 99 );
  * @since  1.0.0
  * @return string
  */
-function chucathlon_download_get_demo_link_url() {
+function checathlon_download_get_demo_link_url() {
 
 	// Set demo link url.
 	$demo_link_url = '';
@@ -100,13 +100,13 @@ function chucathlon_download_get_demo_link_url() {
  * @since  1.0.0
  * @return string
  */
-function chucathlon_download_get_demo_link() {
+function checathlon_download_get_demo_link() {
 	// Set demo link.
 	$demo_link = '';
 
 	// Check if we have demo link.
-	if( '' !== chucathlon_download_get_demo_link_url() ) {
-		$demo_link = '<a class="demo-link button button-secondary" href="' . esc_url( chucathlon_download_get_demo_link_url() ) . '">' . esc_html__( 'Demo', 'checathlon' ) . '</a>';
+	if( '' !== checathlon_download_get_demo_link_url() ) {
+		$demo_link = '<a class="demo-link button button-secondary" href="' . esc_url( checathlon_download_get_demo_link_url() ) . '">' . esc_html__( 'Demo', 'checathlon' ) . '</a>';
 	}
 
 	// Return demo link.

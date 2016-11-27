@@ -224,7 +224,7 @@ add_filter( 'get_the_archive_description', 'checathlon_archive_description_filte
  * @param  string $template Template for displaying archive page.
  * @return string $template
  */
-function chucathlon_jetpack_portfolio_taxonomy_template( $template ) {
+function checathlon_jetpack_portfolio_taxonomy_template( $template ) {
 	// Jetpack portfolio template.
 	if ( is_tax( 'jetpack-portfolio-type' ) || is_tax( 'jetpack-portfolio-tag' ) ) {
 
@@ -247,7 +247,7 @@ function chucathlon_jetpack_portfolio_taxonomy_template( $template ) {
 
 	return $template;
 }
-add_filter( 'taxonomy_template', 'chucathlon_jetpack_portfolio_taxonomy_template', 99 );
+add_filter( 'taxonomy_template', 'checathlon_jetpack_portfolio_taxonomy_template', 99 );
 
 /**
  * Modifies tag cloud widget arguments to have all tags in the widget same font size.
