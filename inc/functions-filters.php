@@ -29,12 +29,10 @@ add_filter( 'frontpage_template', 'checathlon_front_page_template' );
  * @return string $more
  */
 function checathlon_excerpt_more() {
-
-	/* Translators: The %s is mark after excerpt. */
-	$more = sprintf( esc_attr__( '%s', 'checathlon' ), '&hellip;' );
+	/* Translators: The &hellip; is mark after excerpt. */
+	$more = esc_attr__( '&hellip;', 'checathlon' );
 
 	return $more;
-
 }
 add_filter( 'excerpt_more', 'checathlon_excerpt_more' );
 
