@@ -4,7 +4,7 @@
  *
  * @package Checathlon
  */
-	
+
 	// Add the front-page-featured-featured section.
 	$wp_customize->add_section(
 		'front-page-featured',
@@ -16,7 +16,7 @@
 			'active_callback' => 'checathlon_is_front_page_template',
 		)
 	);
-	 
+
 	// Featured area title setting.
 	$wp_customize->add_setting(
 		'featured_area_title',
@@ -25,7 +25,7 @@
 			'sanitize_callback' => 'sanitize_text_field'
 		)
 	);
- 	
+
 	// Featured area title control.
 	$wp_customize->add_control(
 		'featured_area_title',
@@ -37,7 +37,7 @@
 			'active_callback' => 'checathlon_show_featured_title',
 		)
 	);
-	 
+
 	// Add the featured setting where we can select do we use child pages, blog posts or portfolios in front page template.
 	$wp_customize->add_setting(
 		'front_page_featured',
@@ -46,15 +46,15 @@
 			'sanitize_callback' => 'checathlon_sanitize_featured'
 		)
 	);
-	
-	$front_page_featured_choices = apply_filters( 'checathlon_front_page_featured', array( 
+
+	$front_page_featured_choices = apply_filters( 'checathlon_front_page_featured', array(
 		'nothing'           => esc_html__( 'Nothing', 'checathlon' ),
 		'jetpack-portfolio' => esc_html__( 'Portfolios', 'checathlon' ),
 		'portfolio-project' => esc_html__( 'Portfolio Projects', 'checathlon' ),
 		'download'          => esc_html__( 'Downloads', 'checathlon' ),
 		'select-pages'      => esc_html__( 'Select Pages', 'checathlon' ),
 	) );
-	
+
 	// Unset unused post types.
 	if( ! post_type_exists( 'jetpack-portfolio' ) ) {
 		unset( $front_page_featured_choices['jetpack-portfolio'] );
@@ -65,7 +65,7 @@
 	if( ! post_type_exists( 'download' ) ) {
 		unset( $front_page_featured_choices['download'] );
 	}
-	
+
 	// Add the featured control.
 	$wp_customize->add_control(
 		'front_page_featured',
@@ -78,15 +78,15 @@
 			'choices'     => $front_page_featured_choices
 		)
 	);
-	 
+
 	// Loop same setting couple of times.
 	$k = 1;
-	
+
 	// How many pages to show.
 	$how_many_pages = checathlon_how_many_selected_pages();
-	
+
 	while( $k <= absint( $how_many_pages ) ) {
-	
+
 		// Add the 'featured_page_*' setting.
 		$wp_customize->add_setting(
 			'featured_page_' . $k,
@@ -95,7 +95,7 @@
 				'sanitize_callback' => 'absint'
 			)
 		);
-	
+
 		// Add the 'featured_page_*' control.
 		$wp_customize->add_control(
 			'featured_page_' . $k,
@@ -106,13 +106,13 @@
 					'type'            => 'dropdown-pages',
 					'priority'        => $k+20,
 					'active_callback' => 'checathlon_show_select_pages',
-				) 
+				)
 			);
-		
+
 		$k++; // Add one before loop ends.
-		
+
 	} // End while loop.
-	
+
 /**
  * Sanitize the Featured Content value.
  *
@@ -128,7 +128,7 @@ function checathlon_sanitize_featured( $featured ) {
 	}
 
 	return $featured;
-	
+
 }
 
 /**
@@ -140,12 +140,8 @@ function checathlon_sanitize_featured( $featured ) {
  * @return boolean
  */
 function checathlon_show_featured_title( $control ) {
-	
-	if ( 'nothing' != $control->manager->get_setting( 'front_page_featured' )->value() ) {
-		return true;
-	} else {
-		return false;
-	}
+
+	return ( 'nothing' != $control->manager->get_setting( 'front_page_featured' )->value() );
 
 }
 
@@ -158,11 +154,7 @@ function checathlon_show_featured_title( $control ) {
  * @return boolean
  */
 function checathlon_show_select_pages( $control ) {
-	
-	if ( 'select-pages' == $control->manager->get_setting( 'front_page_featured' )->value() ) {
-		return true;
-	} else {
-		return false;
-	}
+
+	return ( 'select-pages' == $control->manager->get_setting( 'front_page_featured' )->value() );
 
 }

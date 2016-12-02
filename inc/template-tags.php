@@ -391,7 +391,7 @@ function checathlon_is_front_page_template() {
  * @return bool
  */
 function checathlon_is_front_page() {
-	return ( ! is_home() && is_front_page() ) ? true: false;
+	return ( ! is_home() && is_front_page() );
 }
 
 /**
@@ -400,7 +400,7 @@ function checathlon_is_front_page() {
  * @return bool
  */
 function checathlon_is_featured_page() {
-	return ( is_page_template( 'templates/featured-page.php' ) ) ? true : false;
+	return is_page_template( 'templates/featured-page.php' );
 }
 
 /**
@@ -409,7 +409,7 @@ function checathlon_is_featured_page() {
  * @return bool
  */
 function checathlon_is_pricing_page() {
-	return ( is_page_template( 'templates/pricing-page.php' ) ) ? true : false;
+	return is_page_template( 'templates/pricing-page.php' );
 }
 
 /**
@@ -418,7 +418,7 @@ function checathlon_is_pricing_page() {
  * @return bool
  */
 function checathlon_has_main_sidebar_widgets() {
-	return ( is_active_sidebar( 'sidebar-1' ) ) ? true : false;
+	return is_active_sidebar( 'sidebar-1' );
 }
 
 /**
@@ -427,7 +427,7 @@ function checathlon_has_main_sidebar_widgets() {
  * @return bool
  */
 function checathlon_has_after_content_widgets() {
-	return ( is_active_sidebar( 'sidebar-2' ) ) ? true : false;
+	return is_active_sidebar( 'sidebar-2' );
 }
 
 /**
@@ -436,7 +436,7 @@ function checathlon_has_after_content_widgets() {
  * @return bool
  */
 function checathlon_has_before_footer_widgets() {
-	return ( is_active_sidebar( 'sidebar-3' ) || is_active_sidebar( 'sidebar-4' ) || is_active_sidebar( 'sidebar-5' ) ) ? true : false;
+	return ( is_active_sidebar( 'sidebar-3' ) || is_active_sidebar( 'sidebar-4' ) || is_active_sidebar( 'sidebar-5' ) );
 }
 
 /**
@@ -445,7 +445,7 @@ function checathlon_has_before_footer_widgets() {
  * @return bool
  */
 function checathlon_has_after_content_front_page_widgets() {
-	return ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-8' ) ) ? true : false;
+	return ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-8' ) );
 }
 
 /**
@@ -454,7 +454,7 @@ function checathlon_has_after_content_front_page_widgets() {
  * @return bool
  */
 function checathlon_has_front_page_widgets() {
-	return ( is_active_sidebar( 'sidebar-8' ) ) ? true : false;
+	return is_active_sidebar( 'sidebar-8' );
 }
 
 /**
@@ -463,7 +463,7 @@ function checathlon_has_front_page_widgets() {
  * @return bool
  */
 function checathlon_has_service_pricing_widgets() {
-	return ( is_active_sidebar( 'sidebar-9' ) ) ? true : false;
+	return is_active_sidebar( 'sidebar-9' );
 }
 
 /**
@@ -472,7 +472,7 @@ function checathlon_has_service_pricing_widgets() {
  * @return bool
  */
 function checathlon_has_download_sidebar_widgets() {
-	return ( is_active_sidebar( 'sidebar-10' ) ) ? true : false;
+	return is_active_sidebar( 'sidebar-10' );
 }
 
 /**
@@ -499,7 +499,7 @@ function checathlon_show_download_sidebar() {
  * @return bool
  */
 function checathlon_edd_is_checkout() {
-	return ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() ) ? true : false;
+	return ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() );
 }
 
 /**
@@ -508,7 +508,7 @@ function checathlon_edd_is_checkout() {
  * @return bool
  */
 function checathlon_edd_is_checkout_cart_empty() {
-	return ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! edd_get_cart_contents() && ! edd_cart_has_fees() ) ? true : false;
+	return ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! edd_get_cart_contents() && ! edd_cart_has_fees() );
 }
 
 /**
@@ -519,7 +519,7 @@ function checathlon_edd_is_checkout_cart_empty() {
 function checathlon_edd_is_purchace_link_hidden() {
 	$edd_hide_purchace_link = get_post_meta( get_the_ID(), '_edd_hide_purchase_link', true );
 
-	return ( isset( $edd_hide_purchace_link ) && $edd_hide_purchace_link ) ? true : false;
+	return ( isset( $edd_hide_purchace_link ) && $edd_hide_purchace_link );
 }
 
 /**

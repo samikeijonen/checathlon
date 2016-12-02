@@ -155,11 +155,7 @@
  */
 function checathlon_show_pricing_title( $control ) {
 
-	if (  1 != $control->manager->get_setting( 'hide_service_pricing' )->value() ) {
-		return true;
-	} else {
-		return false;
-	}
+	return (  1 != $control->manager->get_setting( 'hide_service_pricing' )->value() );
 
 }
 
@@ -173,11 +169,7 @@ function checathlon_show_pricing_title( $control ) {
  */
 function checathlon_show_testimonial_title( $control ) {
 
-	if (  1 != $control->manager->get_setting( 'hide_testimonials' )->value() ) {
-		return true;
-	} else {
-		return false;
-	}
+	return (  1 != $control->manager->get_setting( 'hide_testimonials' )->value() );
 
 }
 
@@ -191,10 +183,6 @@ function checathlon_show_testimonial_title( $control ) {
  */
 function checathlon_show_blog_title( $control ) {
 
-	if (  1 != $control->manager->get_setting( 'hide_blog_posts' )->value() ) {
-		return true;
-	} else {
-		return false;
-	}
+	return (  1 != $control->manager->get_setting( 'hide_blog_posts' )->value() );
 
 }
