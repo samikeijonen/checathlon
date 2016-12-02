@@ -286,7 +286,7 @@ textarea {
 }
 
 .grid-wrapper-3 .entry-summary,
-.footer-widgets .widget,
+.widget,
 .site-description-footer,
 .jetpack-testimonial .entry-thumbnail .entry-title,
 .entry-inner-wrapper .checathlon-widget-pricing-entry-content,
@@ -1534,6 +1534,19 @@ a > img.alignnone {
 
 .main-sidebar .widget {
 	background-color: #f2f2f2;
+}
+
+.main-sidebar .widget li {
+	border-bottom: 1px solid #e1e1e1;
+	line-height: 1.4;
+	padding-bottom: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+
+.main-sidebar .widget li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .footer-widgets-wrapper .widget-title {
