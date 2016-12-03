@@ -1292,13 +1292,19 @@ a:active {
 .pagination {
 	text-align: center;
 }
-.pagination .page-numbers {
+.pagination .page-numbers,
+.page-links > a,
+.page-links > span {
 	background-color: #fff;
 	display: inline-block;
 	line-height: 2.5rem;
 	padding: 0 0.83333333333em;
 	margin-left: 0.625rem;
 	margin-bottom: 0.625rem;
+}
+.page-links > a,
+.page-links > span {
+	background-color: #f2f2f2;
 }
 .pagination .dots {
 	padding-left: 0.61111111111em;
