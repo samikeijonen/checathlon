@@ -67,6 +67,19 @@ function checathlon_download_category_template( $template ) {
 add_filter( 'taxonomy_template', 'checathlon_download_category_template', 99 );
 
 /**
+ * Custom empty cart text.
+ *
+ * @since  1.0.0
+ * @return string message
+ */
+function checathlon_empty_cart_message( $message ) {
+	$message = checathlon_get_empty_cart_text_html();
+
+	return $message;
+}
+add_filter( 'edd_empty_cart_message', 'checathlon_empty_cart_message' );
+
+/**
  * Get download demo link url.
  *
  * @since  1.0.0
