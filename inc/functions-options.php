@@ -185,6 +185,30 @@ function checathlon_get_featured_area_title_html() {
 }
 
 /**
+ * Returns downloads featured area title.
+ *
+ * @since  1.0.0
+ *
+ * @return string
+ */
+function checathlon_get_downloads_featured_area_title() {
+	return checathlon_get_theme_mod( 'downloads_featured_area_title', esc_html__( 'Products', 'checathlon' ) );
+}
+
+/**
+ * Returns downloads featured area title html.
+ *
+ * @since  1.0.0
+ *
+ * @return string
+ */
+function checathlon_get_downloads_featured_area_title_html() {
+	if ( checathlon_get_downloads_featured_area_title() ) {
+		return '<h2 class="downloads-featured-title front-page-title widget-title">' . esc_html( checathlon_get_downloads_featured_area_title() ) . '</h2>';
+	}
+}
+
+/**
  * Returns pricing area title.
  *
  * @since  1.0.0
@@ -257,7 +281,7 @@ function checathlon_get_blog_area_title_html() {
 }
 
 /**
- * Returns blog area title.
+ * Returns footer text.
  *
  * @since  1.0.0
  *
@@ -265,6 +289,17 @@ function checathlon_get_blog_area_title_html() {
  */
 function checathlon_get_footer_text() {
 	return checathlon_get_theme_mod( 'footer_text' );
+}
+
+/**
+ * Returns empty cart text.
+ *
+ * @since  1.0.0
+ *
+ * @return string
+ */
+function checathlon_get_empty_cart_text() {
+	return checathlon_get_theme_mod( 'empty_cart_text' );
 }
 
 /**
@@ -279,6 +314,21 @@ function checathlon_get_footer_text_html() {
 		return wp_kses_post( checathlon_get_footer_text() );
 	} else {
 		return checathlon_default_footer_text();
+	}
+}
+
+/**
+ * Returns empty cart text html.
+ *
+ * @since  1.0.0
+ *
+ * @return string
+ */
+function checathlon_get_empty_cart_text_html() {
+	if ( checathlon_get_empty_cart_text() ) {
+		return '<div class="edd_empty_cart">' . wpautop( wp_kses_post( checathlon_get_empty_cart_text() ) ) . '</div>';
+	} else {
+		return '<div class="edd_empty_cart">' . esc_html__( 'Your cart is empty', 'checathlon' ) . '</div>';
 	}
 }
 
