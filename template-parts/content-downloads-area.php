@@ -5,18 +5,34 @@
  * @package Checathlon
  */
 
-// Downloads Query.
-$downloads = new WP_Query( apply_filters( 'checathlon_downloads_area_downloads', array(
+// Downloads args.
+$downloads_args = apply_filters( 'checathlon_downloads_area_downloads', array(
 	'post_type'      => 'download',
 	'posts_per_page' => 2,
 	'no_found_rows'  => true,
 	'post__not_in'   => array( get_the_ID() ),
-) ) );
+) );
+
+// Show from download_tag.
+if ( get_theme_mod( 'featured_area_downloads_tag' ) ) :
+	$downloads_args['tax_query'] = array(
+		array(
+			'taxonomy' => 'download_tag',
+			'field'    => 'slug',
+			'terms'    => esc_attr( get_theme_mod( 'featured_area_downloads_tag' ) ),
+		),
+	);
+endif;
+
+// Downloads Query.
+$downloads = new WP_Query( $downloads_args );
 
 if ( $downloads->have_posts() ) : ?>
 
 	<div id="downloads-area" class="downloads-area">
 		<div class="wrapper">
+
+		<?php echo checathlon_get_downloads_featured_area_title_html(); ?>
 
 		<div class="grid-wrapper grid-wrapper-2 grid-wrapper-downloads">
 
