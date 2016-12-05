@@ -8,7 +8,7 @@
  */
 
 // Show downloads area if we are on checkout page and cart is empty.
-if ( checathlon_edd_is_checkout_cart_empty() ) :
+if ( checathlon_edd_is_checkout_cart_empty() && get_theme_mod( 'show_downloads_empty_cart' ) ) :
 	get_template_part( 'template-parts/content', 'downloads-area' );
 endif;
 
