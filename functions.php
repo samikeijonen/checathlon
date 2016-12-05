@@ -275,15 +275,17 @@ function checathlon_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar for downloads', 'checathlon' ),
-		'id'            => 'sidebar-10',
-		'description'   => esc_html__( 'Add widgets here for downloads.', 'checathlon' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner-wrappper">',
-		'after_widget'  => '</div></section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	if ( function_exists( 'EDD' ) ) {
+		register_sidebar( array(
+			'name'          => esc_html__( 'Sidebar for downloads', 'checathlon' ),
+			'id'            => 'sidebar-10',
+			'description'   => esc_html__( 'Add widgets here for downloads.', 'checathlon' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner-wrappper">',
+			'after_widget'  => '</div></section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		) );
+	}
 
 }
 add_action( 'widgets_init', 'checathlon_widgets_init' );
