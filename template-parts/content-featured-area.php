@@ -11,41 +11,55 @@ $featured_area = esc_attr( checathlon_get_fp_featured_content() );
 if ( 'jetpack-portfolio' === $featured_area ) :
 
 	// Jetpack portfolio query.
-	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_jetpack_portfolios', array(
+	$featured_content_args = apply_filters( 'checathlon_front_page_jetpack_portfolios', array(
 		'post_type'      => 'jetpack-portfolio',
 		'posts_per_page' => 2,
 		'no_found_rows'  => true,
-	) ) );
+	) );
 
 elseif ( 'portfolio-project' === $featured_area ) :
 
 	// Portfolio project query.
-	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_portfolio_projects', array(
+	$featured_content_args = apply_filters( 'checathlon_front_page_portfolio_projects', array(
 		'post_type'      => 'portfolio_project',
 		'posts_per_page' => 2,
 		'no_found_rows'  => true,
-	) ) );
+	) );
 
 elseif ( 'download' === $featured_area ) :
 
 	// Downloads query.
-	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_downloads', array(
+	$featured_content_args = apply_filters( 'checathlon_front_page_downloads', array(
 		'post_type'      => 'download',
 		'posts_per_page' => 2,
 		'no_found_rows'  => true,
-	) ) );
+	) );
+
+	// Show from download_tag.
+	if ( get_theme_mod( 'featured_area_downloads_tag' ) ) :
+		$featured_content_args['tax_query'] = array(
+			array(
+				'taxonomy' => 'download_tag',
+				'field'    => 'slug',
+				'terms'    => esc_attr( get_theme_mod( 'featured_area_downloads_tag' ) ),
+			),
+		);
+	endif;
 
 elseif ( 'select-pages' === $featured_area ) :
 
 	// Selected pages query.
-	$featured_content = new WP_Query( apply_filters( 'checathlon_front_page_selected_pages', array(
+	$featured_content_args = apply_filters( 'checathlon_front_page_selected_pages', array(
 		'post_type'      => 'page',
 		'post__in'       => checathlon_featured_pages(),
 		'posts_per_page' => checathlon_how_many_selected_pages(),
 		'no_found_rows'  => true,
-	) ) );
+	) );
 
 endif;
+
+// Featured Content Query.
+$featured_content = new WP_Query( $featured_content_args );
 
 // Output featured area.
 if ( 'nothing' !== $featured_area && $featured_content->have_posts() ) : ?>
