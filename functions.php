@@ -15,7 +15,6 @@
  * as indicating support for post thumbnails.
  */
 function checathlon_setup() {
-
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -91,7 +90,7 @@ function checathlon_setup() {
 	// Add excerpt to pages.
 	add_post_type_support( 'page', 'excerpt' );
 
-	// Add support for Custom Content Portfolio Plugin
+	// Add support for Custom Content Portfolio Plugin.
 	add_theme_support( 'custom-content-portfolio' );
 
 	// Add support for Message Board Plugin.
@@ -139,7 +138,7 @@ function checathlon_setup() {
 			'primary' => array(
 				'name'  => esc_html__( 'Primary', 'checathlon' ),
 				'items' => array(
-					'page_home',
+					'link_home',
 					'page_about',
 					'page_blog',
 					'page_contact',
@@ -294,7 +293,6 @@ add_action( 'widgets_init', 'checathlon_widgets_init' );
  * Handles JavaScript detection.
  *
  * Adds a `js` class to the root `<html>` element when JavaScript is detected.
- *
  */
 function checathlon_javascript_detection() {
 	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
@@ -311,17 +309,17 @@ add_action( 'wp_head', 'checathlon_javascript_detection', 0 );
 function checathlon_fonts_url() {
 
 	$fonts_url = '';
-	$fonts     = array();
+	$fonts     = apply_filters( 'checathlon_google_fonts', array() );
 	$subsets   = 'latin,latin-ext';
 
 	/* translators: If there are characters in your language that are not supported by Source Sans Pro, translate this to 'off'. Do not translate into your own language. */
 	if ( 'off' !== esc_attr_x( 'on', 'Source Sans Pro font: on or off', 'checathlon' ) ) {
-		$fonts[] = 'Source Sans Pro:400,600,700,400italic,600italic,700italic';
+		$fonts[] = 'Source Sans Pro:400,600,700,400i,600i,700i';
 	}
 
 	/* translators: If there are characters in your language that are not supported by Lora, translate this to 'off'. Do not translate into your own language. */
 	if ( 'off' !== esc_attr_x( 'on', 'Lora font: on or off', 'checathlon' ) ) {
-		$fonts[] = 'Lora:400,700,400italic,700italic';
+		$fonts[] = 'Lora:400,700,400i,700i';
 	}
 
 	if ( $fonts ) {
@@ -331,7 +329,7 @@ function checathlon_fonts_url() {
 		), 'https://fonts.googleapis.com/css' );
 	}
 
-	return $fonts_url;
+	return esc_url_raw( $fonts_url );
 }
 
 /**
@@ -342,6 +340,7 @@ function checathlon_fonts_url() {
  * @return array  URLs to print for resource hints.
  */
 function checathlon_resource_hints( $urls, $relation_type ) {
+	// Add google preconnect if fonts are queued.
 	if ( wp_style_is( 'checathlon-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
 		if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '>=' ) ) {
 			$urls[] = array(
@@ -370,11 +369,11 @@ function checathlon_scripts() {
 
 	// Add parent theme styles if using child theme.
 	if ( is_child_theme() ) {
-		wp_enqueue_style( 'checathlon-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . $suffix . '.css', array(), null );
+		wp_enqueue_style( 'checathlon-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . $suffix . '.css', array(), checathlon_theme_version( $dir = 'template' ) );
 	}
 
 	// Add theme styles.
-	wp_enqueue_style( 'checathlon-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'checathlon-style', get_stylesheet_uri(), array(), is_child_theme() ? checathlon_theme_version() : checathlon_theme_version( $dir = 'template' ) );
 
 	// Add theme scripts.
 	wp_enqueue_script( 'checathlon-scripts', get_template_directory_uri() . '/assets/js/scripts' . $suffix . '.js', array(), '20160912', true );
@@ -440,3 +439,13 @@ require get_template_directory() . '/inc/functions-scripts.php';
  * Load Easy Digital Downloads functions file.
  */
 require get_template_directory() . '/inc/functions-edd.php';
+
+/**
+ * Load pro link in the Customizer.
+ */
+
+require get_template_directory() . '/inc/customizer/pro/class-customize.php';
+/**
+ * Load admin theme page.
+ */
+require get_template_directory() . '/inc/admin.php';

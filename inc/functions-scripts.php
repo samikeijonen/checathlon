@@ -20,7 +20,6 @@
  * @return    string  $stylesheet_uri
  */
 function checathlon_min_stylesheet_uri( $stylesheet_uri, $stylesheet_dir_uri ) {
-
 	// Get the minified suffix.
 	$suffix = checathlon_get_min_suffix();
 
@@ -42,7 +41,6 @@ function checathlon_min_stylesheet_uri( $stylesheet_uri, $stylesheet_dir_uri ) {
 
 	// Return the theme stylesheet.
 	return $stylesheet_uri;
-
 }
 add_filter( 'stylesheet_uri', 'checathlon_min_stylesheet_uri', 5, 2 );
 
@@ -54,4 +52,23 @@ add_filter( 'stylesheet_uri', 'checathlon_min_stylesheet_uri', 5, 2 );
  */
 function checathlon_get_min_suffix() {
 	return defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ? '' : '.min';
+}
+
+/**
+ * Get theme version number, works also for child themes.
+ *
+ * Calling function checathlon_theme_version() detect active theme version number.
+ * Calling function with $dir = 'template' parameter detect parent theme version number: checathlon_theme_version( $dir = 'template' ).
+ *
+ * @since  1.1.0
+ *
+ * @param  string $dir stylesheet or template.
+ * @return string Theme version.
+ */
+function checathlon_theme_version( $dir = 'stylesheet' ) {
+	// Get theme name. Fallback to active theme.
+	$theme = 'template' === $dir ? wp_get_theme( get_template() ) : wp_get_theme( get_stylesheet() );
+
+	// Return theme version.
+	return $theme->get( 'Version' );
 }
