@@ -1,4 +1,4 @@
-# Copyright (C) 2016 checathlon
+# Copyright (C) 2017 checathlon
 # This file is distributed under the same license as the checathlon package.
 msgid ""
 msgstr ""
@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "X-Poedit-Basepath: ..\n"
@@ -80,87 +80,87 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: build/checathlon/functions.php:56, build/checathlon/functions.php:140, functions.php:56, functions.php:140
+#: build/checathlon/functions.php:55, build/checathlon/functions.php:139, functions.php:55, functions.php:139
 msgid "Primary"
 msgstr ""
 
-#: build/checathlon/functions.php:57, build/checathlon/functions.php:149, functions.php:57, functions.php:149
+#: build/checathlon/functions.php:56, build/checathlon/functions.php:148, functions.php:56, functions.php:148
 msgid "Social Links"
 msgstr ""
 
-#: build/checathlon/functions.php:62, functions.php:62
+#: build/checathlon/functions.php:61, functions.php:61
 msgid "Checkout Page"
 msgstr ""
 
-#: build/checathlon/functions.php:189, functions.php:189
+#: build/checathlon/functions.php:188, functions.php:188
 msgid "Main sidebar"
 msgstr ""
 
-#: build/checathlon/functions.php:191, functions.php:191
+#: build/checathlon/functions.php:190, functions.php:190
 msgid "Add widgets here for posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:199, functions.php:199
+#: build/checathlon/functions.php:198, functions.php:198
 msgid "Widget area after content"
 msgstr ""
 
-#: build/checathlon/functions.php:201, functions.php:201
+#: build/checathlon/functions.php:200, functions.php:200
 msgid "Add widgets here for after posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:209, functions.php:209
+#: build/checathlon/functions.php:208, functions.php:208
 msgid "Before footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:211, functions.php:211
+#: build/checathlon/functions.php:210, functions.php:210
 msgid "Add widgets here for before footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:219, functions.php:219
+#: build/checathlon/functions.php:218, functions.php:218
 msgid "Before footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:221, functions.php:221
+#: build/checathlon/functions.php:220, functions.php:220
 msgid "Add widgets here for before footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:229, functions.php:229
+#: build/checathlon/functions.php:228, functions.php:228
 msgid "Before footer widget area 3"
 msgstr ""
 
-#: build/checathlon/functions.php:231, functions.php:231
+#: build/checathlon/functions.php:230, functions.php:230
 msgid "Add widgets here for before footer widget area 3."
 msgstr ""
 
-#: build/checathlon/functions.php:239, functions.php:239
+#: build/checathlon/functions.php:238, functions.php:238
 msgid "Footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:241, functions.php:241
+#: build/checathlon/functions.php:240, functions.php:240
 msgid "Add widgets here for footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:249, functions.php:249
+#: build/checathlon/functions.php:248, functions.php:248
 msgid "Footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:251, functions.php:251
+#: build/checathlon/functions.php:250, functions.php:250
 msgid "Add widgets here for footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:259, functions.php:259
+#: build/checathlon/functions.php:258, functions.php:258
 msgid "Front Page widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:261, functions.php:261
+#: build/checathlon/functions.php:260, functions.php:260
 msgid "Add widgets here for Front Page widget area."
 msgstr ""
 
-#: build/checathlon/functions.php:269, functions.php:269
+#: build/checathlon/functions.php:268, functions.php:268
 msgid "Service and Pricing widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:271, functions.php:271
+#: build/checathlon/functions.php:270, functions.php:270
 msgid "Add Service and Pricing Widgets here, they appear in Front Page or Pricing Page Template."
 msgstr ""
 
@@ -198,15 +198,15 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: build/checathlon/inc/functions-edd.php:217, inc/functions-edd.php:217
+#: build/checathlon/inc/functions-edd.php:243, inc/functions-edd.php:243
 msgid "Demo"
 msgstr ""
 
-#: build/checathlon/inc/functions-filters.php:67, inc/functions-filters.php:67
-msgid "%s"
+#: build/checathlon/inc/functions-filters.php:65, inc/functions-filters.php:65
+msgid "&hellip;"
 msgstr ""
 
-#: build/checathlon/inc/functions-filters.php:341, inc/functions-filters.php:341
+#: build/checathlon/inc/functions-filters.php:337, inc/functions-filters.php:337
 msgid "Search results for &#8220;%s&#8221;"
 msgstr ""
 
@@ -218,20 +218,24 @@ msgstr ""
 msgid "Please define an SVG icon filename."
 msgstr ""
 
-#: build/checathlon/inc/functions-options.php:341, inc/functions-options.php:341
+#: build/checathlon/inc/functions-options.php:341, build/checathlon/inc/functions-options.php:389, inc/functions-options.php:341, inc/functions-options.php:389
 msgid "Products"
 msgstr ""
 
-#: build/checathlon/inc/functions-options.php:389, inc/functions-options.php:389
+#: build/checathlon/inc/functions-options.php:437, inc/functions-options.php:437
 msgid "Pricing"
 msgstr ""
 
-#: build/checathlon/inc/functions-options.php:437, inc/functions-options.php:437
+#: build/checathlon/inc/functions-options.php:485, inc/functions-options.php:485
 msgid "Testimonials"
 msgstr ""
 
-#: build/checathlon/inc/functions-options.php:485, inc/functions-options.php:485
+#: build/checathlon/inc/functions-options.php:533, inc/functions-options.php:533
 msgid "Recent blog posts"
+msgstr ""
+
+#: build/checathlon/inc/functions-options.php:661, inc/functions-options.php:661
+msgid "Your cart is empty"
 msgstr ""
 
 #: build/checathlon/inc/template-tags.php:57, inc/template-tags.php:57
@@ -397,6 +401,58 @@ msgstr ""
 
 #: build/checathlon/templates/account-page.php:30, templates/account-page.php:30
 msgid "Lost password?"
+msgstr ""
+
+#: inc/admin.php:155
+msgid "More Features"
+msgstr ""
+
+#: inc/admin.php:161
+msgid "Checathlon Plus is Plugin that gives power and more features to Checathlon Theme."
+msgstr ""
+
+#: inc/admin.php:169
+msgid "Get Checathlon Plus"
+msgstr ""
+
+#: inc/admin.php:183
+msgid "Help &amp; Documentation"
+msgstr ""
+
+#: inc/admin.php:189
+msgid "With Checathlon Plus you also get priority support. See also documentation."
+msgstr ""
+
+#: inc/admin.php:197
+msgid "View Documentation"
+msgstr ""
+
+#: inc/admin.php:211
+msgid "Supported Plugins"
+msgstr ""
+
+#: inc/admin.php:217
+msgid "Do you need extra functionality? Checathlon has built-in support for the following plugins."
+msgstr ""
+
+#: inc/admin.php:225
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: inc/admin.php:227
+msgid "Custom Content Portfolio"
+msgstr ""
+
+#: inc/admin.php:229
+msgid "Jetpack"
+msgstr ""
+
+#: inc/customizer/pro/class-customize.php:75
+msgid "More features?"
+msgstr ""
+
+#: inc/customizer/pro/class-customize.php:76
+msgid "Go Pro"
 msgstr ""
 
 #: inc/customizer/settings-front-page-featured.php:23
