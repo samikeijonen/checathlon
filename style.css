@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/checathlon/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Checathlon is the perfect theme for your next business site. Or selling your digital products using Easy Digital Downloads Plugin. You can also showcase your services, portfolios, testimonials, and team members. There are multiple widget areas to set content in many ways. What more you need for your business or e-commerce site!
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: checathlon
@@ -276,9 +276,17 @@ body,
 button,
 input,
 select,
+textarea,
+.main-navigation a {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body,
+button,
+input,
+select,
 textarea {
 	color: #1f1f1f;
-	font-family: "Source Sans Pro", sans-serif;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	line-height: 1.6666666;
@@ -959,6 +967,11 @@ a:visited {
 	color: #e6e6e6;
 }
 
+.site-footer a,
+.footer-widgets-wrapper .widget:not(.widget_nav_menu) a {
+	border-bottom: 1px dotted;
+}
+
 .underline-link {
 	border-bottom: 2px solid;
 	text-decoration: none;
@@ -989,10 +1002,6 @@ a.soft-color:active,
 .page-template-team-page .entry-title a:focus,
 .page-template-team-page .entry-title a:active {
 	color: #ff1654;
-}
-
-.site-footer a {
-	text-decoration: underline;
 }
 
 a:focus {
@@ -1089,8 +1098,11 @@ a:active {
 	.main-navigation .sub-menu li {
 		padding-bottom: 0;
 	}
-	.main-navigation a {
+	.main-navigation a,
+	.main-navigation a:visited {
 		color: #d4d4d4;
+	}
+	.main-navigation a {
 		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	}
 	.main-navigation .sub-menu a {
@@ -1157,7 +1169,8 @@ a:active {
 	.main-navigation .primary-menu > li {
 		display: inline-block;
 	}
-	.main-navigation a {
+	.main-navigation a,
+	.main-navigation a:visited {
 		color: #474747;
 	}
 	.main-navigation a:hover,
@@ -1178,7 +1191,7 @@ a:active {
 
 	.main-navigation ul ul {
 		background-color: #fff;
-		border: 1px solid #d4d4d4;
+		border: 1px solid rgba(0, 0, 0, 0.1);
 		border-bottom: none;
 		display: block;
 		left: -999em;
@@ -1203,7 +1216,7 @@ a:active {
 
 	.main-navigation ul ul li,
 	.main-navigation .sub-menu li {
-		border-bottom: 1px solid #d4d4d4;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 
 	.main-navigation ul ul a {
@@ -1250,23 +1263,29 @@ a:active {
 
 /* Social Links. */
 .menu-social ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 .menu-social li {
-	display: inline-block;
-	padding-right: calc(1.25rem - 2px);
-	margin-bottom: 0.625rem;
+	padding-right: 1.25rem;
+	margin-bottom: 1.25rem;
 }
 .menu-social li:last-child {
 	padding-right: 0;
+}
+.menu-social a,
+.menu-social a:visited {
+	color: #474747;
 }
 .menu-social a {
 	background-color: #d4d4d4;
 	border-bottom: none;
 	border-radius: 50%;
-	color: #474747;
 	display: block;
 	position: relative;
 	width: 2.22222222em;
@@ -1533,11 +1552,6 @@ a > img.alignnone {
 	margin: 0;
 }
 
-.widget li > ul,
-.widget li > ol {
-	padding-left: 0;
-}
-
 .main-sidebar .widget {
 	background-color: #f2f2f2;
 }
@@ -1545,14 +1559,28 @@ a > img.alignnone {
 .main-sidebar .widget li {
 	border-bottom: 1px solid #e1e1e1;
 	line-height: 1.4;
+	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	margin-bottom: 0.625rem;
+}
+
+.main-sidebar ul ul li:first-child {
+	margin-top: 0.625rem;
+}
+
+.main-sidebar ul ul li:first-child {
+	border-top: 1px solid #e1e1e1;
 }
 
 .main-sidebar .widget li:last-child {
 	border-bottom: none;
+}
+
+.main-sidebar .widget .widget-social-navigation li {
+	border-bottom: none;
+	padding-top: 0;
 	padding-bottom: 0;
-	margin-bottom: 0;
+	padding-right: 1rem;
+	margin-bottom: 1rem;
 }
 
 .footer-widgets-wrapper .widget-title {
@@ -1573,11 +1601,6 @@ a > img.alignnone {
 	text-transform: uppercase;
 }
 
-.widget_nav_menu .sub-menu li,
-.widget_nav_menu .sub-menu li:last-of-type {
-	padding-bottom: 0;
-}
-
 .widget_nav_menu .sub-menu li a {
 	text-transform: none;
 }
@@ -1588,9 +1611,15 @@ a > img.alignnone {
 }
 
 .after-content-widget-area .widget:first-of-type,
+.after-content-widget-area .widget:first-of-type .widget-title,
+.front-page-widget-area .widget:first-of-type,
+.front-page-widget-area .widget:first-of-type .widget-title {
+	color: #fff;
+}
+
+.after-content-widget-area .widget:first-of-type,
 .front-page-widget-area .widget:first-of-type {
 	background-color: #474747;
-	color: #fff;
 }
 
 /* Pricing widget. */
@@ -2063,7 +2092,6 @@ a.entry-header-bg-link:active {
 .comment-body,
 #edd_checkout_cart_form,
 fieldset,
-.edd-alert,
 .edd-success .entry-content,
 .entry-login-form {
 	padding: 1.25rem;
@@ -2158,7 +2186,6 @@ fieldset > fieldset {
 	.comment-body,
 	#edd_checkout_cart_form,
 	fieldset,
-	.edd-alert,
 	.edd-success .entry-content,
 	.entry-login-form {
 		padding: 2.5rem;
@@ -2682,7 +2709,6 @@ object {
 
 #edd_checkout_cart_form,
 #edd_purchase_form fieldset,
-.edd-alert,
 .edd-success .entry-content {
 	background-color: #fff;
 	margin-bottom: 1.875rem;
@@ -2839,6 +2865,22 @@ td.edd_cart_item_price,
 #edd_secure_site_wrapper,
 .edd-cart-added-alert {
 	color: #18ad39;
+}
+
+.edd_errors {
+	margin-bottom: 1.666667em;
+}
+
+.edd_error {
+	background-color: #ffcbcb;
+	display: block;
+	padding: 0.625rem;
+	margin-top: 0.625rem;
+}
+
+.edd_error .edd_error {
+	padding: 0;
+	margin-top: 0;
 }
 
 /* Spinner. */
