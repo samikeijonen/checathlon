@@ -26,6 +26,15 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.1.0 - January 10, 2019
+
+* Update styles for better work with custom fonts and colors feature from Checathlon Plus.
+* Add theme welcome/info screen in the admin.
+* Add Pro link in the Customizer.
+* Allow adding new pages in the Customizer.
+* Add version number to style.css.
+* Add action hook `checathlon_after_header` in the header.
+
 ### Version 1.0.0 - September 10, 2016
 
 * Everything's new!
