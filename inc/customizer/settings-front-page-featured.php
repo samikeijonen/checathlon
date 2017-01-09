@@ -104,6 +104,7 @@
 					'label'           => sprintf( esc_html__( 'Select page %s', 'checathlon' ), $k ),
 					'section'         => 'front-page-featured',
 					'type'            => 'dropdown-pages',
+					'allow_addition'  => true,
 					'priority'        => $k+20,
 					'active_callback' => 'checathlon_show_select_pages',
 				)
