@@ -23,18 +23,18 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'checathlon' ); ?></a>
-	
+
 	<div class="site-header-wrap">
 		<header id="masthead" class="site-header main-padding" role="banner">
 			<div class="wrapper main-width">
-			
+
 				<?php
 					// Custom logo.
 					checathlon_the_custom_logo();
-					
+
 					do_action( 'checathlon_after_the_custom_logo' );
 				?>
-		
+
 				<div class="site-branding">
 					<?php
 					// Site title.
@@ -50,9 +50,11 @@
 				<?php
 					get_template_part( 'menus/menu', 'primary' ); // Loads the menus/menu-primary.php template.
 				?>
-		
+
 			</div><!-- .wrapper -->
 		</header><!-- .site-header -->
 	</div><!-- .site-header-wrap -->
+
+	<?php do_action( 'checathlon_after_header' ); ?>
 
 	<div id="content" class="site-content">
