@@ -186,8 +186,128 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: build/checathlon/inc/admin.php:155, inc/admin.php:155
+msgid "More Features"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:161, inc/admin.php:161
+msgid "Checathlon Plus is Plugin that gives power and more features to Checathlon Theme."
+msgstr ""
+
+#: build/checathlon/inc/admin.php:169, inc/admin.php:169
+msgid "Get Checathlon Plus"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:183, inc/admin.php:183
+msgid "Help &amp; Documentation"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:189, inc/admin.php:189
+msgid "With Checathlon Plus you also get priority support. See also documentation."
+msgstr ""
+
+#: build/checathlon/inc/admin.php:197, inc/admin.php:197
+msgid "View Documentation"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:211, inc/admin.php:211
+msgid "Supported Plugins"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:217, inc/admin.php:217
+msgid "Do you need extra functionality? Checathlon has built-in support for the following plugins."
+msgstr ""
+
+#: build/checathlon/inc/admin.php:225, inc/admin.php:225
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:227, inc/admin.php:227
+msgid "Custom Content Portfolio"
+msgstr ""
+
+#: build/checathlon/inc/admin.php:229, inc/admin.php:229
+msgid "Jetpack"
+msgstr ""
+
 #: build/checathlon/inc/customizer.php:37, inc/customizer.php:37
 msgid "Theme Settings"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:23, inc/customizer/settings-front-page-featured.php:23
+msgid "Front Page Featured Area"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:25, inc/customizer/settings-front-page-featured.php:25
+msgid "In this section you can modify Front Page Featured area."
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:65, inc/customizer/settings-front-page-featured.php:65
+msgid "Featured area title"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:101, inc/customizer/settings-front-page-featured.php:101
+msgid "Nothing"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:103, inc/customizer/settings-front-page-featured.php:103
+msgid "Portfolios"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:105, inc/customizer/settings-front-page-featured.php:105
+msgid "Portfolio Projects"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:107, inc/customizer/settings-front-page-featured.php:107
+msgid "Downloads"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:109, inc/customizer/settings-front-page-featured.php:109
+msgid "Select Pages"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:145, inc/customizer/settings-front-page-featured.php:145
+msgid "Featured Content"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:147, inc/customizer/settings-front-page-featured.php:147
+msgid "Select what you want to show on Front Page featured area."
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page-featured.php:207, inc/customizer/settings-front-page-featured.php:207
+msgid "Select page %s"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:23, inc/customizer/settings-front-page.php:23
+msgid "Front Page"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:25, inc/customizer/settings-front-page.php:25
+msgid "In this section you can modify Front Page Template."
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:65, inc/customizer/settings-front-page.php:65
+msgid "Hide Service and Pricing Section"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:105, inc/customizer/settings-front-page.php:105
+msgid "Hide Testimonials"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:145, inc/customizer/settings-front-page.php:145
+msgid "Hide Blog Posts"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:195, inc/customizer/settings-front-page.php:195
+msgid "Pricing area title"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:237, inc/customizer/settings-front-page.php:237
+msgid "Testimonial area title"
+msgstr ""
+
+#: build/checathlon/inc/customizer/settings-front-page.php:279, inc/customizer/settings-front-page.php:279
+msgid "Blog area title"
 msgstr ""
 
 #: build/checathlon/inc/functions-edd.php:73, build/checathlon/inc/functions-edd.php:77, inc/functions-edd.php:73, inc/functions-edd.php:77
@@ -403,130 +523,10 @@ msgstr ""
 msgid "Lost password?"
 msgstr ""
 
-#: inc/admin.php:155
-msgid "More Features"
-msgstr ""
-
-#: inc/admin.php:161
-msgid "Checathlon Plus is Plugin that gives power and more features to Checathlon Theme."
-msgstr ""
-
-#: inc/admin.php:169
-msgid "Get Checathlon Plus"
-msgstr ""
-
-#: inc/admin.php:183
-msgid "Help &amp; Documentation"
-msgstr ""
-
-#: inc/admin.php:189
-msgid "With Checathlon Plus you also get priority support. See also documentation."
-msgstr ""
-
-#: inc/admin.php:197
-msgid "View Documentation"
-msgstr ""
-
-#: inc/admin.php:211
-msgid "Supported Plugins"
-msgstr ""
-
-#: inc/admin.php:217
-msgid "Do you need extra functionality? Checathlon has built-in support for the following plugins."
-msgstr ""
-
-#: inc/admin.php:225
-msgid "Easy Digital Downloads"
-msgstr ""
-
-#: inc/admin.php:227
-msgid "Custom Content Portfolio"
-msgstr ""
-
-#: inc/admin.php:229
-msgid "Jetpack"
-msgstr ""
-
 #: inc/customizer/pro/class-customize.php:75
 msgid "More features?"
 msgstr ""
 
 #: inc/customizer/pro/class-customize.php:76
 msgid "Go Pro"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:23
-msgid "Front Page Featured Area"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:25
-msgid "In this section you can modify Front Page Featured area."
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:65
-msgid "Featured area title"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:101
-msgid "Nothing"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:103
-msgid "Portfolios"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:105
-msgid "Portfolio Projects"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:107
-msgid "Downloads"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:109
-msgid "Select Pages"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:145
-msgid "Featured Content"
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:147
-msgid "Select what you want to show on Front Page featured area."
-msgstr ""
-
-#: inc/customizer/settings-front-page-featured.php:207
-msgid "Select page %s"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:23
-msgid "Front Page"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:25
-msgid "In this section you can modify Front Page Template."
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:65
-msgid "Hide Service and Pricing Section"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:105
-msgid "Hide Testimonials"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:145
-msgid "Hide Blog Posts"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:195
-msgid "Pricing area title"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:237
-msgid "Testimonial area title"
-msgstr ""
-
-#: inc/customizer/settings-front-page.php:279
-msgid "Blog area title"
 msgstr ""
