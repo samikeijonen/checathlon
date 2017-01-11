@@ -2343,6 +2343,7 @@ fieldset > fieldset {
 	clear: both;
 }
 .entry-terms > a,
+.entry-terms > a:visited,
 .widget_tag_cloud a,
 .widget_tag_cloud a:visited {
 	background-color: #f2f2f2;
