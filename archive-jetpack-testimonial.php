@@ -19,16 +19,16 @@ get_header(); ?>
 				<?php
 					// Get Jetpack options for testimonial.
 					$jetpack_options = get_theme_mod( 'jetpack_testimonials' );
-					
+
 					// Use Jetpack testimonial title if it's set.
-					if( isset( $jetpack_options['page-title'] ) && $jetpack_options['page-title'] ) :
+					if ( isset( $jetpack_options['page-title'] ) && $jetpack_options['page-title'] ) :
 						echo '<h1 class="page-title title-font no-margin-bottom text-center text-italic">' .esc_html( $jetpack_options['page-title'] ) . '</h1>';
 					else :
 						the_archive_title( '<h1 class="page-title title-font no-margin-bottom text-center text-italic">', '</h1>' );
 					endif;
-					
+
 					// Use Jetpack testimonial content if it's set.
-					if( isset( $jetpack_options['page-content'] ) && $jetpack_options['page-content'] ) :
+					if ( isset( $jetpack_options['page-content'] ) && $jetpack_options['page-content'] ) :
 						echo '<div class="archive-description text-center soft-color">' . wp_kses_post( $jetpack_options['page-content'] ) . '</div>';
 					else :
 						the_archive_description( '<div class="archive-description text-center soft-color">', '</div>' );
