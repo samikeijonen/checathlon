@@ -243,6 +243,16 @@ function checathlon_jetpack_portfolio_taxonomy_template( $template ) {
 
 	}
 
+	// Toot testimonials template.
+	if ( is_tax( 'testimonial_category' ) ) {
+
+		$new_template = locate_template( array( 'archive-testimonial.php' ) );
+		if ( '' != $new_template ) {
+			return $new_template ;
+		}
+
+	}
+
 	return $template;
 }
 add_filter( 'taxonomy_template', 'checathlon_jetpack_portfolio_taxonomy_template', 99 );

@@ -26,7 +26,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
-### Version 1.1.0 - January 10, 2019
+### Version 1.1.1 -  February 5, 2017
+
+* Add support for Toot Testimonial plugin.
+
+### Version 1.1.0 - January 10, 2017
 
 * Update styles for better work with custom fonts and colors feature from Checathlon Plus.
 * Add theme welcome/info screen in the admin.
