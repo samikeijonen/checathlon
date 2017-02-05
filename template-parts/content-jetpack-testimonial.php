@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying Jetpack portfolios.
+ * Template part for displaying Jetpack testimonials.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
