@@ -26,13 +26,13 @@ function checathlon_customize_register( $wp_customize ) {
 	require_once( get_template_directory() . '/inc/customizer/settings-front-page-featured.php' );
 
 	// PostMessage settings.
-	$wp_customize->get_setting( 'blogname' )->transport                 = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport          = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'featured_area_title' )->transport      = 'postMessage';
-	$wp_customize->get_setting( 'pricing_area_title' )->transport       = 'postMessage';
-	$wp_customize->get_setting( 'testimonial_area_title' )->transport   = 'postMessage';
-	$wp_customize->get_setting( 'blog_area_title' )->transport          = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport               = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'header_textcolor' )->transport       = 'postMessage';
+	$wp_customize->get_setting( 'featured_area_title' )->transport    = 'postMessage';
+	$wp_customize->get_setting( 'pricing_area_title' )->transport     = 'postMessage';
+	$wp_customize->get_setting( 'testimonial_area_title' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'blog_area_title' )->transport        = 'postMessage';
 
 	// Set partial refresh.
 	if ( isset( $wp_customize->selective_refresh ) ) {
