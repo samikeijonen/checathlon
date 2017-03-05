@@ -192,12 +192,12 @@ function checathlon_comments_popup_link( $zero = false, $one = false, $more = fa
 
 	if ( false === $one ) {
 	/* translators: %s: post title */
-		$one = $icon . sprintf( wp_kses( __( '1<span class="screen-reader-text">Comment on %s</span>', 'checathlon' ), array( 'span' => array( 'class' => array() ) ) ), $title );
+		$one = $icon . sprintf( wp_kses( __( '1<span class="screen-reader-text"> Comment on %s</span>', 'checathlon' ), array( 'span' => array( 'class' => array() ) ) ), $title );
 	}
 
 	if ( false === $more ) {
 		/* translators: 1: Number of comments 2: post title */
-		$more = wp_kses( _n( '%1$s<span class="screen-reader-text"> Comment on %2$s</span>', '%1$s<span class="screen-reader-text">Comments on %2$s</span>', $number, 'checathlon' ), array( 'span' => array( 'class' => array() ) ) );
+		$more = wp_kses( _n( '%1$s<span class="screen-reader-text"> Comment on %2$s</span>', '%1$s<span class="screen-reader-text"> Comments on %2$s</span>', $number, 'checathlon' ), array( 'span' => array( 'class' => array() ) ) );
 		$more = $icon . sprintf( $more, number_format_i18n( $number ), $title );
 	}
 
