@@ -26,6 +26,12 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.1.2 -  March 5, 2017
+
+* Show supported SVG icons in the admin page Appearance >> Checathlon.
+* Do not show Checathlon Plus link in the Customizer if the plugin is already active.
+* Add Finnish translation.
+
 ### Version 1.1.1 -  February 5, 2017
 
 * Add support for Toot Testimonial plugin.
