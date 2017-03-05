@@ -22,6 +22,7 @@ function checathlon_include_svg_icons() {
 
 }
 add_action( 'wp_footer', 'checathlon_include_svg_icons', 9999 );
+add_action( 'admin_footer-appearance_page_checathlon', 'checathlon_include_svg_icons', 9999 ); // Load icons under Appearance >> Checathlon.
 
 /**
  * Return SVG markup.
