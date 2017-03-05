@@ -441,10 +441,12 @@ require get_template_directory() . '/inc/functions-scripts.php';
 require get_template_directory() . '/inc/functions-edd.php';
 
 /**
- * Load pro link in the Customizer.
+ * Load pro link in the Customizer if Checathlon Plus plugin is not activated.
  */
+if ( ! class_exists( 'Checathlon_Plus' ) ) {
+	require get_template_directory() . '/inc/customizer/pro/class-customize.php';
+}
 
-require get_template_directory() . '/inc/customizer/pro/class-customize.php';
 /**
  * Load admin theme page.
  */
