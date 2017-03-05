@@ -5,9 +5,12 @@
  * @package Checathlon
  */
 
+// Toot testimonial plugin (or any other standard) wins over Jetpack testimonial.
+$testimonial_post_type = post_type_exists( 'testimonial' ) ? 'testimonial' : 'jetpack-testimonial';
+
 // Testimonials Query.
 $testimonials = new WP_Query( apply_filters( 'checathlon_front_page_testimonials', array(
-	'post_type'      => 'jetpack-testimonial',
+	'post_type'      => $testimonial_post_type,
 	'posts_per_page' => 3,
 	'no_found_rows'  => true,
 ) ) );
