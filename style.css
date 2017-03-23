@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/checathlon/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Checathlon is the perfect theme for your next business site. Or selling your digital products using Easy Digital Downloads Plugin. You can also showcase your services, portfolios, testimonials, and team members. There are multiple widget areas to set content in many ways. What more you need for your business or e-commerce site!
-Version: 1.1.2
+Version: 1.1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: checathlon
@@ -1273,7 +1273,8 @@ a:active {
 	margin: 0;
 }
 
-.footer-widgets-wrapper .menu-social ul {
+.footer-widgets-wrapper .menu-social ul,
+.footer-widgets-0 .footer-widgets-wrapper .menu-social ul {
 	-ms-flex-pack: center;
 	    justify-content: center;
 }
