@@ -309,7 +309,7 @@ add_action( 'wp_head', 'checathlon_javascript_detection', 0 );
 function checathlon_fonts_url() {
 
 	$fonts_url = '';
-	$fonts     = apply_filters( 'checathlon_google_fonts', array() );
+	$fonts     = array();
 	$subsets   = 'latin,latin-ext';
 
 	/* translators: If there are characters in your language that are not supported by Source Sans Pro, translate this to 'off'. Do not translate into your own language. */
@@ -321,6 +321,9 @@ function checathlon_fonts_url() {
 	if ( 'off' !== esc_attr_x( 'on', 'Lora font: on or off', 'checathlon' ) ) {
 		$fonts[] = 'Lora:400,700,400i,700i';
 	}
+
+	// Filter Google fonts array.
+	$fonts = apply_filters( 'checathlon_google_fonts', $fonts );
 
 	if ( $fonts ) {
 		$fonts_url = add_query_arg( array(
