@@ -43,17 +43,19 @@ var phpFiles     = ['./*.php', './**/*.php', '!build/*.php'];
 var project      = 'checathlon'; // Project name.
 var build        = './build/checathlon/';
 var buildInclude = [
-    '**',
-    '!node_modules/**/',
-    '!assets/sass/**/*',
-    '!build/**/',
-    '!.git/**',
-    '!Gulpfile.js',
-    '!package.json',
-    '!.gitignore',
-    '!.gitmodules',
-    '!.tx/**',
-    '!**/*~',
+	'**',
+	'!node_modules/**/',
+	'!assets/sass/**/*',
+	'!build/**/',
+	'!.git/**',
+	'!Gulpfile.js',
+	'!package.js',
+	'!package.json',
+	'!.gitignore',
+	'!.gitmodules',
+	'!.tx/**',
+	'!**/*~',
+	'!.DS_Store',
 ];
 /*
 
@@ -139,12 +141,12 @@ gulp.task('sass-styles', function() {
  * Prefix style.css rules.
  */
 gulp.task('prefix:styles', function() {
-	
+
 	gulp.src(styleFile)
 	.pipe(prefix('last 3 version')) // Adds browser prefixes (eg. -webkit, -moz, etc.)
 	.pipe(gulp.dest(cssDest))
 	.pipe(browserSync.stream());
-	
+
 });
 
 /**
@@ -227,7 +229,7 @@ gulp.task('clean:build', function() {
    .pipe(gulp.dest(build))
    .pipe(notify({ message: 'Copy from buildFiles complete', onLast: true }));
  });
- 
+
  /**
  * Delete unneccessary folders from build.
  */
