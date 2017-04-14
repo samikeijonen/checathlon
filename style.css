@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/checathlon/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Checathlon is the perfect theme for your next business site. Or selling your digital products using Easy Digital Downloads Plugin. You can also showcase your services, portfolios, testimonials, and team members. There are multiple widget areas to set content in many ways. What more you need for your business or e-commerce site!
-Version: 1.1.3
+Version: 1.1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: checathlon
@@ -727,7 +727,7 @@ tr > :last-child {
 }
 
 .highlight-color {
-	color: #ff1654;
+	color: #df003b;
 }
 
 
@@ -741,7 +741,7 @@ input[type="reset"],
 input[type="submit"],
 a.button,
 a.button:visited {
-	background-color: #ff1654;
+	background-color: #df003b;
 	border: 0;
 	color: #fff;
 	font-weight: 600;
@@ -791,7 +791,7 @@ a.edd-cart-saving-button.button:active,
 body .wp-core-ui .quicktags-toolbar input.button.button-small:hover,
 body .wp-core-ui .quicktags-toolbar input.button.button-small:focus,
 body .wp-core-ui .quicktags-toolbar input.button.button-small:active {
-	background-color: #ff1654;
+	background-color: #df003b;
 }
 button:focus,
 input[type="button"]:focus,
@@ -808,7 +808,7 @@ a.button {
 
 .menu-toggle {
 	background-color: transparent;
-	color: #ff1654;
+	color: #df003b;
 	font-size: 1rem;
 	padding: 0.5em;
 	text-shadow: none;
@@ -821,7 +821,7 @@ a.button {
 .menu-toggle:focus,
 .menu-toggle:active {
 	background-color: transparent;
-	color: #ff1654;
+	color: #df003b;
 }
 .menu-toggle.toggled {
 	color: #fff;
@@ -924,7 +924,7 @@ legend {
 
 a,
 a:visited {
-	color: #ff1654;
+	color: #df003b;
 	text-decoration: none;
 	transition: all 0.25s ease-in-out;
 }
@@ -1002,7 +1002,7 @@ a.soft-color:active,
 .page-template-team-page .entry-title a:hover,
 .page-template-team-page .entry-title a:focus,
 .page-template-team-page .entry-title a:active {
-	color: #ff1654;
+	color: #df003b;
 }
 
 a:focus {
@@ -1177,7 +1177,7 @@ a:active {
 	.main-navigation a:hover,
 	.main-navigation a:focus,
 	.main-navigation a:active {
-		color: #ff1654;
+		color: #df003b;
 	}
 	.main-navigation .primary-menu > li {
 		margin-right: 1.875rem;
@@ -1240,7 +1240,7 @@ a:active {
 
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current-menu-ancestor > a {
-		color: #ff1654;
+		color: #df003b;
 	}
 
 	.main-navigation .menu-item-has-children > a {
@@ -1909,7 +1909,7 @@ a.entry-header-bg-link:active {
 }
 .jetpack-testimonial .entry-inner .icon,
 .testimonial .entry-inner .icon {
-	color: #ff1654;
+	color: #df003b;
 	position: absolute;
 	top: -0.9375rem;
 	right: 1.875rem;
@@ -2335,7 +2335,7 @@ fieldset > fieldset {
 }
 
 .archive-description:before {
-	border-bottom: 4px solid #ff1654;
+	border-bottom: 4px solid #df003b;
 	content: "";
 	display: block;
 	margin: 1.25rem auto;
@@ -2549,7 +2549,7 @@ object {
 
 .before-footer-widgets-wrapper .icon,
 .checathlon_widget_pricing .icon {
-	color: #ff1654;
+	color: #df003b;
 	margin-bottom: 1em;
 	width: 2em;
 	height: 2em;
