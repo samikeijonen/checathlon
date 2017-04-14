@@ -26,6 +26,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.1.4 -  April 14, 2017
+
+* Fix landmark role in footer section: Site title and description is also inside landmark role now.
+* Main color `#ff1654` is switched to `#df003b`, which meets the color contrast guidelines for accessibility.
+
 ### Version 1.1.3 -  March 23, 2017
 
 * Fix social menu alignment to center when there is no footer widgets.
