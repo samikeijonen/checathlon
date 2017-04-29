@@ -19,7 +19,7 @@
 				<?php the_title( '<h1 class="entry-title title-font no-margin-bottom text-italic">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
-			<?php checathlon_post_thumbnail( $post_thumbnail = 'checathlon-singular' ) ?>
+			<?php checathlon_post_thumbnail( $post_thumbnail = 'checathlon-singular' ); ?>
 
 			<div class="entry-inner-singular-wrapper">
 
