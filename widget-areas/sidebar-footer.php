@@ -22,11 +22,14 @@ endif;
 				$description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
 					<p class="site-description site-description-footer no-margin-bottom"><?php echo $description; ?></p>
-				<?php endif; ?>
+				<?php endif;
+
+				do_action( 'checathlon_after_footer_title' );
+				?>
 			</div><!-- .site-title-desc-footer-wrapper -->
 
 			<?php
-			if( is_active_sidebar( 'sidebar-6' ) ) : ?>
+			if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
 				<div id="footer-area-1" class="footer-area-1 footer-widget-area">
 					<?php dynamic_sidebar( 'sidebar-6' ); ?>
 				</div><!-- .widget-area -->
