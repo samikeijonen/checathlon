@@ -270,3 +270,19 @@ function checathlon_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'checathlon_widget_tag_cloud_args' );
+
+/**
+ * Ditch subtitles in testimonial archives.
+ *
+ * @since  2.0.0
+ * @param  boolean $supported Default behaviour when to show subtitles.
+ * @return boolean $supported Modified behaviour when to show subtitles..
+ */
+function checathlon_mod_supported_views( $supported ) {
+	if ( is_post_type_archive( array( 'testimonial', 'jetpack-testimonial' ) ) ) {
+		return false;
+	}
+
+	return $supported;
+}
+add_filter( 'subtitle_view_supported', 'checathlon_mod_supported_views' );
