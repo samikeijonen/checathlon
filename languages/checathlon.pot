@@ -80,11 +80,11 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:55, functions.php:139
+#: functions.php:55, functions.php:140
 msgid "Primary"
 msgstr ""
 
-#: functions.php:56, functions.php:148
+#: functions.php:56, functions.php:149
 msgid "Social Links"
 msgstr ""
 
@@ -92,92 +92,92 @@ msgstr ""
 msgid "Checkout Page"
 msgstr ""
 
-#: functions.php:188
+#: functions.php:193
 msgid "Main sidebar"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:195
 msgid "Add widgets here for posts or pages."
 msgstr ""
 
-#: functions.php:198
+#: functions.php:203
 msgid "Widget area after content"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:205
 msgid "Add widgets here for after posts or pages."
 msgstr ""
 
-#: functions.php:208
+#: functions.php:213
 msgid "Before footer widget area 1"
 msgstr ""
 
-#: functions.php:210
+#: functions.php:215
 msgid "Add widgets here for before footer widget area 1."
 msgstr ""
 
-#: functions.php:218
+#: functions.php:223
 msgid "Before footer widget area 2"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:225
 msgid "Add widgets here for before footer widget area 2."
 msgstr ""
 
-#: functions.php:228
+#: functions.php:233
 msgid "Before footer widget area 3"
 msgstr ""
 
-#: functions.php:230
+#: functions.php:235
 msgid "Add widgets here for before footer widget area 3."
 msgstr ""
 
-#: functions.php:238
+#: functions.php:243
 msgid "Footer widget area 1"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:245
 msgid "Add widgets here for footer widget area 1."
 msgstr ""
 
-#: functions.php:248
+#: functions.php:253
 msgid "Footer widget area 2"
 msgstr ""
 
-#: functions.php:250
+#: functions.php:255
 msgid "Add widgets here for footer widget area 2."
 msgstr ""
 
-#: functions.php:258
+#: functions.php:263
 msgid "Front Page widget area"
 msgstr ""
 
-#: functions.php:260
+#: functions.php:265
 msgid "Add widgets here for Front Page widget area."
 msgstr ""
 
-#: functions.php:268
+#: functions.php:273
 msgid "Service and Pricing widget area"
 msgstr ""
 
-#: functions.php:270
+#: functions.php:275
 msgid "Add Service and Pricing Widgets here, they appear in Front Page or Pricing Page Template."
 msgstr ""
 
-#: functions.php:279
+#: functions.php:284
 msgid "Sidebar for downloads"
 msgstr ""
 
-#: functions.php:281
+#: functions.php:286
 msgid "Add widgets here for downloads."
 msgstr ""
 
-#: functions.php:316
+#: functions.php:321
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:321
+#: functions.php:326
 msgctxt "Lora font: on or off"
 msgid "on"
 msgstr ""
@@ -314,15 +314,15 @@ msgstr ""
 msgid "Hide Blog Posts"
 msgstr ""
 
-#: inc/customizer/settings-front-page.php:98
+#: inc/customizer/settings-front-page.php:98, inc/functions-polylang.php:13
 msgid "Pricing area title"
 msgstr ""
 
-#: inc/customizer/settings-front-page.php:119
+#: inc/customizer/settings-front-page.php:119, inc/functions-polylang.php:14
 msgid "Testimonial area title"
 msgstr ""
 
-#: inc/customizer/settings-front-page.php:140
+#: inc/customizer/settings-front-page.php:140, inc/functions-polylang.php:15
 msgid "Blog area title"
 msgstr ""
 
@@ -359,19 +359,35 @@ msgid "Products"
 msgstr ""
 
 #: inc/functions-options.php:219
+msgid "checathlon_get_theme_modpricing_area_title"
+msgstr ""
+
+#: inc/functions-options.php:219, inc/functions-options.php:219
 msgid "Pricing"
 msgstr ""
 
 #: inc/functions-options.php:243
+msgid "checathlon_get_theme_modtestimonial_area_title"
+msgstr ""
+
+#: inc/functions-options.php:243, inc/functions-options.php:243
 msgid "Testimonials"
 msgstr ""
 
 #: inc/functions-options.php:267
+msgid "checathlon_get_theme_modblog_area_title"
+msgstr ""
+
+#: inc/functions-options.php:267, inc/functions-options.php:267
 msgid "Recent blog posts"
 msgstr ""
 
 #: inc/functions-options.php:331
 msgid "Your cart is empty"
+msgstr ""
+
+#: inc/functions-polylang.php:18
+msgid "Footer text"
 msgstr ""
 
 #: inc/template-tags.php:29
