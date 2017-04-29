@@ -49,12 +49,19 @@
 
 			<div class="entry-thumbnail">
 				<?php
-					if ( ! has_post_thumbnail() ) :
-						echo '<span class="testimonial-icon-wrapper">' . checathlon_get_svg( array( 'icon' => 'user' ) ) . '</span>';
-					else :
-						checathlon_post_thumbnail( $post_thumbnail = 'checathlon-small' );
-					endif;
-					the_title( '<h2 class="entry-title text-italic">', '</h2>' );
+				if ( ! has_post_thumbnail() ) :
+					echo '<span class="testimonial-icon-wrapper">' . checathlon_get_svg( array( 'icon' => 'user' ) ) . '</span>';
+				else :
+					checathlon_post_thumbnail( $post_thumbnail = 'checathlon-small' );
+				endif;
+
+				echo '<span class="testimonial-title-wrapper">';
+				the_title( '<h2 class="entry-title text-italic no-margin-bottom">', '</h2>' );
+
+				if ( function_exists( 'the_subtitle' ) ) :
+					the_subtitle( '<p class="job-title testimonial-job-title no-margin-bottom">', '</p>' );
+				endif;
+				echo '</span>';
 				?>
 			</div><!-- .entry-thumbnail -->
 
