@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/checathlon/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Checathlon is the perfect theme for your next business site. Or selling your digital products using Easy Digital Downloads Plugin. You can also showcase your services, portfolios, testimonials, and team members. There are multiple widget areas to set content in many ways. What more you need for your business or e-commerce site!
-Version: 1.1.4
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: checathlon
@@ -277,8 +277,21 @@ button,
 input,
 select,
 textarea,
-.main-navigation a {
+.main-navigation a,
+.entry-subtitle {
 	font-family: "Source Sans Pro", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.entry-title .entry-subtitle,
+.page-title .entry-subtitle {
+	font-size: 17px;
+	font-size: 1.0625rem;
+	line-height: 1.6666666;
 }
 
 body,
@@ -287,9 +300,6 @@ input,
 select,
 textarea {
 	color: #1f1f1f;
-	font-size: 17px;
-	font-size: 1.0625rem;
-	line-height: 1.6666666;
 	word-wrap: break-word;
 }
 
@@ -299,9 +309,18 @@ textarea {
 .jetpack-testimonial .entry-thumbnail .entry-title,
 .testimonial .entry-thumbnail .entry-title,
 .entry-inner-wrapper .checathlon-widget-pricing-entry-content,
-.highlight-title {
+.highlight-title,
+.testimonial-job-title {
 	font-size: 16px;
 	font-size: 1rem;
+}
+
+.grid-wrapper-3 .entry-summary,
+.widget,
+.site-description-footer,
+.jetpack-testimonial .entry-thumbnail .entry-title,
+.entry-inner-wrapper .checathlon-widget-pricing-entry-content,
+.highlight-title {
 	line-height: 1.5;
 }
 
@@ -394,13 +413,20 @@ h6 {
 	margin-top: 0.625rem;
 }
 
+.entry-subtitle {
+	font-style: normal;
+	font-weight: 400;
+}
+
 @media screen and (min-width: 58.875em) {
 
 	body,
 	button,
 	input,
 	select,
-	textarea {
+	textarea,
+	.entry-title .entry-subtitle,
+	.page-title .entry-subtitle {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
@@ -946,7 +972,8 @@ a:visited {
 .edd_cart_discount,
 .edd_cart_tax,
 .edd-description,
-.entry-inner-wrapper .checathlon-widget-pricing-entry-content {
+.entry-inner-wrapper .checathlon-widget-pricing-entry-content,
+.entry-subtitle {
 	color: #6c6c6c;
 }
 
@@ -1484,9 +1511,11 @@ img.alignright {
 	float: none;
 	margin-bottom: 1.66666666667em;
 }
+
 img.alignleft {
 	margin-right: 0;
 }
+
 img.alignright {
 	margin-left: 0;
 }
@@ -1516,6 +1545,41 @@ a > img.alignnone {
 	img.alignright {
 		float: right;
 		margin-left: 1.66666666667em;
+	}
+
+}
+
+.wide.aligncenter,
+.wide.alignnone,
+.wp-caption.aligncenter .wide,
+.wp-caption.alignnone .wide {
+	margin-left: -1.25rem;
+	margin-right: -1.25rem;
+	max-width: calc(100% + 2.5rem);
+}
+
+@media screen and (min-width: 62.875em) {
+
+	.wide.aligncenter,
+	.wide.alignnone,
+	.wp-caption.aligncenter .wide,
+	.wp-caption.alignnone .wide {
+		margin-left: -100px;
+		margin-right: -100px;
+		max-width: calc(100% + 200px);
+	}
+
+}
+
+@media screen and (min-width: 73.875em) {
+
+	.wide.aligncenter,
+	.wide.alignnone,
+	.wp-caption.aligncenter .wide,
+	.wp-caption.alignnone .wide {
+		margin-left: -200px;
+		margin-right: -200px;
+		max-width: calc(100% + 400px);
 	}
 
 }
@@ -1682,6 +1746,7 @@ a > img.alignnone {
 .main-padding,
 .single .hentry,
 .page-template-default:not(.home) .hentry,
+.page-template-no-featured-image:not(.home) .hentry,
 .post-navigation,
 .comments-area,
 .after-content-widget-area,
@@ -2334,7 +2399,9 @@ fieldset > fieldset {
 	margin: 0 0 1.66666666667em;
 }
 
-.archive-description:before {
+.archive-description:before,
+.page .entry-subtitle:before,
+.single .entry-subtitle:before {
 	border-bottom: 4px solid #df003b;
 	content: "";
 	display: block;
@@ -2523,6 +2590,7 @@ object {
 .custom-logo-link {
 	margin-right: 0.625rem;
 }
+
 .custom-logo {
 	display: block;
 }
