@@ -63,9 +63,10 @@ function checathlon_setup() {
 
 	// Add support for logo.
 	add_theme_support( 'custom-logo', apply_filters( 'checathlon_custom_logo_arguments', array(
-		'height'     => 60,
-		'width'      => 60,
-		'flex-width' => true,
+		'height'      => 60,
+		'width'       => 60,
+		'flex-width'  => true,
+		'flex-height' => true,
 	) ) );
 
 	/*
@@ -155,6 +156,10 @@ function checathlon_setup() {
 			),
 		),
 	) );
+
+	// Add support for Subtitles plugin.
+	add_post_type_support( 'testimonial', 'subtitles' );
+	add_post_type_support( 'jetpack-testimonial', 'subtitles' );
 
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
@@ -454,3 +459,8 @@ if ( ! class_exists( 'Checathlon_Plus' ) ) {
  * Load admin theme page.
  */
 require get_template_directory() . '/inc/admin.php';
+
+/**
+ * Load Polylang related functions.
+ */
+require get_template_directory() . '/inc/functions-polylang.php';
