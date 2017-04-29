@@ -26,6 +26,15 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.2.0 -  April 29, 2017
+
+* Add better support for [Subtitles plugin](https://wordpress.org/plugins/subtitles/).
+* Add Polylang support for titles and textareas in the Customizer.
+* Add no featured image page template.
+* Add tablet and file text icons.
+* Add `wide` class styles for images that span larger than the content.
+* Add `flex-height` for logo.
+
 ### Version 1.1.4 -  April 14, 2017
 
 * Fix landmark role in footer section: Site title and description is also inside landmark role now.
