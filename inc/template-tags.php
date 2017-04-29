@@ -277,7 +277,7 @@ function checathlon_post_background( $post_thumbnail = null, $id = null ) {
  */
 function checathlon_post_thumbnail( $post_thumbnail = null ) {
 
-	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() || is_page_template( 'templates/no-featured-image.php' ) ) {
 		return;
 	}
 
