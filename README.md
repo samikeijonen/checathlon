@@ -34,6 +34,7 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 * Add tablet and file text icons.
 * Add `wide` class styles for images that span larger than the content.
 * Add `flex-height` for logo.
+* Add `checathlon_inside_header` and `checathlon_after_footer_title` action hooks.
 
 ### Version 1.1.4 -  April 14, 2017
 
