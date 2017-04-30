@@ -168,7 +168,7 @@ function checathlon_setup() {
 	add_editor_style( array( 'assets/css/editor-style.css', checathlon_fonts_url() ) );
 
 }
-add_action( 'after_setup_theme', 'checathlon_setup' );
+add_action( 'after_setup_theme', 'checathlon_setup', 5 );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
