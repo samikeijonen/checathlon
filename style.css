@@ -1125,6 +1125,7 @@ a:active {
 	}
 	.main-navigation .sub-menu li {
 		padding-bottom: 0;
+		padding-left: 1em;
 	}
 	.main-navigation a,
 	.main-navigation a:visited {
@@ -1132,9 +1133,6 @@ a:active {
 	}
 	.main-navigation a {
 		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	}
-	.main-navigation .sub-menu a {
-		padding-left: 1em;
 	}
 	.main-navigation a:hover,
 	.main-navigation a:focus,
