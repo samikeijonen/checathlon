@@ -1,0 +1,582 @@
+# Copyright (C) 2017 checathlon
+# This file is distributed under the same license as the checathlon package.
+msgid ""
+msgstr ""
+"Project-Id-Version: checathlon\n"
+"Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-03-05 20:24+0200\n"
+"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language-Team: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17, build/checathlon/404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Tätä sivua ei löydy."
+
+#: 404.php:19, build/checathlon/404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Näyttää siltä, että mitään ei löytynyt tästä osoitteesta. Koita navigoida "
+"alla olevista linkeistä tai etsiä haluamaasi."
+
+#: 404.php:20, build/checathlon/404.php:20
+msgid "404"
+msgstr "404"
+
+#: 404.php:20, build/checathlon/404.php:20
+msgid "Page not found icon"
+msgstr "Sivua ei löytynyt -ikoni"
+
+#: 404.php:35, build/checathlon/404.php:35
+msgid "Most Used Categories"
+msgstr "Käytetyimmät kategoriat"
+
+#: 404.php:53, build/checathlon/404.php:53
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Koita etsiä kuukausiarkistosta. %1$s"
+
+#: board/loop-topic.php:11
+msgid "Add new topic"
+msgstr "Lisää uusi aihe"
+
+#: board/loop-topic.php:53
+msgid "Started by %s"
+msgstr "Viestin kirjoittaja: %s"
+
+#: board/loop-topic.php:57
+msgid "Replies: %s"
+msgstr "Vastauksia: %s"
+
+#: board/loop-topic.php:59
+msgid "Voices: %s"
+msgstr "Osallistujia: %s"
+
+#: board/loop-topic.php:61
+msgid "Latest reply:"
+msgstr "Viimeisin vastaus:"
+
+#: build/checathlon/comments.php:34, comments.php:34
+msgctxt "comments title"
+msgid "One comment %2$s"
+msgid_plural "%1$s comments %2$s"
+msgstr[0] "Yksi kommentti artikkelissa %2$s"
+msgstr[1] "%1$s kommenttia artikkelissa %2$s"
+
+#: build/checathlon/comments.php:43, build/checathlon/comments.php:60,
+#: comments.php:43, comments.php:60
+msgid "Newer comments"
+msgstr "Uudemmat kommentit"
+
+#: build/checathlon/comments.php:44, build/checathlon/comments.php:61,
+#: comments.php:44, comments.php:61
+msgid "Older comments"
+msgstr "Vanhemmat kommentit"
+
+#: build/checathlon/comments.php:66, comments.php:66
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: build/checathlon/functions.php:55, build/checathlon/functions.php:139,
+#: functions.php:55, functions.php:139
+msgid "Primary"
+msgstr "Päävalikko"
+
+#: build/checathlon/functions.php:56, build/checathlon/functions.php:148,
+#: functions.php:56, functions.php:148
+msgid "Social Links"
+msgstr "Somelinkit"
+
+#: build/checathlon/functions.php:61, functions.php:61
+msgid "Checkout Page"
+msgstr "Kassan sivu"
+
+#: build/checathlon/functions.php:188, functions.php:188
+msgid "Main sidebar"
+msgstr "Päävimpainalue."
+
+#: build/checathlon/functions.php:190, functions.php:190
+msgid "Add widgets here for posts or pages."
+msgstr "Lisää vimpaimia, jotka näkyvät vain artikkeleissa ja sivuilla."
+
+#: build/checathlon/functions.php:198, functions.php:198
+msgid "Widget area after content"
+msgstr "Vimpainalue sisällön jälkeen"
+
+#: build/checathlon/functions.php:200, functions.php:200
+msgid "Add widgets here for after posts or pages."
+msgstr "Lisää vimpaimia, jotka näkyvät sisällön jälkeen."
+
+#: build/checathlon/functions.php:208, functions.php:208
+msgid "Before footer widget area 1"
+msgstr "Ennen alapalkkia vimpainalue 1"
+
+#: build/checathlon/functions.php:210, functions.php:210
+msgid "Add widgets here for before footer widget area 1."
+msgstr "Lisää tähän vimpaimet ennen alapalkin vimpainalueeseen 1."
+
+#: build/checathlon/functions.php:218, functions.php:218
+msgid "Before footer widget area 2"
+msgstr "Ennen alapalkkia vimpainalue 2"
+
+#: build/checathlon/functions.php:220, functions.php:220
+msgid "Add widgets here for before footer widget area 2."
+msgstr "Lisää tähän vimpaimet ennen alapalkin vimpainalueeseen 2."
+
+#: build/checathlon/functions.php:228, functions.php:228
+msgid "Before footer widget area 3"
+msgstr "Ennen alapalkkia vimpainalue 3"
+
+#: build/checathlon/functions.php:230, functions.php:230
+msgid "Add widgets here for before footer widget area 3."
+msgstr "Lisää tähän vimpaimet ennen alapalkin vimpainalueeseen 3."
+
+#: build/checathlon/functions.php:238, functions.php:238
+msgid "Footer widget area 1"
+msgstr "Alapalkin vimpainalue 1"
+
+#: build/checathlon/functions.php:240, functions.php:240
+msgid "Add widgets here for footer widget area 1."
+msgstr "Lisää tähän vimpaimet alapalkin vimpainalueeseen 1."
+
+#: build/checathlon/functions.php:248, functions.php:248
+msgid "Footer widget area 2"
+msgstr "Alapalkin vimpainalue 2"
+
+#: build/checathlon/functions.php:250, functions.php:250
+msgid "Add widgets here for footer widget area 2."
+msgstr "Lisää tähän vimpaimet alapalkin vimpainalueeseen 2."
+
+#: build/checathlon/functions.php:258, functions.php:258
+msgid "Front Page widget area"
+msgstr "Etusivun vimpainalue"
+
+#: build/checathlon/functions.php:260, functions.php:260
+msgid "Add widgets here for Front Page widget area."
+msgstr "Lisää tähän etusivun vimpaimet."
+
+#: build/checathlon/functions.php:268, functions.php:268
+msgid "Service and Pricing widget area"
+msgstr "Palveluiden ja hinnaston vimpainalue"
+
+#: build/checathlon/functions.php:270, functions.php:270
+msgid ""
+"Add Service and Pricing Widgets here, they appear in Front Page or Pricing "
+"Page Template."
+msgstr ""
+"Lisää \"Palvelut ja hinnasto\" -vimpaimia tähän, jotka näkyvät etusivulla ja "
+"Pricing Page -sivupohjassa."
+
+#: build/checathlon/functions.php:279, functions.php:279
+msgid "Sidebar for downloads"
+msgstr "Latauksien sivupalkki"
+
+#: build/checathlon/functions.php:281, functions.php:281
+msgid "Add widgets here for downloads."
+msgstr "Lisää latauksien vimpaimet tähän."
+
+#: build/checathlon/functions.php:316, functions.php:316
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr "on"
+
+#: build/checathlon/functions.php:321, functions.php:321
+msgctxt "Lora font: on or off"
+msgid "on"
+msgstr "on"
+
+#: build/checathlon/header.php:25, header.php:25
+msgid "Skip to content"
+msgstr "Siirry sisältöön"
+
+#: inc/admin.php:209
+msgid "More Features"
+msgstr "Lisää ominaisuuksia"
+
+#: inc/admin.php:215
+msgid ""
+"Checathlon Plus is Plugin that gives power and more features to Checathlon "
+"Theme."
+msgstr "Checathlon Plus -lisäosa tuo lisäominaisuuksia Checathlon teemaan."
+
+#: inc/admin.php:223
+msgid "Get Checathlon Plus"
+msgstr "Hanki Checathlon Plus"
+
+#: inc/admin.php:237
+msgid "Help &amp; Documentation"
+msgstr "Tuki &amp; dokumentaatio"
+
+#: inc/admin.php:243
+msgid ""
+"With Checathlon Plus you also get priority support. See also documentation."
+msgstr ""
+"Checathlon Plus -lisäosan ostamalla saat myös tukea. Katso myös "
+"dokumentaatio."
+
+#: inc/admin.php:251
+msgid "View Documentation"
+msgstr "Näytä dokumentaatio"
+
+#: inc/admin.php:265
+msgid "Supported Plugins"
+msgstr "Tuetut lisäosat"
+
+#: inc/admin.php:271
+msgid ""
+"Do you need extra functionality? Checathlon has built-in support for the "
+"following plugins."
+msgstr "Tarvitsetko lisäominaisuuksia? Checathlon tukee seuraavia lisäosio."
+
+#: inc/admin.php:279
+msgid "Easy Digital Downloads"
+msgstr "Easy Digital Downloads"
+
+#: inc/admin.php:281
+msgid "Custom Content Portfolio"
+msgstr "Custom Content Portfolio"
+
+#: inc/admin.php:283
+msgid "Jetpack"
+msgstr "Jetpack"
+
+#: inc/admin.php:303
+msgid "Supported Social Links Menu Icons"
+msgstr "Tuetut Some-valikon ikonit"
+
+#: inc/admin.php:339
+msgid "Other Icons"
+msgstr "Muut ikonit"
+
+#: inc/customizer.php:37
+msgid "Theme Settings"
+msgstr "Teeman asetukset"
+
+#: inc/customizer/pro/class-customize.php:75
+msgid "More features?"
+msgstr "Lisää ominaisuuksia"
+
+#: inc/customizer/pro/class-customize.php:76
+msgid "Go Pro"
+msgstr "Lisätietoja"
+
+#: inc/customizer/settings-front-page-featured.php:23
+msgid "Front Page Featured Area"
+msgstr "Etusivun \"featured\"-osio"
+
+#: inc/customizer/settings-front-page-featured.php:25
+msgid "In this section you can modify Front Page Featured area."
+msgstr "Tässä osiossa voit muokata etusivun \"featured\"-osiota."
+
+#: inc/customizer/settings-front-page-featured.php:65
+msgid "Featured area title"
+msgstr "Etusivun \"featured\"-otsikko"
+
+#: inc/customizer/settings-front-page-featured.php:101
+msgid "Nothing"
+msgstr "Ei mitään"
+
+#: inc/customizer/settings-front-page-featured.php:103
+msgid "Portfolios"
+msgstr "Portfoliot"
+
+#: inc/customizer/settings-front-page-featured.php:105
+msgid "Portfolio Projects"
+msgstr "Portfolion projektit"
+
+#: inc/customizer/settings-front-page-featured.php:107
+msgid "Downloads"
+msgstr "Lataukset"
+
+#: inc/customizer/settings-front-page-featured.php:109
+msgid "Select Pages"
+msgstr "Valitse sivut"
+
+#: inc/customizer/settings-front-page-featured.php:145
+msgid "Featured Content"
+msgstr "Etusivun \"featured\"-sisältö"
+
+#: inc/customizer/settings-front-page-featured.php:147
+msgid "Select what you want to show on Front Page featured area."
+msgstr "Valitse mitä haluat näyttää etusivun \"featured\"-osiossa."
+
+#: inc/customizer/settings-front-page-featured.php:207
+msgid "Select page %s"
+msgstr "Valitse sivu %s"
+
+#: inc/customizer/settings-front-page.php:23
+msgid "Front Page"
+msgstr "Etusivu"
+
+#: inc/customizer/settings-front-page.php:25
+msgid "In this section you can modify Front Page Template."
+msgstr "Tässä osiossa voit muokata Etusivua."
+
+#: inc/customizer/settings-front-page.php:65
+msgid "Hide Service and Pricing Section"
+msgstr "Piilota etusivun palvelut ja hinnasto osio"
+
+#: inc/customizer/settings-front-page.php:105
+msgid "Hide Testimonials"
+msgstr "Piilota suositukset"
+
+#: inc/customizer/settings-front-page.php:145
+msgid "Hide Blog Posts"
+msgstr "Piilota viimeisimmät artikkelit etusivulla"
+
+#: inc/customizer/settings-front-page.php:195
+msgid "Pricing area title"
+msgstr "Hinnaston otsikko"
+
+#: inc/customizer/settings-front-page.php:237
+msgid "Testimonial area title"
+msgstr "Suositusten otsikko"
+
+#: inc/customizer/settings-front-page.php:279
+msgid "Blog area title"
+msgstr "Blogin otsikko"
+
+#: inc/functions-edd.php:73, inc/functions-edd.php:77
+msgid "Price:"
+msgstr "Hinta:"
+
+#: inc/functions-edd.php:83
+msgid "Free"
+msgstr "Ilmainen"
+
+#: inc/functions-edd.php:243
+msgid "Demo"
+msgstr "Demo"
+
+#: inc/functions-filters.php:65
+msgid "&hellip;"
+msgstr "&hellip;"
+
+#: inc/functions-filters.php:337
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Hakutulokset haulle &#8221;%s&#8221;"
+
+#: inc/functions-icons.php:83
+msgid "Please define default parameters in the form of an array."
+msgstr "Määritä parametrit array-muodossa."
+
+#: inc/functions-icons.php:93
+msgid "Please define an SVG icon filename."
+msgstr "Määritä SVG-ikonin nimi."
+
+#: inc/functions-options.php:341, inc/functions-options.php:389
+msgid "Products"
+msgstr "Tuotteet"
+
+#: inc/functions-options.php:437
+msgid "Pricing"
+msgstr "Hinta"
+
+#: inc/functions-options.php:485
+msgid "Testimonials"
+msgstr "Suositukset"
+
+#: inc/functions-options.php:533
+msgid "Recent blog posts"
+msgstr "Viimeisimmät artikkelit"
+
+#: inc/functions-options.php:661
+msgid "Your cart is empty"
+msgstr "Ostoskori on tyhjä"
+
+#: inc/template-tags.php:57
+msgctxt "post date"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: inc/template-tags.php:59
+msgid "Posted on"
+msgstr "Julkaistu"
+
+#: inc/template-tags.php:87
+msgctxt "post author"
+msgid "by %s"
+msgstr "kirjoittanut %s"
+
+#: inc/template-tags.php:163
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:235, inc/template-tags.php:247
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:239
+msgid "Posted in %1$s"
+msgstr "Artikkeli kategoriassa %1$s"
+
+#: inc/template-tags.php:251
+msgid "Tagged %1$s"
+msgstr "Avainsanat %1$s"
+
+#: inc/template-tags.php:265
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"Jätä kommentti<span class=\"screen-reader-text\"> artikkeliin %s</span>"
+
+#: inc/template-tags.php:279
+msgid "Edit %s"
+msgstr "Muokkaa %s"
+
+#: inc/template-tags.php:311
+msgid "Read more %s"
+msgstr "Lue lisää %s"
+
+#: inc/template-tags.php:379, inc/template-tags.php:399
+msgid "%1$s<span class=\"screen-reader-text\"> Comment on %2$s</span>"
+msgid_plural "%1$s<span class=\"screen-reader-text\"> Comments on %2$s</span>"
+msgstr[0] ""
+"%1$s<span class=\"screen-reader-text\"> kommentti artikkelissa %2$s</span>"
+msgstr[1] ""
+"%1$s<span class=\"screen-reader-text\"> kommenttia artikkelissa %2$s</span>"
+
+#: inc/template-tags.php:389
+msgid "1<span class=\"screen-reader-text\"> Comment on %s</span>"
+msgstr "1<span class=\"screen-reader-text\"> kommentti artikkelissa %s</span>"
+
+#: inc/template-tags.php:655, inc/template-tags.php:661
+msgid "Continue reading"
+msgstr "Jatka lukemista"
+
+#: inc/template-tags.php:689
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/template-tags.php:689
+msgid "Proudly powered by %s"
+msgstr "Voimanlähteenä %s"
+
+#: inc/template-tags.php:693
+msgid "Theme: %1$s by %2$s"
+msgstr "Teeman %1$s tekijä %2$s"
+
+#: inc/template-tags.php:715, template-parts/content-jetpack-portfolio.php:67,
+#: template-parts/content-page.php:71,
+#: template-parts/content-portfolio_project.php:69,
+#: template-parts/content.php:87
+msgid "Page"
+msgstr "Sivu"
+
+#: menus/menu-primary.php:41
+msgid "Menu"
+msgstr "Valikko"
+
+#: menus/menu-primary.php:49
+msgid "Primary Menu"
+msgstr "Päävalikko"
+
+#: menus/menu-social.php:21
+msgid "Social Menu"
+msgstr "Some-valikko"
+
+#: misc/entry-footer.php:25, template-parts/content-portfolio_project.php:117
+msgid "Categories:"
+msgstr "Kategoriat:"
+
+#: misc/entry-footer.php:27, template-parts/content-portfolio_project.php:119
+msgid "Tags:"
+msgstr "Avainsanat:"
+
+#: misc/entry-portfolio-info.php:27
+msgid "Visit project %s"
+msgstr "Näytä projekti %s"
+
+#: misc/entry-product-info.php:33
+msgid "Details"
+msgstr "Tiedot"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "Hakutulokset haulle %s"
+
+#: single.php:22
+msgid "Next"
+msgstr "Seuraava"
+
+#: single.php:23
+msgid "Next post:"
+msgstr "Seuraava artikkeli:"
+
+#: single.php:25
+msgid "Previous"
+msgstr "Edellinen"
+
+#: single.php:26
+msgid "Previous post:"
+msgstr "Edellinen artikkeli:"
+
+#: template-parts/content-jetpack-portfolio.php:59,
+#: template-parts/content-page.php:63,
+#: template-parts/content-portfolio_project.php:61,
+#: template-parts/content.php:79
+msgid "Pages:"
+msgstr "Sivut:"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Mitään ei löytynyt"
+
+#: template-parts/content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Oletko valmis julkaisemaan ensimmäisen artikkelisi? <a href=“%1$s”>Aloita "
+"tästä</a>."
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Hakusi ei valitettavasti tuottanut yhtään tulosta. Yritä uudelleen eri "
+"hakusanoilla."
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
+
+#: template-parts/content-portfolio_project.php:87
+msgid "Client"
+msgstr "Asiakas"
+
+#: template-parts/content-portfolio_project.php:89
+msgid "Location"
+msgstr "Sijainti"
+
+#: template-parts/content-portfolio_project.php:91
+msgid "Started"
+msgstr "Aloitus"
+
+#: template-parts/content-portfolio_project.php:93
+msgid "Completed"
+msgstr "Valmis"
+
+#: templates/account-page.php:26
+msgid "You must be logged in to view the content of this page."
+msgstr "Vain sisään kirjautuneet käyttäjät näkevät tämän sivun sisällön."
+
+#: templates/account-page.php:30
+msgid "Lost password?"
+msgstr "Salasana unohtunut?"

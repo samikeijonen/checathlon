@@ -52,6 +52,7 @@
 				?>
 
 			</div><!-- .wrapper -->
+			<?php do_action( 'checathlon_inside_header' ); ?>
 		</header><!-- .site-header -->
 	</div><!-- .site-header-wrap -->
 

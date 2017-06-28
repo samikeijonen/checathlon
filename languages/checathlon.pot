@@ -17,510 +17,229 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:17, build/checathlon/404.php:17
+#: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19, build/checathlon/404.php:19
+#: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: 404.php:20, build/checathlon/404.php:20
+#: 404.php:20
 msgid "404"
 msgstr ""
 
-#: 404.php:20, build/checathlon/404.php:20
+#: 404.php:20
 msgid "Page not found icon"
 msgstr ""
 
-#: 404.php:35, build/checathlon/404.php:35
+#: 404.php:35
 msgid "Most Used Categories"
 msgstr ""
 
-#: 404.php:53, build/checathlon/404.php:53
+#: 404.php:53
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: board/loop-topic.php:11, build/checathlon/board/loop-topic.php:11
+#: board/loop-topic.php:6
 msgid "Add new topic"
 msgstr ""
 
-#: board/loop-topic.php:53, build/checathlon/board/loop-topic.php:53
+#: board/loop-topic.php:27
 msgid "Started by %s"
 msgstr ""
 
-#: board/loop-topic.php:57, build/checathlon/board/loop-topic.php:57
+#: board/loop-topic.php:29
 msgid "Replies: %s"
 msgstr ""
 
-#: board/loop-topic.php:59, build/checathlon/board/loop-topic.php:59
+#: board/loop-topic.php:30
 msgid "Voices: %s"
 msgstr ""
 
-#: board/loop-topic.php:61, build/checathlon/board/loop-topic.php:61
+#: board/loop-topic.php:31
 msgid "Latest reply:"
 msgstr ""
 
-#: build/checathlon/comments.php:34, comments.php:34
+#: comments.php:34
 msgctxt "comments title"
 msgid "One comment %2$s"
 msgid_plural "%1$s comments %2$s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: build/checathlon/comments.php:43, build/checathlon/comments.php:60, comments.php:43, comments.php:60
+#: comments.php:43, comments.php:60
 msgid "Newer comments"
 msgstr ""
 
-#: build/checathlon/comments.php:44, build/checathlon/comments.php:61, comments.php:44, comments.php:61
+#: comments.php:44, comments.php:61
 msgid "Older comments"
 msgstr ""
 
-#: build/checathlon/comments.php:66, comments.php:66
+#: comments.php:66
 msgid "Comments are closed."
 msgstr ""
 
-#: build/checathlon/functions.php:55, build/checathlon/functions.php:139, functions.php:55, functions.php:139
+#: functions.php:55, functions.php:140
 msgid "Primary"
 msgstr ""
 
-#: build/checathlon/functions.php:56, build/checathlon/functions.php:148, functions.php:56, functions.php:148
+#: functions.php:56, functions.php:149
 msgid "Social Links"
 msgstr ""
 
-#: build/checathlon/functions.php:61, functions.php:61
+#: functions.php:61
 msgid "Checkout Page"
 msgstr ""
 
-#: build/checathlon/functions.php:188, functions.php:188
+#: functions.php:193
 msgid "Main sidebar"
 msgstr ""
 
-#: build/checathlon/functions.php:190, functions.php:190
+#: functions.php:195
 msgid "Add widgets here for posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:198, functions.php:198
+#: functions.php:203
 msgid "Widget area after content"
 msgstr ""
 
-#: build/checathlon/functions.php:200, functions.php:200
+#: functions.php:205
 msgid "Add widgets here for after posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:208, functions.php:208
+#: functions.php:213
 msgid "Before footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:210, functions.php:210
+#: functions.php:215
 msgid "Add widgets here for before footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:218, functions.php:218
+#: functions.php:223
 msgid "Before footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:220, functions.php:220
+#: functions.php:225
 msgid "Add widgets here for before footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:228, functions.php:228
+#: functions.php:233
 msgid "Before footer widget area 3"
 msgstr ""
 
-#: build/checathlon/functions.php:230, functions.php:230
+#: functions.php:235
 msgid "Add widgets here for before footer widget area 3."
 msgstr ""
 
-#: build/checathlon/functions.php:238, functions.php:238
+#: functions.php:243
 msgid "Footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:240, functions.php:240
+#: functions.php:245
 msgid "Add widgets here for footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:248, functions.php:248
+#: functions.php:253
 msgid "Footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:250, functions.php:250
+#: functions.php:255
 msgid "Add widgets here for footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:258, functions.php:258
+#: functions.php:263
 msgid "Front Page widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:260, functions.php:260
+#: functions.php:265
 msgid "Add widgets here for Front Page widget area."
 msgstr ""
 
-#: build/checathlon/functions.php:268, functions.php:268
+#: functions.php:273
 msgid "Service and Pricing widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:270, functions.php:270
+#: functions.php:275
 msgid "Add Service and Pricing Widgets here, they appear in Front Page or Pricing Page Template."
 msgstr ""
 
-#: build/checathlon/functions.php:279, functions.php:279
+#: functions.php:284
 msgid "Sidebar for downloads"
 msgstr ""
 
-#: build/checathlon/functions.php:281, functions.php:281
+#: functions.php:286
 msgid "Add widgets here for downloads."
 msgstr ""
 
-#: build/checathlon/functions.php:316, functions.php:316
+#: functions.php:321
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
 
-#: build/checathlon/functions.php:321, functions.php:321
+#: functions.php:326
 msgctxt "Lora font: on or off"
 msgid "on"
 msgstr ""
 
-#: build/checathlon/header.php:25, header.php:25
+#: header.php:25
 msgid "Skip to content"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:155, inc/admin.php:155
+#: inc/admin.php:105
 msgid "More Features"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:161, inc/admin.php:161
+#: inc/admin.php:108
 msgid "Checathlon Plus is Plugin that gives power and more features to Checathlon Theme."
 msgstr ""
 
-#: build/checathlon/inc/admin.php:169, inc/admin.php:169
+#: inc/admin.php:112
 msgid "Get Checathlon Plus"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:183, inc/admin.php:183
+#: inc/admin.php:119
 msgid "Help &amp; Documentation"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:189, inc/admin.php:189
+#: inc/admin.php:122
 msgid "With Checathlon Plus you also get priority support. See also documentation."
 msgstr ""
 
-#: build/checathlon/inc/admin.php:197, inc/admin.php:197
+#: inc/admin.php:126
 msgid "View Documentation"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:211, inc/admin.php:211
+#: inc/admin.php:133
 msgid "Supported Plugins"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:217, inc/admin.php:217
+#: inc/admin.php:136
 msgid "Do you need extra functionality? Checathlon has built-in support for the following plugins."
 msgstr ""
 
-#: build/checathlon/inc/admin.php:225, inc/admin.php:225
+#: inc/admin.php:140
 msgid "Easy Digital Downloads"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:227, inc/admin.php:227
+#: inc/admin.php:141
 msgid "Custom Content Portfolio"
 msgstr ""
 
-#: build/checathlon/inc/admin.php:229, inc/admin.php:229
+#: inc/admin.php:142
 msgid "Jetpack"
 msgstr ""
 
-#: build/checathlon/inc/customizer.php:37, inc/customizer.php:37
+#: inc/admin.php:152
+msgid "Supported Social Links Menu Icons"
+msgstr ""
+
+#: inc/admin.php:170
+msgid "Other Icons"
+msgstr ""
+
+#: inc/customizer.php:19
 msgid "Theme Settings"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:23, inc/customizer/settings-front-page-featured.php:23
-msgid "Front Page Featured Area"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:25, inc/customizer/settings-front-page-featured.php:25
-msgid "In this section you can modify Front Page Featured area."
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:65, inc/customizer/settings-front-page-featured.php:65
-msgid "Featured area title"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:101, inc/customizer/settings-front-page-featured.php:101
-msgid "Nothing"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:103, inc/customizer/settings-front-page-featured.php:103
-msgid "Portfolios"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:105, inc/customizer/settings-front-page-featured.php:105
-msgid "Portfolio Projects"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:107, inc/customizer/settings-front-page-featured.php:107
-msgid "Downloads"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:109, inc/customizer/settings-front-page-featured.php:109
-msgid "Select Pages"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:145, inc/customizer/settings-front-page-featured.php:145
-msgid "Featured Content"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:147, inc/customizer/settings-front-page-featured.php:147
-msgid "Select what you want to show on Front Page featured area."
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page-featured.php:207, inc/customizer/settings-front-page-featured.php:207
-msgid "Select page %s"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:23, inc/customizer/settings-front-page.php:23
-msgid "Front Page"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:25, inc/customizer/settings-front-page.php:25
-msgid "In this section you can modify Front Page Template."
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:65, inc/customizer/settings-front-page.php:65
-msgid "Hide Service and Pricing Section"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:105, inc/customizer/settings-front-page.php:105
-msgid "Hide Testimonials"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:145, inc/customizer/settings-front-page.php:145
-msgid "Hide Blog Posts"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:195, inc/customizer/settings-front-page.php:195
-msgid "Pricing area title"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:237, inc/customizer/settings-front-page.php:237
-msgid "Testimonial area title"
-msgstr ""
-
-#: build/checathlon/inc/customizer/settings-front-page.php:279, inc/customizer/settings-front-page.php:279
-msgid "Blog area title"
-msgstr ""
-
-#: build/checathlon/inc/functions-edd.php:73, build/checathlon/inc/functions-edd.php:77, inc/functions-edd.php:73, inc/functions-edd.php:77
-msgid "Price:"
-msgstr ""
-
-#: build/checathlon/inc/functions-edd.php:83, inc/functions-edd.php:83
-msgid "Free"
-msgstr ""
-
-#: build/checathlon/inc/functions-edd.php:243, inc/functions-edd.php:243
-msgid "Demo"
-msgstr ""
-
-#: build/checathlon/inc/functions-filters.php:65, inc/functions-filters.php:65
-msgid "&hellip;"
-msgstr ""
-
-#: build/checathlon/inc/functions-filters.php:337, inc/functions-filters.php:337
-msgid "Search results for &#8220;%s&#8221;"
-msgstr ""
-
-#: build/checathlon/inc/functions-icons.php:81, inc/functions-icons.php:81
-msgid "Please define default parameters in the form of an array."
-msgstr ""
-
-#: build/checathlon/inc/functions-icons.php:91, inc/functions-icons.php:91
-msgid "Please define an SVG icon filename."
-msgstr ""
-
-#: build/checathlon/inc/functions-options.php:341, build/checathlon/inc/functions-options.php:389, inc/functions-options.php:341, inc/functions-options.php:389
-msgid "Products"
-msgstr ""
-
-#: build/checathlon/inc/functions-options.php:437, inc/functions-options.php:437
-msgid "Pricing"
-msgstr ""
-
-#: build/checathlon/inc/functions-options.php:485, inc/functions-options.php:485
-msgid "Testimonials"
-msgstr ""
-
-#: build/checathlon/inc/functions-options.php:533, inc/functions-options.php:533
-msgid "Recent blog posts"
-msgstr ""
-
-#: build/checathlon/inc/functions-options.php:661, inc/functions-options.php:661
-msgid "Your cart is empty"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:57, inc/template-tags.php:57
-msgctxt "post date"
-msgid "%1$s %2$s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:59, inc/template-tags.php:59
-msgid "Posted on"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:87, inc/template-tags.php:87
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:163, inc/template-tags.php:163
-msgctxt "taxonomy terms separator"
-msgid ", "
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:235, build/checathlon/inc/template-tags.php:247, inc/template-tags.php:235, inc/template-tags.php:247
-msgid ", "
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:239, inc/template-tags.php:239
-msgid "Posted in %1$s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:251, inc/template-tags.php:251
-msgid "Tagged %1$s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:265, inc/template-tags.php:265
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:279, inc/template-tags.php:279
-msgid "Edit %s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:311, inc/template-tags.php:311
-msgid "Read more %s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:379, build/checathlon/inc/template-tags.php:399, inc/template-tags.php:379, inc/template-tags.php:399
-msgid "%1$s<span class=\"screen-reader-text\"> Comment on %2$s</span>"
-msgid_plural "%1$s<span class=\"screen-reader-text\">Comments on %2$s</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: build/checathlon/inc/template-tags.php:389, inc/template-tags.php:389
-msgid "1<span class=\"screen-reader-text\">Comment on %s</span>"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:655, build/checathlon/inc/template-tags.php:661, inc/template-tags.php:655, inc/template-tags.php:661
-msgid "Continue reading"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:689, inc/template-tags.php:689
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:689, inc/template-tags.php:689
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:693, inc/template-tags.php:693
-msgid "Theme: %1$s by %2$s"
-msgstr ""
-
-#: build/checathlon/inc/template-tags.php:715, build/checathlon/template-parts/content-jetpack-portfolio.php:67, build/checathlon/template-parts/content-page.php:71, build/checathlon/template-parts/content-portfolio_project.php:69, build/checathlon/template-parts/content.php:87, inc/template-tags.php:715, template-parts/content-jetpack-portfolio.php:67, template-parts/content-page.php:71, template-parts/content-portfolio_project.php:69, template-parts/content.php:87
-msgid "Page"
-msgstr ""
-
-#: build/checathlon/menus/menu-primary.php:41, menus/menu-primary.php:41
-msgid "Menu"
-msgstr ""
-
-#: build/checathlon/menus/menu-primary.php:49, menus/menu-primary.php:49
-msgid "Primary Menu"
-msgstr ""
-
-#: build/checathlon/menus/menu-social.php:21, menus/menu-social.php:21
-msgid "Social Menu"
-msgstr ""
-
-#: build/checathlon/misc/entry-footer.php:25, build/checathlon/template-parts/content-portfolio_project.php:117, misc/entry-footer.php:25, template-parts/content-portfolio_project.php:117
-msgid "Categories:"
-msgstr ""
-
-#: build/checathlon/misc/entry-footer.php:27, build/checathlon/template-parts/content-portfolio_project.php:119, misc/entry-footer.php:27, template-parts/content-portfolio_project.php:119
-msgid "Tags:"
-msgstr ""
-
-#: build/checathlon/misc/entry-portfolio-info.php:27, misc/entry-portfolio-info.php:27
-msgid "Visit project %s"
-msgstr ""
-
-#: build/checathlon/misc/entry-product-info.php:33, misc/entry-product-info.php:33
-msgid "Details"
-msgstr ""
-
-#: build/checathlon/search.php:19, search.php:19
-msgid "Search Results for: %s"
-msgstr ""
-
-#: build/checathlon/single.php:22, single.php:22
-msgid "Next"
-msgstr ""
-
-#: build/checathlon/single.php:23, single.php:23
-msgid "Next post:"
-msgstr ""
-
-#: build/checathlon/single.php:25, single.php:25
-msgid "Previous"
-msgstr ""
-
-#: build/checathlon/single.php:26, single.php:26
-msgid "Previous post:"
-msgstr ""
-
-#: build/checathlon/template-parts/content-jetpack-portfolio.php:59, build/checathlon/template-parts/content-page.php:63, build/checathlon/template-parts/content-portfolio_project.php:61, build/checathlon/template-parts/content.php:79, template-parts/content-jetpack-portfolio.php:59, template-parts/content-page.php:63, template-parts/content-portfolio_project.php:61, template-parts/content.php:79
-msgid "Pages:"
-msgstr ""
-
-#: build/checathlon/template-parts/content-none.php:14, template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
-#: build/checathlon/template-parts/content-none.php:21, template-parts/content-none.php:21
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: build/checathlon/template-parts/content-none.php:25, template-parts/content-none.php:25
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: build/checathlon/template-parts/content-none.php:31, template-parts/content-none.php:31
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: build/checathlon/template-parts/content-portfolio_project.php:87, template-parts/content-portfolio_project.php:87
-msgid "Client"
-msgstr ""
-
-#: build/checathlon/template-parts/content-portfolio_project.php:89, template-parts/content-portfolio_project.php:89
-msgid "Location"
-msgstr ""
-
-#: build/checathlon/template-parts/content-portfolio_project.php:91, template-parts/content-portfolio_project.php:91
-msgid "Started"
-msgstr ""
-
-#: build/checathlon/template-parts/content-portfolio_project.php:93, template-parts/content-portfolio_project.php:93
-msgid "Completed"
-msgstr ""
-
-#: build/checathlon/templates/account-page.php:26, templates/account-page.php:26
-msgid "You must be logged in to view the content of this page."
-msgstr ""
-
-#: build/checathlon/templates/account-page.php:30, templates/account-page.php:30
-msgid "Lost password?"
 msgstr ""
 
 #: inc/customizer/pro/class-customize.php:75
@@ -529,4 +248,309 @@ msgstr ""
 
 #: inc/customizer/pro/class-customize.php:76
 msgid "Go Pro"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:12
+msgid "Front Page Featured Area"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:13
+msgid "In this section you can modify Front Page Featured area."
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:33
+msgid "Featured area title"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:51
+msgid "Nothing"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:52
+msgid "Portfolios"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:53
+msgid "Portfolio Projects"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:54
+msgid "Downloads"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:55
+msgid "Select Pages"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:73
+msgid "Featured Content"
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:74
+msgid "Select what you want to show on Front Page featured area."
+msgstr ""
+
+#: inc/customizer/settings-front-page-featured.php:104
+msgid "Select page %s"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:12
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:13
+msgid "In this section you can modify Front Page Template."
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:33
+msgid "Hide Service and Pricing Section"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:53
+msgid "Hide Testimonials"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:73
+msgid "Hide Blog Posts"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:98, inc/functions-polylang.php:13
+msgid "Pricing area title"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:119, inc/functions-polylang.php:14
+msgid "Testimonial area title"
+msgstr ""
+
+#: inc/customizer/settings-front-page.php:140, inc/functions-polylang.php:15
+msgid "Blog area title"
+msgstr ""
+
+#: inc/functions-edd.php:37, inc/functions-edd.php:39
+msgid "Price:"
+msgstr ""
+
+#: inc/functions-edd.php:42
+msgid "Free"
+msgstr ""
+
+#: inc/functions-edd.php:122
+msgid "Demo"
+msgstr ""
+
+#: inc/functions-filters.php:33
+msgid "&hellip;"
+msgstr ""
+
+#: inc/functions-filters.php:169
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/functions-icons.php:42
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: inc/functions-icons.php:47
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: inc/functions-options.php:171, inc/functions-options.php:195
+msgid "Products"
+msgstr ""
+
+#: inc/functions-options.php:219
+msgid "checathlon_get_theme_modpricing_area_title"
+msgstr ""
+
+#: inc/functions-options.php:219, inc/functions-options.php:219
+msgid "Pricing"
+msgstr ""
+
+#: inc/functions-options.php:243
+msgid "checathlon_get_theme_modtestimonial_area_title"
+msgstr ""
+
+#: inc/functions-options.php:243, inc/functions-options.php:243
+msgid "Testimonials"
+msgstr ""
+
+#: inc/functions-options.php:267
+msgid "checathlon_get_theme_modblog_area_title"
+msgstr ""
+
+#: inc/functions-options.php:267, inc/functions-options.php:267
+msgid "Recent blog posts"
+msgstr ""
+
+#: inc/functions-options.php:331
+msgid "Your cart is empty"
+msgstr ""
+
+#: inc/functions-polylang.php:18
+msgid "Footer text"
+msgstr ""
+
+#: inc/template-tags.php:29
+msgctxt "post date"
+msgid "%1$s %2$s"
+msgstr ""
+
+#: inc/template-tags.php:30
+msgid "Posted on"
+msgstr ""
+
+#: inc/template-tags.php:44
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:82
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:118, inc/template-tags.php:124
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:120
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:126
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:133
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgid "Edit %s"
+msgstr ""
+
+#: inc/template-tags.php:156
+msgid "Read more %s"
+msgstr ""
+
+#: inc/template-tags.php:190, inc/template-tags.php:200
+msgid "%1$s<span class=\"screen-reader-text\"> Comment on %2$s</span>"
+msgid_plural "%1$s<span class=\"screen-reader-text\"> Comments on %2$s</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-tags.php:195
+msgid "1<span class=\"screen-reader-text\"> Comment on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:328, inc/template-tags.php:331
+msgid "Continue reading"
+msgstr ""
+
+#: inc/template-tags.php:345
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/template-tags.php:345
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: inc/template-tags.php:347
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: inc/template-tags.php:358, template-parts/content-jetpack-portfolio.php:34, template-parts/content-page.php:36, template-parts/content-portfolio_project.php:35, template-parts/content.php:44
+msgid "Page"
+msgstr ""
+
+#: menus/menu-primary.php:21
+msgid "Menu"
+msgstr ""
+
+#: menus/menu-primary.php:25
+msgid "Primary Menu"
+msgstr ""
+
+#: menus/menu-social.php:11
+msgid "Social Menu"
+msgstr ""
+
+#: misc/entry-footer.php:13, template-parts/content-portfolio_project.php:59
+msgid "Categories:"
+msgstr ""
+
+#: misc/entry-footer.php:14, template-parts/content-portfolio_project.php:60
+msgid "Tags:"
+msgstr ""
+
+#: misc/entry-portfolio-info.php:14
+msgid "Visit project %s"
+msgstr ""
+
+#: misc/entry-product-info.php:17
+msgid "Details"
+msgstr ""
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:22
+msgid "Next"
+msgstr ""
+
+#: single.php:23
+msgid "Next post:"
+msgstr ""
+
+#: single.php:25
+msgid "Previous"
+msgstr ""
+
+#: single.php:26
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/content-jetpack-portfolio.php:30, template-parts/content-page.php:32, template-parts/content-portfolio_project.php:31, template-parts/content.php:40
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-portfolio_project.php:44
+msgid "Client"
+msgstr ""
+
+#: template-parts/content-portfolio_project.php:45
+msgid "Location"
+msgstr ""
+
+#: template-parts/content-portfolio_project.php:46
+msgid "Started"
+msgstr ""
+
+#: template-parts/content-portfolio_project.php:47
+msgid "Completed"
+msgstr ""
+
+#: templates/account-page.php:26
+msgid "You must be logged in to view the content of this page."
+msgstr ""
+
+#: templates/account-page.php:30
+msgid "Lost password?"
 msgstr ""

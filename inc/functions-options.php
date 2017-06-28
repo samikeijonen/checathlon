@@ -18,8 +18,8 @@
  * @link      http://themehybrid.com/themes/extant
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
- * @param     string $name
- * @param     mixed  $default
+ * @param     string $name    Theme mod ID.
+ * @param     mixed  $default Theme mod default.
  * @return    mixed
  */
 function checathlon_get_theme_mod( $name, $default = false ) {
@@ -45,7 +45,7 @@ function checathlon_get_before_footer_area_title() {
  * @return string
  */
 function checathlon_get_before_footer_area_title_html() {
-	if( checathlon_get_before_footer_area_title() ) {
+	if ( checathlon_get_before_footer_area_title() ) {
 		return '<h2 class="page-title before-footer-widgets-title">' . esc_html( checathlon_get_before_footer_area_title() ) . '</h2>';
 	}
 }
@@ -216,7 +216,7 @@ function checathlon_get_downloads_featured_area_title_html() {
  * @return string
  */
 function checathlon_get_pricing_area_title() {
-	return checathlon_get_theme_mod( 'pricing_area_title', esc_html__( 'Pricing', 'checathlon' ) );
+	return ( function_exists( 'pll__' ) ) ? pll__( checathlon_get_theme_mod( 'pricing_area_title', esc_html__( 'Pricing', 'checathlon' ) ) ) : checathlon_get_theme_mod( 'pricing_area_title', esc_html__( 'Pricing', 'checathlon' ) );
 }
 
 /**
@@ -227,7 +227,7 @@ function checathlon_get_pricing_area_title() {
  * @return string
  */
 function checathlon_get_pricing_area_title_html() {
-	if( checathlon_get_pricing_area_title() ) {
+	if ( checathlon_get_pricing_area_title() ) {
 		return '<h2 class="front-page-pricing-title front-page-title widget-title">' . esc_html( checathlon_get_pricing_area_title() ) . '</h2>';
 	}
 }
@@ -240,7 +240,7 @@ function checathlon_get_pricing_area_title_html() {
  * @return string
  */
 function checathlon_get_testimonial_area_title() {
-	return checathlon_get_theme_mod( 'testimonial_area_title', esc_html__( 'Testimonials', 'checathlon' ) );
+	return ( function_exists( 'pll__' ) ) ? pll__( checathlon_get_theme_mod( 'testimonial_area_title', esc_html__( 'Testimonials', 'checathlon' ) ) ) : checathlon_get_theme_mod( 'testimonial_area_title', esc_html__( 'Testimonials', 'checathlon' ) );
 }
 
 /**
@@ -264,7 +264,7 @@ function checathlon_get_testimonial_area_title_html() {
  * @return string
  */
 function checathlon_get_blog_area_title() {
-	return checathlon_get_theme_mod( 'blog_area_title', esc_html__( 'Recent blog posts', 'checathlon' ) );
+	return ( function_exists( 'pll__' ) ) ? pll__( checathlon_get_theme_mod( 'blog_area_title', esc_html__( 'Recent blog posts', 'checathlon' ) ) ) : checathlon_get_theme_mod( 'blog_area_title', esc_html__( 'Recent blog posts', 'checathlon' ) );
 }
 
 /**
@@ -288,7 +288,7 @@ function checathlon_get_blog_area_title_html() {
  * @return string
  */
 function checathlon_get_footer_text() {
-	return checathlon_get_theme_mod( 'footer_text' );
+	return ( function_exists( 'pll__' ) ) ? pll__( checathlon_get_theme_mod( 'footer_text' ) ) : checathlon_get_theme_mod( 'footer_text' );
 }
 
 /**
@@ -366,7 +366,7 @@ function checathlon_featured_pages() {
 		$checathlon_page_id = absint( get_theme_mod( 'featured_page_' . $k ) );
 
 			// Add selected featured pages in array.
-			if ( 0 != $checathlon_page_id || ! empty( $checathlon_page_id ) ) { // Check if page is selected.
+			if ( 0 !== $checathlon_page_id || ! empty( $checathlon_page_id ) ) { // Check if page is selected.
 				$checathlon_featured_pages[] = $checathlon_page_id;
 			}
 

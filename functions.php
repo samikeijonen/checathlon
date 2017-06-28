@@ -63,9 +63,10 @@ function checathlon_setup() {
 
 	// Add support for logo.
 	add_theme_support( 'custom-logo', apply_filters( 'checathlon_custom_logo_arguments', array(
-		'height'     => 60,
-		'width'      => 60,
-		'flex-width' => true,
+		'height'      => 60,
+		'width'       => 60,
+		'flex-width'  => true,
+		'flex-height' => true,
 	) ) );
 
 	/*
@@ -156,6 +157,10 @@ function checathlon_setup() {
 		),
 	) );
 
+	// Add support for Subtitles plugin.
+	add_post_type_support( 'testimonial', 'subtitles' );
+	add_post_type_support( 'jetpack-testimonial', 'subtitles' );
+
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
@@ -163,7 +168,7 @@ function checathlon_setup() {
 	add_editor_style( array( 'assets/css/editor-style.css', checathlon_fonts_url() ) );
 
 }
-add_action( 'after_setup_theme', 'checathlon_setup' );
+add_action( 'after_setup_theme', 'checathlon_setup', 5 );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -309,7 +314,7 @@ add_action( 'wp_head', 'checathlon_javascript_detection', 0 );
 function checathlon_fonts_url() {
 
 	$fonts_url = '';
-	$fonts     = apply_filters( 'checathlon_google_fonts', array() );
+	$fonts     = array();
 	$subsets   = 'latin,latin-ext';
 
 	/* translators: If there are characters in your language that are not supported by Source Sans Pro, translate this to 'off'. Do not translate into your own language. */
@@ -321,6 +326,9 @@ function checathlon_fonts_url() {
 	if ( 'off' !== esc_attr_x( 'on', 'Lora font: on or off', 'checathlon' ) ) {
 		$fonts[] = 'Lora:400,700,400i,700i';
 	}
+
+	// Filter Google fonts array.
+	$fonts = apply_filters( 'checathlon_google_fonts', $fonts );
 
 	if ( $fonts ) {
 		$fonts_url = add_query_arg( array(
@@ -441,11 +449,18 @@ require get_template_directory() . '/inc/functions-scripts.php';
 require get_template_directory() . '/inc/functions-edd.php';
 
 /**
- * Load pro link in the Customizer.
+ * Load pro link in the Customizer if Checathlon Plus plugin is not activated.
  */
+if ( ! class_exists( 'Checathlon_Plus' ) ) {
+	require get_template_directory() . '/inc/customizer/pro/class-customize.php';
+}
 
-require get_template_directory() . '/inc/customizer/pro/class-customize.php';
 /**
  * Load admin theme page.
  */
 require get_template_directory() . '/inc/admin.php';
+
+/**
+ * Load Polylang related functions.
+ */
+require get_template_directory() . '/inc/functions-polylang.php';

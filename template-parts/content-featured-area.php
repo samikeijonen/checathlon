@@ -54,6 +54,7 @@ elseif ( 'select-pages' === $featured_area ) :
 		'post__in'       => checathlon_featured_pages(),
 		'posts_per_page' => checathlon_how_many_selected_pages(),
 		'no_found_rows'  => true,
+		'orderby'        => 'post__in',
 	) );
 
 endif;

@@ -22,6 +22,7 @@ function checathlon_include_svg_icons() {
 
 }
 add_action( 'wp_footer', 'checathlon_include_svg_icons', 9999 );
+add_action( 'admin_footer-appearance_page_checathlon', 'checathlon_include_svg_icons', 9999 ); // Load icons under Appearance >> Checathlon.
 
 /**
  * Return SVG markup.
@@ -69,7 +70,7 @@ function checathlon_get_svg( $args = array() ) {
 		$aria_hidden     = '';
 	}
 
-	// Begin SVG markup
+	// Begin SVG markup.
 	$svg = '<svg class="icon icon-' . esc_attr( $args['icon'] ) . '"' . $aria_hidden . $aria_labelledby . ' role="img">';
 
 	// If there is a title, display it.
@@ -137,9 +138,9 @@ add_filter( 'walker_nav_menu_start_el', 'checathlon_nav_social_icons', 10, 4 );
  * @return string $title The menu item's title with dropdown icon.
  */
 function checathlon_dropdown_icon_to_menu_link( $title, $item, $args, $depth ) {
-	if ( 'primary' == $args->theme_location ) {
+	if ( 'primary' === $args->theme_location ) {
 		foreach ( $item->classes as $value ) {
-			if ( $value === 'menu-item-has-children' ) {
+			if ( 'menu-item-has-children' === $value ) {
 				$title = $title . checathlon_get_svg( array( 'icon' => 'angle-down' ) );
 			}
 		}
@@ -256,6 +257,8 @@ function checathlon_get_svg_icons() {
 		'diamond'        => 'diamond',
 		'shopping-cart'  => 'shopping-cart',
 		'404'            => '404',
+		'tablet'         => 'tablet',
+		'file-text-o'    => 'file-text-o',
 	);
 
 	return apply_filters( 'checathlon_svg_icons', $icons );

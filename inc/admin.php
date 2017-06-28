@@ -9,9 +9,6 @@
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-// Hook into the admin menu.
-add_action( 'admin_menu', 'checathlon_admin_menu' );
-
 /**
  * Adds a custom themes sub-page.
  *
@@ -28,6 +25,7 @@ function checathlon_admin_menu() {
 		add_action( "admin_head-{$page}", 'checathlon_welcome_page_css' );
 	}
 }
+add_action( 'admin_menu', 'checathlon_admin_menu' );
 
 /**
  * Outputs some custom CSS to the welcome screen.
@@ -39,8 +37,37 @@ function checathlon_admin_menu() {
 function checathlon_welcome_page_css() { ?>
 
 	<style type="text/css" media="screen">
-		.appearance_page_checathlon .three-col { clear: both; }
-		.appearance_page_checathlon .col .dashicons { margin-top: 7px; margin-right: 4px; }
+		.appearance_page_checathlon .three-col {
+			clear: both;
+		}
+		.appearance_page_checathlon .col .dashicons {
+			margin-top: 7px; margin-right: 4px;
+		}
+		.icons-wrapper {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin: -0.75em;
+		}
+
+		.icons-wrapper > * {
+			-ms-flex: 1 0 8em;
+			flex: 1 0 8em;
+			margin: 0.75em;
+		}
+		.url-wrap {
+			display: block;
+		}
+		.icon {
+			display: inline-block;
+			fill: currentColor;
+			position: relative; /* Align more nicely with capital letters */
+			top: -0.0625em;
+			vertical-align: middle;
+			width: 2em;
+			height: 2em;
+		}
 	</style>
 <?php }
 
@@ -75,7 +102,7 @@ function checathlon_welcome_page() {
 
 			<div class="col">
 
-				<h3><i class="dashicons dashicons-sos"></i><?php esc_html_e( 'More Features', 'checathlon' ); ?></h3>
+				<h3><i class="dashicons dashicons-sos" aria-hidden="true"></i><?php esc_html_e( 'More Features', 'checathlon' ); ?></h3>
 
 				<p>
 					<?php esc_html_e( 'Checathlon Plus is Plugin that gives power and more features to Checathlon Theme.', 'checathlon' ); ?>
@@ -89,7 +116,7 @@ function checathlon_welcome_page() {
 
 			<div class="col">
 
-				<h3><i class="dashicons dashicons-admin-appearance"></i><?php esc_html_e( 'Help &amp; Documentation', 'checathlon' ); ?></h3>
+				<h3><i class="dashicons dashicons-admin-appearance" aria-hidden="true"></i><?php esc_html_e( 'Help &amp; Documentation', 'checathlon' ); ?></h3>
 
 				<p>
 					<?php esc_html_e( 'With Checathlon Plus you also get priority support. See also documentation.', 'checathlon' ); ?>
@@ -103,7 +130,7 @@ function checathlon_welcome_page() {
 
 			<div class="col">
 
-				<h3><i class="dashicons dashicons-admin-plugins"></i><?php esc_html_e( 'Supported Plugins', 'checathlon' ); ?></h3>
+				<h3><i class="dashicons dashicons-admin-plugins" aria-hidden="true"></i><?php esc_html_e( 'Supported Plugins', 'checathlon' ); ?></h3>
 
 				<p>
 					<?php esc_html_e( 'Do you need extra functionality? Checathlon has built-in support for the following plugins.', 'checathlon' ); ?>
@@ -118,6 +145,46 @@ function checathlon_welcome_page() {
 			</div><!-- .col -->
 
 		</div><!-- .three-col -->
+
+		<div class="two-col">
+
+			<div class="col">
+				<h3><?php esc_html_e( 'Supported Social Links Menu Icons', 'checathlon' ); ?></h3>
+				<?php
+					// Get social icons.
+					$social_icons = checathlon_social_links_icons();
+
+					// Loop them.
+					echo '<div class="icons-wrapper">';
+					foreach ( $social_icons as $url => $icon ) {
+						echo '<div class="icon-wrapper">';
+							echo '<span class="icon-wrap">' . checathlon_get_svg( array( 'icon' => $icon ) ) . '</span>';
+							echo '<span class="url-wrap">' . $url . '</span>';
+						echo '</div>';
+					}
+					echo '</div>';
+				?>
+			</div><!-- .col -->
+
+			<div class="col">
+				<h3><?php esc_html_e( 'Other Icons', 'checathlon' ); ?></h3>
+				<?php
+					// Get other icons.
+					$other_icons = checathlon_get_svg_icons();
+
+					// Loop them.
+					echo '<div class="icons-wrapper">';
+					foreach ( $other_icons as $name => $icon ) {
+						echo '<div class="icon-wrapper">';
+							echo '<span class="icon-wrap">' . checathlon_get_svg( array( 'icon' => $icon ) ) . '</span>';
+							echo '<span class="url-wrap">' . $name . '</span>';
+						echo '</div>';
+					}
+					echo '</div>';
+				?>
+			</div><!-- .col -->
+
+		</div><!-- .two-col -->
 
 	</div><!-- .wrap -->
 
