@@ -26,11 +26,16 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.2.2 - June 30, 2017
+
+* Add style.min.css back in .zip file.
+
 ### Version 1.2.1 - June 30, 2017
 
 * Add weibo.com social icon.
 * Fix padding issue in mobile menu.
 * When mobile menu is open, stay focus inside the menu items.
+* Add `checathlon_starter_content` around starter content.
 
 ### Version 1.2.0 -  April 29, 2017
 
