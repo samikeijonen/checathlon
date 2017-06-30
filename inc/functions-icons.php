@@ -189,6 +189,7 @@ function checathlon_social_links_icons() {
 		'vimeo.com'       => 'vimeo',
 		'vine.co'         => 'vine',
 		'vk.com'          => 'vk',
+		'weibo.com'       => 'weibo',
 		'wordpress.org'   => 'wordpress',
 		'wordpress.com'   => 'wordpress',
 		'yelp.com'        => 'yelp',
