@@ -190,6 +190,22 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
+#: build/checathlon/single.php:22, single.php:22
+msgid "Next"
+msgstr ""
+
+#: build/checathlon/single.php:23, single.php:23
+msgid "Next post:"
+msgstr ""
+
+#: build/checathlon/single.php:25, single.php:25
+msgid "Previous"
+msgstr ""
+
+#: build/checathlon/single.php:26, single.php:26
+msgid "Previous post:"
+msgstr ""
+
 #: inc/admin.php:105
 msgid "More Features"
 msgstr ""
@@ -493,22 +509,6 @@ msgstr ""
 
 #: misc/entry-product-info.php:17
 msgid "Details"
-msgstr ""
-
-#: single.php:22
-msgid "Next"
-msgstr ""
-
-#: single.php:23
-msgid "Next post:"
-msgstr ""
-
-#: single.php:25
-msgid "Previous"
-msgstr ""
-
-#: single.php:26
-msgid "Previous post:"
 msgstr ""
 
 #: template-parts/content-jetpack-portfolio.php:30, template-parts/content-page.php:32, template-parts/content-portfolio_project.php:31, template-parts/content.php:40
