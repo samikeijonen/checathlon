@@ -44,13 +44,16 @@ var project      = 'checathlon'; // Project name.
 var build        = './build/checathlon/';
 var buildInclude = [
 	'**',
+	'!node_modules',
 	'!node_modules/**/',
 	'!assets/sass/**/*',
+	'!build',
 	'!build/**/',
 	'!.git/**',
 	'!Gulpfile.js',
 	'!package.js',
 	'!package.json',
+	'!package-lock.json',
 	'!.gitignore',
 	'!.gitmodules',
 	'!.tx/**',
