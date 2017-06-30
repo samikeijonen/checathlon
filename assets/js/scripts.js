@@ -5,7 +5,7 @@
  * navigation support for dropdown menus.
  */
 ( function() {
-	var html, body, container, button, menu, menuWrapper, links, subMenus, i, len;
+	var html, body, container, button, menu, menuWrapper, links, subMenus, i, len, focusableElements, firstFocusableElement, lastFocusableElement;
 
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
@@ -44,6 +44,35 @@
 			button.className    += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
+
+			// Set focusable elements inside main navigation.
+			focusableElements     = container.querySelectorAll( ['a[href]', 'area[href]', 'input:not([disabled])', 'select:not([disabled])', 'textarea:not([disabled])', 'button:not([disabled])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'] );
+			firstFocusableElement = focusableElements[0];
+			lastFocusableElement  = focusableElements[focusableElements.length - 1];
+
+			// Redirect last Tab to first focusable element.
+			lastFocusableElement.addEventListener( 'keydown', function ( e ) {
+				if ( ( e.keyCode === 9 && ! e.shiftKey ) ) {
+					e.preventDefault();
+					button.focus(); // Set focus on first element - that's actually close menu button.
+				}
+			});
+
+			// Redirect first Shift+Tab to toggle button element.
+			firstFocusableElement.addEventListener( 'keydown', function ( e ) {
+				if ( ( e.keyCode === 9 && e.shiftKey ) ) {
+					e.preventDefault();
+					button.focus(); // Set focus on last element.
+				}
+			});
+
+			// Redirect Shift+Tab from the toggle button to last focusable element.
+			button.addEventListener( 'keydown', function ( e ) {
+				if ( ( e.keyCode === 9 && e.shiftKey ) ) {
+					e.preventDefault();
+					lastFocusableElement.focus(); // Set focus on last element.
+				}
+			});
 		}
 	};
 
