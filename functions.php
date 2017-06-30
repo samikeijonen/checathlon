@@ -98,7 +98,7 @@ function checathlon_setup() {
 	add_theme_support( 'message-board' );
 
 	// Starter content.
-	add_theme_support( 'starter-content', array(
+	$starter_content = array(
 		'widgets' => array(
 			'sidebar-1' => array(
 				'text_about',
@@ -155,7 +155,18 @@ function checathlon_setup() {
 				),
 			),
 		),
-	) );
+	);
+
+	/**
+	 * Filters array of starter content.
+	 *
+	 * @since 1.2.1
+	 *
+	 * @param array $starter_content Array of starter content.
+	 */
+	$starter_content = apply_filters( 'checathlon_starter_content', $starter_content );
+
+	add_theme_support( 'starter-content', $starter_content );
 
 	// Add support for Subtitles plugin.
 	add_post_type_support( 'testimonial', 'subtitles' );
