@@ -17,27 +17,27 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:17, build/checathlon/404.php:17
+#: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19, build/checathlon/404.php:19
+#: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: 404.php:20, build/checathlon/404.php:20
+#: 404.php:20
 msgid "404"
 msgstr ""
 
-#: 404.php:20, build/checathlon/404.php:20
+#: 404.php:20
 msgid "Page not found icon"
 msgstr ""
 
-#: 404.php:35, build/checathlon/404.php:35
+#: 404.php:35
 msgid "Most Used Categories"
 msgstr ""
 
-#: 404.php:53, build/checathlon/404.php:53
+#: 404.php:53
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
@@ -61,149 +61,129 @@ msgstr ""
 msgid "Latest reply:"
 msgstr ""
 
-#: build/checathlon/comments.php:34, comments.php:34
+#: comments.php:34
 msgctxt "comments title"
 msgid "One comment %2$s"
 msgid_plural "%1$s comments %2$s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: build/checathlon/comments.php:43, build/checathlon/comments.php:60, comments.php:43, comments.php:60
+#: comments.php:43, comments.php:60
 msgid "Newer comments"
 msgstr ""
 
-#: build/checathlon/comments.php:44, build/checathlon/comments.php:61, comments.php:44, comments.php:61
+#: comments.php:44, comments.php:61
 msgid "Older comments"
 msgstr ""
 
-#: build/checathlon/comments.php:66, comments.php:66
+#: comments.php:66
 msgid "Comments are closed."
 msgstr ""
 
-#: build/checathlon/functions.php:55, build/checathlon/functions.php:140, functions.php:55, functions.php:140
+#: functions.php:55, functions.php:140
 msgid "Primary"
 msgstr ""
 
-#: build/checathlon/functions.php:56, build/checathlon/functions.php:149, functions.php:56, functions.php:149
+#: functions.php:56, functions.php:149
 msgid "Social Links"
 msgstr ""
 
-#: build/checathlon/functions.php:61, functions.php:61
+#: functions.php:61
 msgid "Checkout Page"
 msgstr ""
 
-#: build/checathlon/functions.php:204, functions.php:204
+#: functions.php:204
 msgid "Main sidebar"
 msgstr ""
 
-#: build/checathlon/functions.php:206, functions.php:206
+#: functions.php:206
 msgid "Add widgets here for posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:214, functions.php:214
+#: functions.php:214
 msgid "Widget area after content"
 msgstr ""
 
-#: build/checathlon/functions.php:216, functions.php:216
+#: functions.php:216
 msgid "Add widgets here for after posts or pages."
 msgstr ""
 
-#: build/checathlon/functions.php:224, functions.php:224
+#: functions.php:224
 msgid "Before footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:226, functions.php:226
+#: functions.php:226
 msgid "Add widgets here for before footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:234, functions.php:234
+#: functions.php:234
 msgid "Before footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:236, functions.php:236
+#: functions.php:236
 msgid "Add widgets here for before footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:244, functions.php:244
+#: functions.php:244
 msgid "Before footer widget area 3"
 msgstr ""
 
-#: build/checathlon/functions.php:246, functions.php:246
+#: functions.php:246
 msgid "Add widgets here for before footer widget area 3."
 msgstr ""
 
-#: build/checathlon/functions.php:254, functions.php:254
+#: functions.php:254
 msgid "Footer widget area 1"
 msgstr ""
 
-#: build/checathlon/functions.php:256, functions.php:256
+#: functions.php:256
 msgid "Add widgets here for footer widget area 1."
 msgstr ""
 
-#: build/checathlon/functions.php:264, functions.php:264
+#: functions.php:264
 msgid "Footer widget area 2"
 msgstr ""
 
-#: build/checathlon/functions.php:266, functions.php:266
+#: functions.php:266
 msgid "Add widgets here for footer widget area 2."
 msgstr ""
 
-#: build/checathlon/functions.php:274, functions.php:274
+#: functions.php:274
 msgid "Front Page widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:276, functions.php:276
+#: functions.php:276
 msgid "Add widgets here for Front Page widget area."
 msgstr ""
 
-#: build/checathlon/functions.php:284, functions.php:284
+#: functions.php:284
 msgid "Service and Pricing widget area"
 msgstr ""
 
-#: build/checathlon/functions.php:286, functions.php:286
+#: functions.php:286
 msgid "Add Service and Pricing Widgets here, they appear in Front Page or Pricing Page Template."
 msgstr ""
 
-#: build/checathlon/functions.php:295, functions.php:295
+#: functions.php:295
 msgid "Sidebar for downloads"
 msgstr ""
 
-#: build/checathlon/functions.php:297, functions.php:297
+#: functions.php:297
 msgid "Add widgets here for downloads."
 msgstr ""
 
-#: build/checathlon/functions.php:332, functions.php:332
+#: functions.php:332
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
 
-#: build/checathlon/functions.php:337, functions.php:337
+#: functions.php:337
 msgctxt "Lora font: on or off"
 msgid "on"
 msgstr ""
 
-#: build/checathlon/header.php:25, header.php:25
+#: header.php:25
 msgid "Skip to content"
-msgstr ""
-
-#: build/checathlon/search.php:19, search.php:19
-msgid "Search Results for: %s"
-msgstr ""
-
-#: build/checathlon/single.php:22, single.php:22
-msgid "Next"
-msgstr ""
-
-#: build/checathlon/single.php:23, single.php:23
-msgid "Next post:"
-msgstr ""
-
-#: build/checathlon/single.php:25, single.php:25
-msgid "Previous"
-msgstr ""
-
-#: build/checathlon/single.php:26, single.php:26
-msgid "Previous post:"
 msgstr ""
 
 #: inc/admin.php:105
@@ -509,6 +489,26 @@ msgstr ""
 
 #: misc/entry-product-info.php:17
 msgid "Details"
+msgstr ""
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:22
+msgid "Next"
+msgstr ""
+
+#: single.php:23
+msgid "Next post:"
+msgstr ""
+
+#: single.php:25
+msgid "Previous"
+msgstr ""
+
+#: single.php:26
+msgid "Previous post:"
 msgstr ""
 
 #: template-parts/content-jetpack-portfolio.php:30, template-parts/content-page.php:32, template-parts/content-portfolio_project.php:31, template-parts/content.php:40
